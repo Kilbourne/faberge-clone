@@ -1,0 +1,1503 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"backgr",
+				"background-repeat"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"isB",
+				"isbigClaim()"
+			],
+			[
+				"box",
+				"boxx-wrapper	 _pages.scss"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"initD",
+				"initDotdot()"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"box-",
+				"boxx-wrapper	 _pages.scss"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"max",
+				"maxHeight	 _pages.scss"
+			],
+			[
+				"prodo",
+				"prodottoSingle"
+			],
+			[
+				"text-",
+				"text-indent"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"other",
+				"otherLinks"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"heig",
+				"height"
+			],
+			[
+				"current",
+				"currentTarget"
+			],
+			[
+				"flag-",
+				"flag-body	 _pages.scss"
+			],
+			[
+				"curr",
+				"currentTarget"
+			],
+			[
+				"flex",
+				"flex-basis"
+			],
+			[
+				"img-cont",
+				"img-container	 _header.scss"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"html",
+				"htmlboiler	htmlboiler"
+			],
+			[
+				"attivi_",
+				"attivi_length_meta"
+			],
+			[
+				"rig",
+				"right_obj"
+			],
+			[
+				"PA",
+				"padding-top"
+			],
+			[
+				"get_post_t",
+				"get_post_type	(content-single-prodotti.php)"
+			],
+			[
+				"fla",
+				"flag-body	 _header.scss"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"align-",
+				"align-items"
+			],
+			[
+				"space",
+				"space-around"
+			],
+			[
+				"post_",
+				"post_title"
+			],
+			[
+				"last",
+				"lastPart"
+			],
+			[
+				"las",
+				"lastPart"
+			],
+			[
+				"var_",
+				"var_dump()	standard Function"
+			],
+			[
+				"bioge",
+				"biogenaData"
+			],
+			[
+				"content",
+				"the_content"
+			],
+			[
+				"get_th",
+				"get_the_post_thumbnail	(content-aree-terapeutiche.php)"
+			],
+			[
+				"get_post_",
+				"get_the_post_thumbnail	(content-aree-terapeutiche.php)"
+			],
+			[
+				"the_post_",
+				"the_post_thumbnail"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"trn",
+				"translate"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"Conve",
+				"Convenzioni"
+			],
+			[
+				"custom",
+				"custom-select	 _header.scss"
+			],
+			[
+				"slide",
+				"slideshow	(_header.scss)"
+			],
+			[
+				"cirl",
+				"circle-container	 _header.scss"
+			],
+			[
+				"down",
+				"container.down"
+			],
+			[
+				"circle",
+				"circle-container	 _header.scss"
+			],
+			[
+				"container",
+				"div.container"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"des",
+				"destroy	(main.js)"
+			],
+			[
+				"create",
+				"createSticky"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"cli",
+				"clickedPaper"
+			],
+			[
+				"sel",
+				"selectedPaper"
+			],
+			[
+				"p",
+				"papers"
+			],
+			[
+				"vis",
+				"visible"
+			],
+			[
+				"bars",
+				"bars-body	 _skills.scss"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bro",
+				"browsersync	(gulpconfig.js)"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"Cor",
+				"Cordoba	(cv.html)"
+			],
+			[
+				"sub",
+				"subskill"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"doc",
+				"document	(cv.html)"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"displa",
+				"displayFasc"
+			],
+			[
+				"chang",
+				"changeSelect"
+			],
+			[
+				"anima",
+				"animation"
+			],
+			[
+				"righ",
+				"rightSide	(index.html)"
+			],
+			[
+				"cv",
+				"cv.html"
+			],
+			[
+				"conte",
+				"context"
+			],
+			[
+				"random",
+				"randomColor"
+			],
+			[
+				"logo",
+				"logo_menthalia.png	w:250 h:61"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"an",
+				"anchors"
+			],
+			[
+				"stop",
+				"stopPropagation()	Event"
+			],
+			[
+				"appen",
+				"appendEls"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"grou",
+				"groupedByURI"
+			],
+			[
+				"ul",
+				"ul	<ul>"
+			],
+			[
+				"comment",
+				"comment_text	(functions.php)"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"entry-",
+				"entry-header	 _components.scss"
+			],
+			[
+				"tmp",
+				"tmpDir"
+			],
+			[
+				"tar",
+				"target	Event"
+			],
+			[
+				"queryS",
+				"querySelectorAll(${0:selectors})	Element"
+			],
+			[
+				"encode",
+				"encoded_array"
+			],
+			[
+				"backfa",
+				"backface-visibility"
+			],
+			[
+				"wp_eun",
+				"wp_enqueue_script"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"posi",
+				"positions"
+			],
+			[
+				"now",
+				"nowrap"
+			],
+			[
+				"mediaq",
+				"media query iphone 4	iphone 4"
+			],
+			[
+				"transp",
+				"transparent	(style.min.css)"
+			],
+			[
+				"media",
+				"media query ipad portrait	ipad portrait"
+			],
+			[
+				"jus",
+				"justify	(style.min.css.map)"
+			],
+			[
+				"sea",
+				"search"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"deb",
+				"debug_to_console"
+			],
+			[
+				"visi",
+				"visible	(magnific-popup.css)"
+			],
+			[
+				"inline-",
+				"inline-block"
+			],
+			[
+				"resize",
+				"resizeHeight"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"magnific",
+				"_magnific-popup.scss"
+			],
+			[
+				"line-",
+				"line-height"
+			],
+			[
+				"vie",
+				"viewWidth"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"line",
+				"link_before	(functions.php)"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"getElemnt",
+				"getElementById(id)	helper.js"
+			],
+			[
+				"nor",
+				"no-repeat"
+			],
+			[
+				"menthalia",
+				"menthalia.png	w:125 h:15"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"pin",
+				"pointer"
+			],
+			[
+				"get_",
+				"get_header	(index.php)"
+			],
+			[
+				"tra",
+				"transform	CSS - transform: ;"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<div class=\"content-main\">\n    <div class=\"content-wrapper\">\n        <div class=\" boxx with-img\">\n\n\n            <div class=\"boxx-wrapper\">\n                <h3>Chi siamo</h3>\n                <div class=\"flag-body \">\n\n                    <p><strong>BIOGENA</strong> è una divisione di <strong>Valetudo</strong>, azienda cosmetica e farmaceutica italiana impegnata in un’intensa attività di ricerca scientifica rivolta principalmente al benessere della pelle.</p>\n                    <p>La divisione <strong>BIOGENA</strong>, in particolare, si rivolge al mondo della dermatologia e vuole essere sempre più il punto di riferimento italiano per lo specialista in dermatologia.</p>\n                    <p>L’azienda, <strong>fondata nel 1982 dal chimico cosmetologo dottor Vittorino Bortolin</strong>, ha sostenuto nel corso di 30 anni una crescita continua e un progressivo avanzamento scientifico e tecnologico, che l’hanno condotta ad affermarsi sempre più a livello nazionale e internazionale. L’azienda offre ai propri clienti un efficiente servizio di produzione e commercializzazione di una gamma ampia e diversificata di prodotti destinati al trattamento dermatologico. Produce <strong>Cosmetici, Dispositivi Medici</strong> e <strong>Presidi Medico-Chirurgici</strong> sia per marchi propri sia per marchi di clienti terzi, annoverando tra i propri clienti alcune tra le più importanti aziende nazionali e internazionali. L’azienda è certificata in conformità alla norma <strong>UNI EN ISO 9001/2000</strong>.</p>\n                    <p>Nei laboratori interni di ricerca e con l’ausilio di strumentazioni analitiche di avanguardia, vengono eseguite rigorose attività di ricerca e sperimentazione, che garantiscono lo sviluppo formulativo dei singoli prodotti, prove di stabilità, test di efficacia e di tollerabilità, assistenza marketing, dossier di prodotto, ecc.</p>\n                    <p>I principali interlocutori di<strong> BIOGENA</strong> nell’ambito della classe medica sono rappresentati da dermatologi e pediatri.</p>\n                    <p>I prodotti <strong>BIOGENA</strong> sono <strong>disponibili esclusivamente in farmacia</strong>.</p>\n                    <span class=\"readmore-box\">Leggi Tutto</span>\n                </div>\n                <img src=\"http://www.menthalia.com/biogena/app/uploads/2016/01/azienda-1.png\" alt=\"azienda-02\" width=\"180\" height=\"300\" class=\"alignleft size-full wp-image-1619\" />\n            </div>\n        </div>\n   <div class=\"boxx with-img\">\n            <div class=\"boxx-wrapper\">\n                <h3>La nostra filosofia in 10 punti</h3>\n                <div class=\"flag-body \">\n                    <p>La nostra <strong>mission</strong> è garantire al consumatore prodotti e soluzioni che soddisfano i più <strong>elevati standard di qualità</strong>, <strong>sicurezza</strong> ed <strong>efficacia</strong> e di <strong>innovazione scientifica</strong>.</p>\n                    <p>Condividiamo una comune filosofia: prenderci cura della pelle con passione e competenza. L’attività produttiva di <strong>BIOGENA</strong> è focalizzata nello sviluppo di prodotti specialistici innovativi e originali per il trattamento di patologie dermatologiche, formulati con principi attivi di efficacia e sicurezza dimostrate da chiare evidenze sperimentali e cliniche.</p>\n                    <div class=\"list-wrapper\">\n                        <ol>\n                            <li>\n                                <h6>30 anni in Dermatologia</h6> L’esperienza trentennale maturata sul campo è per noi un vanto e un’ulteriore garanzia di qualità dei nostri prodotti.</li>\n                            <li>\n                                <h6>Ricerca Scientifica</h6> Competenza e innovazione nello sviluppo di ogni prodotto.</li>\n                            <li>\n                                <h6>Partner di OL del settore Dermatologico</h6> Collaboriamo attivamente con dermatologi nazionali e internazionali per fornire prodotti di alto profilo.</li>\n                            <li>\n                                <h6>Selezione e controllo delle materie prime</h6> Una rigorosa selezione e controllo delle materie prime e degli ingredienti utilizzati assicura la qualità dei nostri prodotti.</li>\n                            <li>\n                                <h6>Studi Clinici di Efficacia e Tollerabilità</h6> Sottoponiamo i nostri prodotti a studi clinici sotto il controllo di esperti dermatologi, allergologi e professionisti per valutare l’efficacia e la tollerabilità dei prodotti. Questi studi sono pubblicati in giornali scientifici riconosciuti del settore.</li>\n                            <li>\n                                <h6>Rispetto dell’ambiente</h6> Ricaviamo l’energia elettrica necessaria allo stabilimento mediante pannelli fotovoltaici. Cerchiamo di ridurre al minimo l’impatto ambientale.</li>\n                            <li>\n                                <h6>Eccellenza del MADE IN ITALY</h6> L’italianità è per noi un valore fondamentale. Dalla ricerca alla produzione.</li>\n                            <li>\n                                <h6>Responsabilità sociale</h6> Le persone sono il “cuore” dell’azienda, caratterizzato da etica e professionalità.</li>\n                            <li>\n                                <h6>Passione</h6> La Passione per il nostro lavoro ci unisce in un unico obiettivo produrre prodotti di alta qualità.</li>\n                            <li>\n                                <h6>Impegno</h6> Il nostro impegno presente e futuro sarà quello di fornire soluzioni avanzate ed innovative per la dermatologia.</li>\n                        </ol>\n                    </div>\n                    <span class=\"readmore-box\">Leggi Tutto</span>\n                </div>\n                <img src=\"http://www.menthalia.com/biogena/app/uploads/2016/01/azienda-3.png\" alt=\"azienda-03\" width=\"180\" height=\"300\" class=\"alignleft size-full wp-image-1618\" />\n            </div>\n        </div>\n    </div>\n    <div class=\"content-wrapper\">\n        <div class=\" boxx with-img\">\n            <div class=\"boxx-wrapper\">\n                <h3>Studi clinici internazionali</h3>\n                <div class=\"flag-body\">\n                    <p>Biogena vanta un’esperienza più che trentennale in dermatologia.\n                        <br/> Ci proponiamo di sviluppare soluzioni coadiuvanti per la detergenza e il trattamento delle principali problematiche della pelle. </p>\n                    <p>Forniamo un’ampia gamma di soluzioni anche per la tricologia, la fotoprotezione, la deodorazione, la secchezza cutanea, la pelle sensibile e l’estetica corpo.</p>\n                    <p><strong>Sottoponiamo i nostri prodotti a rigorosi test, studi clinici nazionali e/o internazionali per valutare l’efficacia e la sicurezza dei prodotti.  Questi studi sono pubblicati in giornali scientifici riconosciuti del settore.</strong></p>\n                    <p><strong>Collaboriamo attivamente con esperti dermatologi di levatura nazionale e internazionale per fornire prodotti di alto profilo che soddisfano i più stringenti criteri qualitativi. </strong></p>\n                    <p>La nostra ricerca in campo cosmetico è finalizzata a perseguire:</p>\n                    <p><strong>Qualità farmaceutica</strong> per assicurare un’elevata performance del prodotto, </p>\n                    <p><strong>Sicurezza</strong> per assicurare che i nostri prodotti siano tollerati anche dalle pelli più sensibili </p>\n                    <p><strong>Piacevolezza e sensorialità d’uso</strong>, per assicurare texture innovative, leggere e piacevoli da usare</p>\n                    <span class=\"readmore-box\">Leggi Tutto</span>\n                </div>\n                                    <img src=\"http://www.menthalia.com/biogena/app/uploads/2016/01/azienda-2.png\" alt=\"azienda-01\" width=\"180\" height=\"300\" class=\"alignleft size-full wp-image-1620\" />\n            </div>\n        </div>\n        <div class=\" boxx with-img video\">\n            <div class=\"boxx-wrapper\">\n                <h3>Il saluto del dr. Bortolin</h3>\n[video src=\"http://www.menthalia.com/biogena/app/uploads/2015/11/biogena.mp4\"][/video]\n<img class=\"alignleft size-full wp-image-1620\" src=\"http://www.menthalia.com/biogena/app/uploads/2016/01/azienda-4.png\" alt=\"azienda-01\" width=\"180\" height=\"300\" /></div>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n",
+			"settings":
+			{
+				"buffer_size": 8394,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": " ",
+			"settings":
+			{
+				"buffer_size": 1,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "sublimerge",
+		"selected_items":
+		[
+			[
+				"sublimerge",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"sublime comp",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"sublim co",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"subl",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"subli",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"aut",
+				"AutoBackups: Open file backup"
+			],
+			[
+				"win",
+				"WinMerge: Show Diff"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"enal",
+				"Package Control: Enable Package"
+			],
+			[
+				"su",
+				"Sublimerge"
+			],
+			[
+				"codef",
+				"CodeFormatter: Format as PHP Syntax"
+			],
+			[
+				"set",
+				"Set Syntax: HTML"
+			],
+			[
+				"proje",
+				"Project Manager: Add Project"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"new f",
+				"File: New File Relative to Current View"
+			],
+			[
+				"mini",
+				"Minify::Default File Settings"
+			],
+			[
+				"ECSS",
+				"Run eCSStractor"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"set s css",
+				"Set Syntax: SCSS"
+			],
+			[
+				"create",
+				"Quick File Creator: Create file"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
+			],
+			[
+				"termina",
+				"Terminal: Open"
+			],
+			[
+				"rename ",
+				"File: Rename"
+			],
+			[
+				"crefile",
+				"Quick File Creator: Create file"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				" scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"new file",
+				"ANF: New File"
+			],
+			[
+				"snippe",
+				"Snippet: htmlboiler"
+			],
+			[
+				"set sy html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set sy",
+				"Set Syntax: HTML"
+			],
+			[
+				"sidebar",
+				"Side Bar: Disable Syncing"
+			],
+			[
+				"compare",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"set syntax js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"code f",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"merge",
+				"Sublimerge"
+			],
+			[
+				"sets",
+				"Set Syntax: HTML"
+			],
+			[
+				"sub",
+				"Sublimerge"
+			],
+			[
+				"sublim",
+				"Sublimerge"
+			],
+			[
+				"set s jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"COL",
+				"Color Picker"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime",
+				"Sublimerge"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 664.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/faberge"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/faberge/.travis.yml",
+		"/C/xampp/htdocs/faberge/CONTRIBUTING.md",
+		"/C/xampp/htdocs/faberge/.env.example",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/composer.json",
+		"/C/wp-cli/wp.bat",
+		"/C/wp-cli/composer.json",
+		"/C/xampp/htdocs/faberge/web/app/themes/faberge/gulpfile.js/devUrl.js",
+		"/C/xampp/htdocs/faberge/.env",
+		"/C/xampp/htdocs/faberge/web/app/themes/faberge/assets/styles/main.scss",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/assets/styles/main.scss",
+		"/C/xampp/htdocs/biogena/composer.json",
+		"/C/xampp/htdocs/faberge/web/app/themes/faberge/base.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/.env.example",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/.htaccess",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/gulpfile.js/devUrl.js",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/assets/styles/components/_wp-classes.scss",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/assets/manifest.json",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/manifest.json",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/assets/styles/components/_grid.scss",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/assets/styles/components/_forms.scss",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/assets/styles/components/_comments.scss",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/bower.json",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/package.json",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/package.json",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/bower.json",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/lib/setup.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lib/setup.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/lib/extras.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lib/extras.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/lib/customizer.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lib/wrapper.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/lib/wrapper.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lib/titles.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/lib/titles.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lib/assets.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/lib/assets.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/page.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/page.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/base.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/base.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/single.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/single.php",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/web/app/themes/faberge/.gitignore",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/.gitignore",
+		"/C/xampp/htdocs/biogena/.gitignore",
+		"/C/Users/MarcoQ/Desktop/Project/faberge/.gitignore",
+		"/C/xampp/htdocs/faberge/.gitignore",
+		"/C/Users/MarcoQ/Desktop/newsletter gennaio/gennaio2016.html",
+		"/C/Users/MarcoQ/Desktop/Copia di Cartel2.csv",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/components/_slider.scss",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/archive.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/content-archive-area-skin-care.php",
+		"/C/Users/MarcoQ/Desktop/optima/myfontsfree.txt",
+		"/C/Users/MarcoQ/Desktop/webfontkit-20160125-084229/stylesheet.css",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/fonts/optima/stylesheet.css",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/components/_news-box.scss",
+		"/C/xampp/htdocs/biogena/vendor/autoload.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/content-single-area-skin-care.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/underscore-template.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/content-single-prodotti.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/footer.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/ajax.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/page-azienda.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/components/_fonts.scss",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/layouts/_pages.scss",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/content-FAQ.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/content-single.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/front-page.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/scripts/main.js",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/components/_video.scss",
+		"/C/Users/MarcoQ/Desktop/backup_2016-01-26-0925_Biogena_04a7960ba428-db/backup_2016-01-26-0925_Biogena_04a7960ba428-db",
+		"/C/Users/MarcoQ/Desktop/backup_2016-01-25-0928_Biogena_887559f36dbe-db",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/dist/smarty.config.inc.php",
+		"/C/Users/MarcoQ/Desktop/product.tpl",
+		"/F/MARCO-Q backup 27 Febbraio 2014/Lavori/_WEB/MenthaliaShop/MenthaliaShop/themes/trendy/product.tpl",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/dist/styles/main.css",
+		"/C/Users/MarcoQ/Desktop/footer.tpl",
+		"/C/Users/MarcoQ/Desktop/index.tpl",
+		"/C/Users/MarcoQ/Desktop/layout.tpl",
+		"/C/Users/MarcoQ/Desktop/jquery.fancybox-1.3.4.pack.js",
+		"/C/Users/MarcoQ/Desktop/fancybox.setting.js",
+		"/C/Users/MarcoQ/Desktop/ProductController.php",
+		"/C/Users/MarcoQ/Desktop/index.php",
+		"/C/Users/MarcoQ/Desktop/nbr-product-page.tpl",
+		"/C/Users/MarcoQ/Desktop/.env",
+		"/C/xampp/htdocs/faberge/web/app/themes/faberge/assets/styles/components/_comments.scss",
+		"/C/xampp/htdocs/faberge/web/app/themes/faberge/assets/styles/components/_grid.scss",
+		"/C/xampp/htdocs/faberge/web/app/themes/faberge/assets/styles/components/_wp-classes.scss",
+		"/C/xampp/htdocs/faberge/.htaccess",
+		"/C/Users/MarcoQ/Desktop/Project/bedrock/composer.json",
+		"/C/Users/MarcoQ/Desktop/defz.html",
+		"/C/Users/MarcoQ/Dropbox/plugins.txt",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lang/en_GB.po",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lang/it_IT.po",
+		"/C/Users/MarcoQ/Desktop/Project/bedrock/.env.example",
+		"/C/xampp/htdocs/biogena/.env",
+		"/C/xampp/htdocs/biogena/.env.home",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/gulpfile.js/devUrl.js",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/header.php",
+		"/C/Users/MarcoQ/Desktop/text.hhh.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/components/_attivi.scss",
+		"/C/Users/MarcoQ/Desktop/it.po",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/content-single-linee.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/search.php",
+		"/C/Users/MarcoQ/Desktop/backup_2016-01-10-1305_Biogena_470c02494a0e-db",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/components/_menu.scss",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lang/sage.pot",
+		"/C/Users/MarcoQ/Desktop/backup_2016-01-14-1709_Biogena_e93bdca49693-db",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lang/en_EN.po",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/lang/it.po",
+		"/C/Users/MarcoQ/Desktop/biogena.po",
+		"/C/Users/MarcoQ/Desktop/biogena.pot",
+		"/C/Users/MarcoQ/Desktop/sql527254_5.sql",
+		"/C/Users/MarcoQ/Desktop/backup_2016-01-14-0914_Biogena_b08f938271a7-db(1)",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/area_riservata.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/content-osmin.php",
+		"/C/xampp/htdocs/biogena/web/.htaccess",
+		"/C/xampp/htdocs/biogena/config/application.php",
+		"/C/Users/MarcoQ/Desktop/application.php",
+		"/C/Users/MarcoQ/Desktop/backup_2016-01-14-0914_Biogena_b08f938271a7-db/backup_2016-01-14-0914_Biogena_b08f938271a7-db",
+		"/C/Users/MarcoQ/Desktop/backup_2016-01-11-1955_Biogena_922d04a1d6db-db/backup_2016-01-11-1955_Biogena_922d04a1d6db-db",
+		"/C/Users/MarcoQ/Desktop/backup_2016-01-13-0918_Biogena_dc5add77d8da-db/backup_2016-01-13-0918_Biogena_dc5add77d8da-db",
+		"/C/xampp/htdocs/biogena/web/app/themes/front-page.php",
+		"/C/Users/MarcoQ/Desktop/Sql527254_5.sql",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/gulpfile.js/tasks/images.js",
+		"/C/Users/MarcoQ/.sublime/history/C/xampp/htdocs/biogena/web/app/themes/biogena/templates/2016-01-08_12.12.47.content-single-area-skin-care.php",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/components/_down-nav.scss",
+		"/C/xampp/htdocs/biogena/web/app/themes/biogena/assets/styles/common/_icons.scss"
+	],
+	"find":
+	{
+		"height": 52.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"www.menthalia.com/biogena/biogena",
+			"192.168.1.18",
+			"gennaio",
+			"http://magazine.menthalia.com/i-capolavori-della-maison-faberge-luovo-dellincoronazione/",
+			"http://magazine.menthalia.com/novak-djoker-djokovic-piglia-tutto-e-lui-lo-sportivo-dellanno/",
+			"madonna_300x300.jpg",
+			"http://magazine.menthalia.com/rebel-heart-tour-di-madonna-la-regina-e-sempre-lei/",
+			"2015",
+			"dicembre",
+			"Dicembre",
+			".swiper-slide ",
+			".swiper-slide .",
+			".swiper-slide ",
+			"articoli",
+			"entry-content",
+			"img",
+			"www.menthalia.com",
+			"Sql527254_5",
+			"body.articoli",
+			"giras",
+			"php",
+			"box2",
+			"nth-child(2",
+			"content-wra",
+			"h3",
+			"h4",
+			"GIRASOLE",
+			"margin",
+			"fotop",
+			"foto-p",
+			"list-wrapper",
+			"padding-right",
+			"fotop",
+			"p:first-of-type",
+			"');\n",
+			"isBox",
+			"dotdotdot",
+			"aziendaMatchHeight",
+			".box1 ",
+			".boxx.box1 ",
+			"uso",
+			"modo",
+			"wp-video",
+			"padding: 1rem 7.5%;",
+			";}\n",
+			"under-photo",
+			"line-h",
+			"under-photo",
+			"home",
+			"big-claim",
+			"10px 0px 20px",
+			"flowtype",
+			"192.168.1.18",
+			"www.menthalia.com",
+			"Sql527254_5",
+			"$groups",
+			"short-desc",
+			"ratings",
+			"flag-body",
+			"list-wrapper",
+			"propri",
+			"big",
+			"80%",
+			"0 10",
+			"margin 0 10",
+			"1.8rem",
+			"big",
+			"27",
+			"27.5",
+			"big",
+			"title",
+			"big",
+			"flow",
+			"27.5",
+			"big",
+			"big-claim-right",
+			"fitText",
+			"big",
+			"flowtype",
+			"big-cl",
+			"optima",
+			"roboto",
+			"personalizzazione",
+			"fascetta",
+			"customization",
+			"*",
+			"sku",
+			"addJ",
+			"idTab10",
+			"desc-foto",
+			".6em",
+			".6rem",
+			"false",
+			"desc-foto",
+			"143",
+			"all-small-caps",
+			"osmin",
+			"box2",
+			"box",
+			"azienda",
+			"1rem 3rem",
+			"fotop",
+			"all",
+			"video",
+			"azienda",
+			"azineda",
+			"list-wrapper",
+			"video",
+			"osmin",
+			"omsin",
+			"content-wrapper",
+			"down-nav",
+			"osmin",
+			"no-pad",
+			"video",
+			"important",
+			"video",
+			"localhost",
+			"\\'",
+			"intervento farmacologico",
+			"\\'",
+			"Atopia",
+			"l'Atopia",
+			"'",
+			"azienda",
+			"osmin",
+			"osmin+",
+			"osmin"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"www.menthalia.com/biogena",
+			"http://magazine.menthalia.com/videos-radios-cianfrusaglies/",
+			"http://magazine.menthalia.com/icapolavori-della-maison-faberge-luovo-di-pietro-il-grande/",
+			"italianoestero_300x300.jpg",
+			"http://magazine.menthalia.com/quanto-costa-il-sapere-italiano-allestero-chi-si-avventura-e-chi-si-reinventa/",
+			"2016",
+			"gennaio",
+			"Gennaio",
+			"192.168.1.18",
+			"localhost",
+			"biogena",
+			"192.168.1.18",
+			"biogena",
+			"optima",
+			"www.menthalia.com",
+			"’",
+			"",
+			"’",
+			"192.168.1.18",
+			"biogena",
+			"10vw",
+			".Chiudi",
+			"192.168.1.18",
+			"localhost",
+			"biogena",
+			"/biogena/en",
+			"192.168.1.18",
+			"biogena",
+			"p",
+			"localhost",
+			"biogena",
+			"$double_claim",
+			"biogena",
+			"192.168.1.18",
+			"<div class=\"swiper-button swiper-button-prev\"></div><div class=\"swiper-button swiper-button-next\"></div>",
+			"swiper-button",
+			"localhost",
+			"<",
+			">",
+			"biogena",
+			"http://magazine.menthalia.com/i-capolavori-della-maison-faberge-luovo-dellincoronazione/",
+			"http://magazine.menthalia.com/novak-djoker-djokovic-piglia-tutto-e-lui-lo-sportivo-dellanno/",
+			"http://magazine.menthalia.com/rebel-heart-tour-di-madonna-la-regina-e-sempre-lei/",
+			"http://magazine.menthalia.com/con-o-senza-valigia-le-10-1-piu-belle-citta-da-visitare/",
+			"dicembre",
+			"Dicembre",
+			"192.168.1.18",
+			"www.menthalia.com",
+			"biogena",
+			"isset($field) && $field &&",
+			"isset($field) &&",
+			"isset($field) || $field",
+			"ENGINE=InnoDB ROW_FORMAT=COMPRESSED ",
+			"192.168.1.18",
+			"js-accordionTrigger fa fa-caret-right",
+			"url('./pt_sans-narrow/",
+			"#24569B	",
+			"#24569B",
+			"evidenze_cliniche",
+			"right",
+			"$field;",
+			"",
+			"accordion-content",
+			"class=\"accordion-content accordionItem is-collapsed\"  aria-hidden=\"true\"",
+			"right_obj",
+			"$obj",
+			"right_obj2",
+			"$right_obj",
+			"jQuery",
+			"192.168.1.18",
+			"$prev",
+			"$next",
+			"menu-menu-1",
+			".menu-aree-terapeutiche",
+			"menu-aree-terapeutiche",
+			"?>",
+			"<?=",
+			"?>",
+			"<?php",
+			"$resp",
+			"$this->resp",
+			"",
+			"linee",
+			".nav-primary",
+			"png",
+			"jpg",
+			"",
+			"palaveliero",
+			"[number*",
+			"[number*  [",
+			":  [",
+			"Voto",
+			" ",
+			"<br/> [number field min:0 max:5 step:1 class:number]</p>",
+			"h4",
+			"\n{",
+			"settembre",
+			"www.azzurronapolibasket.com",
+			"window.pageYOffset",
+			"192.168.1.18/insurrezionedidublino",
+			"infowindow",
+			"",
+			"D",
+			"",
+			"Remove",
+			"42",
+			"new-icon",
+			"192.168.1.18/www.azzurronapolibasket.com",
+			"www.menthalia.com/azzurronapolibasket",
+			"href=\"<?php echo get_template_directory_uri(); ?>/img/icons",
+			"href=\"<?php echo get_template_directory_uri(); ?>",
+			"",
+			"carica\"",
+			"www.menthalia.com/azzurronapolibasket",
+			"giugno",
+			".menu-item >",
+			"http://192.168.1.18/www.azzurronapolibasket.com",
+			"www.menthalia.com/azzurronapolibasket",
+			"Sql657345_3",
+			"www.menthalia.com/azzurronapolibasket\n",
+			"giugno",
+			"nav",
+			"localhost/www.azzurronapolibasket.com",
+			"aria-required=\"false\"",
+			"jQuery",
+			"767px",
+			"1200px",
+			"992px"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								8394
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"default_dir": "C:\\xampp\\htdocs\\biogena",
+							"incomplete_sync": null,
+							"last_modified_indicator": true,
+							"last_modified_indicator_file_save_clear": false,
+							"last_modified_indicator_multiline": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"tabs_extra_last_activated": 1453887712.52,
+							"tabs_extra_last_activated_sheet_index": 0,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 545.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": true,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"default_dir": "C:\\xampp\\htdocs\\biogena",
+							"incomplete_sync": null,
+							"last_modified_indicator": true,
+							"last_modified_indicator_file_save_clear": false,
+							"last_modified_indicator_multiline": true,
+							"syntax": "Packages/JavaScript Ultimate/JSON.tmLanguage",
+							"tab_size": 4,
+							"tabs_extra_last_activated": 1453895614.03,
+							"tabs_extra_last_activated_sheet_index": 1,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 41.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "faberge.sublime-project",
+	"replace":
+	{
+		"height": 92.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\MarcoQ\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\Projects\\biogena.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

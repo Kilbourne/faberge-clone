@@ -1,0 +1,46 @@
+.u-6\/11 {
+    width: 58.61% !important;
+}
+.u-5\/11 {
+    width: 41.39% !important;
+}
+body{
+  background-image: url('../images/bg.png');
+}
+.banner{
+ background-image: url('../images/bg-head.png');
+ border-bottom: 3px solid rgb(207, 173, 66);
+border-left: 3px solid rgb(207, 173, 66);
+border-right: 3px solid #CFAD42;
+background-color: #fff;
+}
+.nav-primary{
+  position: relative;
+  height: 6rem;
+  z-index: 11;
+  list-style: none;
+}
+.logo{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0px;
+}
+.claim{
+  position:absolute;
+  z-index:11;
+  color:#fff;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  >h5{
+    font-size: 2rem;
+    margin-bottom: 0px;
+
+  }
+  >p{
+
+  }
+}
+.col{ position:relative;}
+.history-box{ background-color:#DFDFDF;}
+.locator-box{ background-color: #C39847;}
