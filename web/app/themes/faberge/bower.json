@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-        "inuit-defaults": "latest",
+    "inuit-defaults": "latest",
     "inuit-responsive-settings": "latest",
     "inuit-functions": "latest",
     "inuit-mixins": "latest",
@@ -46,6 +46,9 @@
     "jquery": "~1.11.3",
     "font-awesome": "~4.5.0",
     "enquire": "~2.1.2",
-    "fastclick": "~1.0.6"
+    "fastclick": "~1.0.6",
+    "imagesloaded": "~4.1.0",
+    "Flowtype.js": "~1.1.0",
+    "swiper": "~3.3.1"
   }
 }
