@@ -86,7 +86,7 @@ use Roots\Sage\Wrapper;
 </g>
       </symbol>
     </svg>
-    <div class="page-wrapper page-wrapper--little">
+    <div class="page-wrapper ">
     <?php
       do_action('get_header');
       get_template_part('templates/header');
