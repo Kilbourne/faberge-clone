@@ -25,16 +25,15 @@ if ( empty( $product ) || ! $product->exists() ) {
 	return;
 }
 
-$related = $product->get_related( $posts_per_page );
-
+$related = $product->get_related( 9999 );
 if ( sizeof( $related ) === 0 ) return;
 
 $args = apply_filters( 'woocommerce_related_products_args', array(
 	'post_type'            => 'product',
 	'ignore_sticky_posts'  => 1,
 	'no_found_rows'        => 1,
-	'posts_per_page'       => $posts_per_page,
-	'orderby'              => $orderby,
+	'posts_per_page'       => -1,
+	'orderby'              => 'ID',
 	'post__in'             => $related,
 	'post__not_in'         => array( $product->id )
 ) );
@@ -47,7 +46,7 @@ if ( $products->have_posts() ) : ?>
 
 	<div class="related products">
 
-		<h2><?php _e( 'Related Products', 'woocommerce' ); ?></h2>
+		<h2><?php _e( 'Scopri tutta la gamma', 'faberge' ); ?></h2>
 
 		<?php woocommerce_product_loop_start(); ?>
 

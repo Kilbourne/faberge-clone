@@ -34,11 +34,15 @@ global $post, $woocommerce, $product;
 				'title'	=> $image_title,
 				'alt'	=> $image_title
 				) );
-
-			$attachment_count = count( $product->get_gallery_attachment_ids() );
+			$gallery_ids=$product->get_gallery_attachment_ids();
+			$attachment_count = count( $gallery_ids );
 
 			if ( $attachment_count > 0 ) {
 				$gallery = '[product-gallery]';
+					 $pathinfo=pathinfo(parse_url($image_link, PHP_URL_PATH));
+
+					$image_link=$pathinfo['dirname'].'/'.$pathinfo['filename'].'_zoom'.'.'.$pathinfo['extension'];
+
 			} else {
 				$gallery = '';
 			}
@@ -47,11 +51,14 @@ global $post, $woocommerce, $product;
 
 		} else {
 
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
+			$image = apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
+			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a  itemprop="image" class="woocommerce-main-image zoom"  data-rel="prettyPhoto">%s</a>',  $image ), $post->ID );
+
 
 		}
 	?>
 
-	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
+	<?php //do_action( 'woocommerce_product_thumbnails' );
+	faberge_woocommerce_single_product_variations();?>
 
 </div>

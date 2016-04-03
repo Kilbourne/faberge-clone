@@ -22,5 +22,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-
+<div class="social-wrap">	
+<h5>SHARE</h5>
+<div class="social">
+	
+	<span class="facebook">
+	<svg class="fb-icon" >
+	  <use xlink:href="#FB_svg_icon" fill="#949494"></use>
+	<svg>
+	</span> 
+	<span class="twitter">
+	<svg class="twitter-icon" >
+	  <use xlink:href="#TW_svg_icon" fill="#949494"></use>
+	<svg>
+	</span> 
+</div>
+</div>
 <?php do_action( 'woocommerce_share' ); // Sharing plugins can hook into here ?>

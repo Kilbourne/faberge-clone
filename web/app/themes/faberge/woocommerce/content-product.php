@@ -47,8 +47,9 @@ if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1
 if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	$classes[] = 'last';
 }
+$classes[]='product';
 ?>
-<li <?php post_class( $classes ); ?>>
+<li id="product-<?php the_ID() ?>" <?php post_class( $classes ); ?>>
 
 	<?php
 	/**
