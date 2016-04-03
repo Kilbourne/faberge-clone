@@ -1,0 +1,48 @@
+.linea-description{
+  text-align: center;
+  position:relative;
+}
+.linea-nav{
+  display: inline-block;
+  width: 98%;
+  padding: 1%;
+  border-bottom: 1px solid rgb(207, 173, 66);
+  text-align: left;
+  //margin-top: 1.8rem;
+  &-title{
+    font-size: 1rem;
+    color: rgb(214, 187, 149);
+    margin-top: 0px;
+    line-height: 1.125;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-bottom: 0px;
+    margin-right: 0.5rem;
+    &>a{
+
+    }
+  }
+  &-list{
+    margin: 0px;
+    display: inline;
+    font-size: 12px;
+    line-height: 1.2;
+    vertical-align: middle;
+  }
+  &-listelement{
+    display: inline-block;
+    margin-right: 3%;
+    >a{
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  >.term-description{
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+    bottom: 2%;
+    max-width: 43%;
+    text-align: left;
+  }
+}

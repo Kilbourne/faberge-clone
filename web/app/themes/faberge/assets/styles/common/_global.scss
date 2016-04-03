@@ -1,3 +1,26 @@
 html{
   box-sizing: border-box;
 }
+body{
+  background-color: #fff;
+  font-family: 'Antic Didone', serif;
+  background-image: url('../images/bg.png');
+}
+    body.admin-bar{
+      .page-wrapper { margin-top: 32px !important; }
+      @media screen and ( max-width: 782px ) {
+          .page-wrapper { margin-top: 46px !important; }
+      }
+  }
+
+a:visited{ color:initial; }
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+svg path {
+    fill: inherit;
+}

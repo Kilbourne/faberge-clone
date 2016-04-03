@@ -1,6 +1,7 @@
 /* UTILITIES */
-
-.inline-block {
-    display: inline-block;
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.little-text{font-size:12px !important;}
+

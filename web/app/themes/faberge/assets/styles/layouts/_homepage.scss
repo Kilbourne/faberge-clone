@@ -1,0 +1,104 @@
+.panel-grid-cell {
+    position: relative;
+    .widget_sow-image {
+        margin: 0 !important;
+        padding: 1px 3px;
+    }
+    .so-panel.widget_text {
+        font-size: 1rem;
+    }
+    .panel-widget-style {
+        &.box-title {
+            font-size: 1em;
+            position: absolute;
+            display: inline-block;
+            >.widget-title {
+                display: table;
+            }
+            >.textwidget {
+                display: inline-block;
+            }
+        }
+        &.no-title {
+            >.widget-title {
+                display: none;
+            }
+        }
+        &.pre-tf-logo {
+            &::before {
+                content: '';
+                background-image: url(../images/tf.svg);
+                display: inline-block;
+                width: 2.7em;
+                height: auto;
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                margin-right: 10px;
+                padding-bottom: 2.25em;
+                line-height: 1;
+            }
+            >.widget-title {
+                display: inline-block;
+                width: calc(100% - 10px - 0.95em);
+            }
+        }
+        &.pre-tf-logo-black {
+            &::before {
+                content: '';
+                background-image: url(../images/tf-black.svg);
+                display: inline-block;
+                width: 2.75em;
+                height: auto;
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                margin-right: 10px;
+                padding-bottom: 2.3em;
+                line-height: 1;
+            }
+            >.widget-title {
+                display: inline-block;
+                width: calc(100% - 10px - 0.9em);
+            }
+        }
+        color: rgb(255, 255, 255);
+        .widget-title {
+            font-size: 3.125em;
+            font-family: "bebas_neueregular";
+            margin-bottom: 0;
+        }
+        .textwidget {
+            p {
+                font-size: 1.125em;
+                margin-bottom: 0.5rem;
+            }
+            button {
+                background-color: rgb(45, 46, 46);
+                border: medium none;
+                font-size: 0.9em;
+                color: #fff;
+            }
+        }
+    }
+    .widget_sp_image {
+        margin-bottom: 0 !important;
+        >img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.history-box {
+    background-color: #DFDFDF;
+}
+
+.locator-box {
+    background-color: #C39847;
+}
+
+body.home .wrap.container>.content {
+    background-image: url('../images/bg.jpg');
+    background-color: #000;
+}

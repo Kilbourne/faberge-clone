@@ -1,0 +1,41 @@
+.variations-thumbs{
+  position: absolute;
+  top:0;
+  margin-left: 1.4rem;
+  /*
+  margin-top: 1.4rem;
+  height: calc( 100% - 1.4rem);
+  */
+  height: 100%;
+  padding: 2.25rem 0;
+  .variation{
+    border: 1px solid #DAC278;
+    max-width: 70px;
+    margin-bottom: 5px;
+    cursor:pointer;
+    >img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .variation.active{ display:none;}
+}
+#slider-variation{
+  height: 100%;
+  overflow:hidden;
+  .swiper-button-next, .swiper-button-prev {
+    width: 30px;
+  height: 32px;
+  background-size: 30px 30px;
+  left: 21px;
+  transform: rotate(90deg);
+  margin-top:0;
+  }
+  .swiper-button-prev{
+    top: 3px;
+
+  }
+  .swiper-button-next{
+      top: 93%;
+  }
+}
