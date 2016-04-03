@@ -2,83 +2,169 @@
 use Roots\Sage\Assets;
 
 
-//add_filter('woocommerce_show_page_title', '__return_false');
-//remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
-// Remove default WooCommerce breadcrumbs and add Yoast ones instead
+/**
+ * Remove Hooks
+ */
+
+// Remove Woocommerce BreadCumbs
 remove_action( 'woocommerce_before_main_content','woocommerce_breadcrumb', 20, 0);
-remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_meta', 40, 0);
-remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_add_to_cart', 30, 0);
+
+// Remove Product Data Tabs
 remove_action( 'woocommerce_after_single_product_summary','woocommerce_output_product_data_tabs', 10, 0);
 
 
-//remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
-//remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+/**
+ * Archive Description
+ *
+ * Replace Hooks
+ *
+ */
+
 remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
 add_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description2', 20 );
-//add_action( 'woocommerce_before_single_product_summary', 'faberge_woocommerce_single_product_variations', 21, 0 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_pre_single_product_summary', 1,2 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_after_single_product_summary_title', 11,2 );
 
-add_action( 'woocommerce_single_product_summary', 'woocommerce_after_single_product_summary_single_add_to_cart', 13,2 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 12,2 );
-add_action( 'woocommerce_single_product_summary', 'attributes_woocommerce_single_product_summary', 14,2 );
-
-add_filter( "woocommerce_get_related_product_cat_terms", 'filter_woocommerce_get_related_term_terms', 40, 2 );
-add_filter( 'woocommerce_output_related_products_args', 'faberge_related_products_args' );
-add_filter( 'woocommerce_product_related_posts_relate_by_tag', function() {
-    return false;
-});
-add_filter( 'woocommerce_attribute','attribute_size_image',10,3);
-add_filter( 'woocommerce_product_related_posts_query', function( $query ) {
-    $query['limits'] = '';
-    return $query;
-});
-function print_r_reverse($in) {
-    $lines = explode("\n", trim($in));
-    if (trim($lines[0]) != 'Array') {
-        // bottomed out to something that isn't an array
-        return $in;
-    } else {
-        // this is an array, lets parse it
-        if (preg_match("/(\s{5,})\(/", $lines[1], $match)) {
-            // this is a tested array/recursive call to this function
-            // take a set of spaces off the beginning
-            $spaces = $match[1];
-            $spaces_length = strlen($spaces);
-            $lines_total = count($lines);
-            for ($i = 0; $i < $lines_total; $i++) {
-                if (substr($lines[$i], 0, $spaces_length) == $spaces) {
-                    $lines[$i] = substr($lines[$i], $spaces_length);
-                }
-            }
+function woocommerce_taxonomy_archive_description2() {
+    if ( is_tax( array( 'product_cat', 'product_tag' ) ) && 0 === absint( get_query_var( 'paged' ) ) ) {
+        $description = term_description() ;
+        $title = single_term_title('',false) ;
+        if ( $description ) {
+            echo '<div class="term-description"><h3 class="term-description-title">'.$title.'</h3>'. $description . '</div>';
         }
-        array_shift($lines); // Array
-        array_shift($lines); // (
-        array_pop($lines); // )
-        $in = implode("\n", $lines);
-        // make sure we only match stuff with 4 preceding spaces (stuff for this array and not a nested one)
-        preg_match_all("/^\s{4}\[(.+?)\] \=\> /m", $in, $matches, PREG_OFFSET_CAPTURE | PREG_SET_ORDER);
-        $pos = array();
-        $previous_key = '';
-        $in_length = strlen($in);
-        // store the following in $pos:
-        // array with key = key of the parsed array's item
-        // value = array(start position in $in, $end position in $in)
-        foreach ($matches as $match) {
-            $key = $match[1][0];
-            $start = $match[0][1] + strlen($match[0][0]);
-            $pos[$key] = array($start, $in_length);
-            if ($previous_key != '') $pos[$previous_key][1] = $match[0][1] - 1;
-            $previous_key = $key;
-        }
-        $ret = array();
-        foreach ($pos as $key => $where) {
-            // recursively see if the parsed out value is an array too
-            $ret[$key] = print_r_reverse(substr($in, $where[0], $where[1] - $where[0]));
-        }
-        return $ret;
     }
 }
+
+
+function category_has_children($cat_id){
+  $children=get_term_children( $cat_id, "product_cat" );
+  return count($children)>0?true:false;
+}
+
+function get_category_attachment_url($cat_id){
+  $thumbnail_id = get_woocommerce_term_meta( $cat_id, 'thumbnail_id', true );
+  return wp_get_attachment_url( $thumbnail_id );
+}
+
+function get_category_single_product_content($cat_id){
+  global $post;
+  $posts= get_posts(
+    array(
+      'post_type' => 'product',
+      'posts_per_page' => 1,
+      'tax_query'=> array(
+                      array(
+                        'taxonomy'      => 'product_cat',
+                        'terms'         => $cat_id,
+                      )
+                    )
+    )
+  );
+  $post=$posts[0];
+  setup_postdata( $post );
+  enqueue_category_single_product_scripts();
+  wc_get_template_part( 'content', 'single-product' );
+  wp_reset_postdata();
+}
+
+function enqueue_category_single_product_scripts(){
+    $suffix               = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+    $lightbox_en          = 'yes' === get_option( 'woocommerce_enable_lightbox' );
+
+    $assets_path          = str_replace( array( 'http:', 'https:' ), '', WC()->plugin_url() ) . '/assets/';
+    $frontend_script_path = $assets_path . 'js/frontend/';
+    if ( $lightbox_en ) {
+      wp_enqueue_script( 'prettyPhoto', $assets_path . 'js/prettyPhoto/jquery.prettyPhoto' . $suffix . '.js', array( 'jquery' ), '3.1.6', true );
+      wp_enqueue_script( 'prettyPhoto-init', $assets_path . 'js/prettyPhoto/jquery.prettyPhoto.init' . $suffix . '.js', array( 'jquery','prettyPhoto' ) );
+      wp_enqueue_style( 'woocommerce_prettyPhoto_css', $assets_path . 'css/prettyPhoto.css' );
+    }
+
+      wp_enqueue_script( 'wc-single-product' );
+}
+
+
+/**
+ *
+ *  Single Product Summary
+ *
+ */
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_pre_single_product_summary', 1,2 );
+
+function woocommerce_pre_single_product_summary(){
+    echo '<div class="title-and-cart"><div class="single-product-title-wrapper">';
+};
+
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_after_single_product_summary_title', 11,2 );
+
+function woocommerce_after_single_product_summary_title(){
+    echo '</div><div class="single-product-cart-wrapper">';
+}
+
+
+remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_add_to_cart', 30, 0);
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 12,2 );
+
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_after_single_product_summary_single_add_to_cart', 13,2 );
+
+function woocommerce_after_single_product_summary_single_add_to_cart(){
+    echo '</div></div>';
+};
+
+
+add_action( 'woocommerce_single_product_summary', 'attributes_woocommerce_single_product_summary', 14,2 );
+
+function attributes_woocommerce_single_product_summary( ) {
+        global $product;
+        $product->list_attributes();
+};
+
+
+remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_meta', 40, 0);
+
+
+add_filter( 'woocommerce_attribute','attribute_size_image',10,3);
+
+function attribute_size_image( $wpautop,$attribute,$values){
+  if($attribute['name']=="pa_measure"){
+    global $product;
+    foreach ($values as $key => $value) {
+      $display='';
+      $display.='<div class="size-wrap">'.wp_get_attachment_image( 2620 , 'thumb' ).'<p>'.$value.'</p></div>';
+
+    }
+    return $display ;
+  }else{
+    return $wpautop;
+  }
+}
+
+
+/**
+ *
+ * Related Products
+ *
+ */
+
+add_filter( "woocommerce_get_related_product_cat_terms", 'filter_woocommerce_get_related_term_terms', 40, 2 );
+
+function filter_woocommerce_get_related_term_terms( $wp_get_post_terms ) {
+  foreach ($wp_get_post_terms as $key => $value) {
+    $children = get_categories( array ('taxonomy' => 'product_cat', 'parent' => $value->term_id ));
+    if ( count($children) == 0 ) {$arr[]=$value;}
+  }
+  return $arr;
+};
+
+add_filter( 'woocommerce_product_related_posts_relate_by_tag', function() { return false; });
+
+
+/**
+ *
+ * Variations Thumbnails
+ *
+ */
 
 function faberge_woocommerce_single_product_variations(){
   global $product;
@@ -129,63 +215,38 @@ function faberge_woocommerce_single_product_variations(){
 
 </div>';
       }
-       echo '<div class="variations">'.$display.'</div><script> productVariation='.json_encode($results).';</script>';
+       echo '<div class="variations-thumbs">'.$display.'</div><script> productVariation='.json_encode($results).';</script>';
   }
 }
 
-function filter_woocommerce_get_related_term_terms( $wp_get_post_terms ) {
-  foreach ($wp_get_post_terms as $key => $value) {
-   $children = get_categories( array ('taxonomy' => 'product_cat', 'parent' => $value->term_id ));
 
-   if ( count($children) == 0 ) {$arr[]=$value;}
-  }
-    return $arr;
-};
-// !! A che serve??
-function woocommerce_taxonomy_archive_description2() {
-    if ( is_tax( array( 'product_cat', 'product_tag' ) ) && 0 === absint( get_query_var( 'paged' ) ) ) {
-        $description = term_description() ;
-        $title = single_term_title('',false) ;
-        if ( $description ) {
-            echo '<div class="term-description"><h3 class="term-description-title">'.$title.'</h3>'. $description . '</div>';
-        }
-    }
+/**
+ *
+ * Ajax Product Detail
+ *
+ */
+
+function faberge_get_product_detail() {
+  $product_id = $_POST['product_id'];
+  $args = array(
+    'post_type' => 'product',
+    'p'  => $product_id,
+  );
+  $query = new WP_Query( $args );
+  if(!wp_script_is( 'wc-add-to-cart-variation' )){ wp_enqueue_script( 'wc-add-to-cart-variation' ); }
+
+  if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
+            wc_get_template_part( 'content', 'single-product' );
+        endwhile;
+     else :
+        echo "There were no posts found";
+    endif;
+    wp_reset_query();
+  //faberge_woocommerce_single_product_variations(FALSE);
+  wp_die();
 }
 
-    // !! A che serve??
-    function attributes_woocommerce_single_product_summary( ) {
-        global $product;
-        $product->list_attributes();
-    };
+add_action('wp_ajax_get_product_detail', __NAMESPACE__ . '\\faberge_get_product_detail');
+add_action('wp_ajax_nopriv_get_product_detail', __NAMESPACE__ . '\\faberge_get_product_detail');
 
-
- function woocommerce_pre_single_product_summary(){
-    echo '<div class="title-and-cart"><div class="single-product-title-wrapper">';
- };
- function woocommerce_after_single_product_summary_title(){
-    echo '</div><div class="single-product-cart-wrapper">';
- }
-
- function woocommerce_after_single_product_summary_single_add_to_cart(){
-    echo '</div></div>';
- };
-
-
-  function faberge_related_products_args( $args ) {
-  $args['posts_per_page'] = 9999; // 4 related products
-  return $args;
-}
-
-function attribute_size_image( $wpautop,$attribute,$values){
-  if($attribute['name']=="pa_measure"){
-    global $product;
-    foreach ($values as $key => $value) {
-      $display='';
-      $display.='<div class="size-wrap">'.wp_get_attachment_image( 2620 , 'thumb' ).'<p>'.$value.'</p></div>';
-
-    }
-    return $display ;
-  }else{
-    return $wpautop;
-  }
-}
