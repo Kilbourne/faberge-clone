@@ -127,12 +127,17 @@ remove_action( 'woocommerce_single_product_summary','woocommerce_template_single
 add_filter( 'woocommerce_attribute','attribute_size_image',10,3);
 
 function attribute_size_image( $wpautop,$attribute,$values){
-  if($attribute['name']=="pa_measure"){
+  if($attribute['name']=="pa_measure"   ){
     global $product;
+    
     foreach ($values as $key => $value) {
-      $display='';
-      $display.='<div class="size-wrap">'.wp_get_attachment_image( 2620 , 'thumb' ).'<p>'.$value.'</p></div>';
-
+      if(strpos($value, 'mm')){
+        $val= intval($value);
+        $display='';
+      $display.='<div class="size-wrap" data-size="'.$val.'">'.wp_get_attachment_image( 2620 , 'thumb' ).'<div >
+        <p>'.$value.'</p>
+      </div></div>';
+      }      
     }
     return $display ;
   }else{
@@ -171,20 +176,19 @@ function faberge_woocommerce_single_product_variations(){
   if( $product->is_type( 'variable' ) ){
       $available_variations = $product->get_available_variations();
       $variation_data = $product->get_variation_attributes();
-      $results=array();
+      $results=array();          
       if(is_array( $variation_data )){
         $default=strtolower($product->get_variation_default_attribute( "pa_color" ));
         $used_color=array();
         $display="";
         $count=count($available_variations);
-        if($count>5) $display.='<div id="slider-variation">
+        if($count>6) $display.='<div id="slider-variation">
     <div class="swiper-wrapper">';
         foreach( $available_variations as $key => $variation ){
           $var_id = $variation["variation_id"];
           $variation_obj=$product->get_child($var_id);
           $value=$variation_obj->get_sku();
-          // !!!
-          $price="";
+          $price=$variation_obj->get_price();
           $gallery_image_link=false;
           if($variation_data['pa_color'] && count($variation_data['pa_color'])>1){
             // !
@@ -196,15 +200,15 @@ function faberge_woocommerce_single_product_variations(){
               $image_ids = get_post_meta( $var_id, '_wc_additional_variation_images' );
               $gallery_image_link  = wp_get_attachment_url( $image_ids[0]);
               $display.='<div id="var-'.$var_id.'"class="variation';
-              if($count>5){$display.=' swiper-slide ';}
+              if($count>6){$display.=' swiper-slide ';}
               if($active){$display.= ' active default ';}
               $display.=' " data-color="'.$color.'" >'.$image.'</div>';
               $used_color[]=$color;
             }
           }
-          $results[$var_id]=array("image"=>$variation_obj-> get_image('full'),"value"=>$value,"variation_image"=>$gallery_image_link,"price"=>$price);
+          $results[$var_id]=array("image"=>$variation_obj-> get_image('full'),"value"=>$value,"variation_image"=>$gallery_image_link,"price"=>$price,"attributes"=>$variation['attributes']);
         }
-        if($count>7) $display.='</div>
+        if($count>6) $display.='</div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
 
