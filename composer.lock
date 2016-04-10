@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a0634f901d2550e166f20a6de3a66f3d",
-    "content-hash": "b9bb122475d70bf9927f078dd878f4e5",
+    "hash": "0b696e2711c1cf531ed58447ef41ce7e",
+    "content-hash": "8cfe6f00d6bc356c24ea5179638c7c8d",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.23",
+            "version": "v1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
+                "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
                 "shasum": ""
             },
             "require": {
@@ -40,8 +40,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -56,12 +56,14 @@
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
                 "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
                 "SMF",
                 "Thelia",
@@ -103,7 +105,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2016-04-05 11:42:46"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -284,66 +286,6 @@
             "time": "2015-12-29 15:10:30"
         },
         {
-            "name": "wpackagist-plugin/admin-post-navigation",
-            "version": "1.9.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/admin-post-navigation/",
-                "reference": "tags/1.9.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/admin-post-navigation.1.9.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/admin-post-navigation/"
-        },
-        {
-            "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "tags/4.4.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
-        },
-        {
-            "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.1.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.1.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
-        },
-        {
             "name": "wpackagist-plugin/custom-upload-dir",
             "version": "3.4.3.1",
             "source": {
@@ -425,10 +367,10 @@
         },
         {
             "name": "wpackagist-plugin/favicon-by-realfavicongenerator",
-            "version": "1.3.2",
+            "version": "1.3.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/favicon-by-realfavicongenerator/",
+                "url": "https://plugins.svn.wordpress.org/favicon-by-realfavicongenerator/",
                 "reference": "trunk"
             },
             "dist": {
@@ -442,6 +384,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/favicon-by-realfavicongenerator/"
+        },
+        {
+            "name": "wpackagist-plugin/flat-rate-per-countryregion-for-woocommerce",
+            "version": "2.4.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/flat-rate-per-countryregion-for-woocommerce/",
+                "reference": "tags/2.4.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/flat-rate-per-countryregion-for-woocommerce.2.4.5.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/flat-rate-per-countryregion-for-woocommerce/"
         },
         {
             "name": "wpackagist-plugin/image-widget",
@@ -464,36 +426,16 @@
             "homepage": "https://wordpress.org/plugins/image-widget/"
         },
         {
-            "name": "wpackagist-plugin/no-category-base-wpml",
-            "version": "1.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/no-category-base-wpml/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/no-category-base-wpml.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/no-category-base-wpml/"
-        },
-        {
             "name": "wpackagist-plugin/post-type-switcher",
-            "version": "1.5",
+            "version": "1.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/post-type-switcher/",
-                "reference": "tags/1.5"
+                "reference": "tags/1.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.1.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.1.7.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -505,15 +447,15 @@
         },
         {
             "name": "wpackagist-plugin/post-types-order",
-            "version": "1.8.5",
+            "version": "1.8.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/post-types-order/",
-                "reference": "tags/1.8.5"
+                "reference": "tags/1.8.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/post-types-order.1.8.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/post-types-order.1.8.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -525,15 +467,15 @@
         },
         {
             "name": "wpackagist-plugin/siteorigin-panels",
-            "version": "2.2.2",
+            "version": "2.4.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/siteorigin-panels/",
-                "reference": "tags/2.2.2"
+                "reference": "tags/2.4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/siteorigin-panels.2.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/siteorigin-panels.2.4.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -544,16 +486,16 @@
             "homepage": "https://wordpress.org/plugins/siteorigin-panels/"
         },
         {
-            "name": "wpackagist-plugin/so-widgets-bundle",
-            "version": "1.5.6",
+            "name": "wpackagist-plugin/smart-manager-for-wp-e-commerce",
+            "version": "3.9.14",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/so-widgets-bundle/",
-                "reference": "tags/1.5.6"
+                "url": "https://plugins.svn.wordpress.org/smart-manager-for-wp-e-commerce/",
+                "reference": "tags/3.9.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/so-widgets-bundle.1.5.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/smart-manager-for-wp-e-commerce.3.9.14.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -561,19 +503,39 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/so-widgets-bundle/"
+            "homepage": "https://wordpress.org/plugins/smart-manager-for-wp-e-commerce/"
         },
         {
-            "name": "wpackagist-plugin/store-locator-le",
-            "version": "4.4.36",
+            "name": "wpackagist-plugin/smart-reporter-for-wp-e-commerce",
+            "version": "2.9.12",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/store-locator-le/",
-                "reference": "tags/4.4.36"
+                "url": "https://plugins.svn.wordpress.org/smart-reporter-for-wp-e-commerce/",
+                "reference": "tags/2.9.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/store-locator-le.4.4.36.zip",
+                "url": "https://downloads.wordpress.org/plugin/smart-reporter-for-wp-e-commerce.2.9.12.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/smart-reporter-for-wp-e-commerce/"
+        },
+        {
+            "name": "wpackagist-plugin/store-locator-le",
+            "version": "4.4.37",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/store-locator-le/",
+                "reference": "tags/4.4.37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/store-locator-le.4.4.37.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -625,15 +587,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "2.5.1",
+            "version": "2.5.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/2.5.1"
+                "reference": "tags/2.5.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.2.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.2.5.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -642,6 +604,146 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-cart-tab",
+            "version": "0.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-cart-tab/",
+                "reference": "tags/0.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-cart-tab.0.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-cart-tab/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-direct-checkout",
+            "version": "1.1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-direct-checkout/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-direct-checkout.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-direct-checkout/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-menu-bar-cart",
+            "version": "2.5.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-menu-bar-cart/",
+                "reference": "tags/2.5.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-menu-bar-cart/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-pdf-invoices-italian-add-on",
+            "version": "0.4.6.160408",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-pdf-invoices-italian-add-on/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-pdf-invoices-italian-add-on.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-pdf-invoices-italian-add-on/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-pdf-invoices-packing-slips",
+            "version": "1.5.29",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-pdf-invoices-packing-slips/",
+                "reference": "tags/1.5.29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-pdf-invoices-packing-slips.1.5.29.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-pdf-invoices-packing-slips/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-quick-buy",
+            "version": "0.17",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-quick-buy/",
+                "reference": "tags/0.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-quick-buy.0.17.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-quick-buy/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-remove-all-products",
+            "version": "1.0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-remove-all-products/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-remove-all-products.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-remove-all-products/"
         }
     ],
     "packages-dev": [
@@ -684,26 +786,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/query-monitor/"
-        },
-        {
-            "name": "wpackagist-plugin/show-current-template",
-            "version": "0.2.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/show-current-template/",
-                "reference": "tags/0.2.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/show-current-template.0.2.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/show-current-template/"
         }
     ],
     "aliases": [],
