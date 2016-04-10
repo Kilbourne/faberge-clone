@@ -65,3 +65,13 @@ function remove_admin_css() {
     remove_action('wp_head', '_admin_bar_bump_cb');
 }
 add_action('admin_bar_init', __NAMESPACE__ . '\\remove_admin_css');
+
+
+
+ function remove_medialibrary_tab($strings) {
+
+            unset($strings["mediaLibraryTitle"]);
+        return $strings;
+
+    }
+    add_filter('media_view_strings',__NAMESPACE__ . '\\remove_medialibrary_tab');
