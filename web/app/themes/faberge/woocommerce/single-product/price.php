@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-
+if( $product->product_type !== 'variable' ) {
 ?>
 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 
@@ -31,3 +31,4 @@ global $product;
 	<link itemprop="availability" href="http://schema.org/<?php echo $product->is_in_stock() ? 'InStock' : 'OutOfStock'; ?>" />
 
 </div>
+<?php } ?>
