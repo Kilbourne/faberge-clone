@@ -48,18 +48,23 @@ font-weight: 700;
     	overflow: visible;
 	}
 }
-.cart-tab.inview{
-    right:0;
-    position:absolute;
-    top:0
+.cart-tab{
+    top:0;
+    position:absolute;    
+    &.right{ right: -24em; }
+    &.inview{
+        right:0;
+        
+    }
 }
-
 .woocommerce.widget_shopping_cart .cart_list .mini_cart_item{
     padding-left:0;
     .remove{ position:static;}
     >a{ display:inline-block;
         float:left;
         margin: 0 10px;
+        text-decoration: none;
+        color: #000;
     }
     .quantity{float:right;}
 }

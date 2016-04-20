@@ -1,0 +1,10 @@
+.woocommerce-checkout{
+	font-size:0;
+	#customer_details,.order-wrap{
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;		
+		padding: 0 2%;
+	}
+	&>*{ font-size: 1rem;}
+}

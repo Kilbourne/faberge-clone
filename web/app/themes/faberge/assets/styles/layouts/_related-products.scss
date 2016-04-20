@@ -12,6 +12,9 @@
   li.type-product{
     border: 1px solid #bababa;
     margin-bottom: 8px;
+    &.active{
+      border: 2px dotted rgb(207, 173, 66);
+    }
     >a:first-child{
       line-height: 1;
       vertical-align: top;
