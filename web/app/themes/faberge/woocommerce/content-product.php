@@ -47,6 +47,8 @@ if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1
 if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	$classes[] = 'last';
 }
+$main_product = $wp_query->get_queried_object();
+if($main_product->ID === $post->ID){ $classes[] = ' active';}
 $classes[]='product';
 ?>
 <li id="product-<?php the_ID() ?>" <?php post_class( $classes ); ?>>

@@ -2,6 +2,7 @@
 if(is_product_category() || is_product()){
   $is_parent=false;
   $has_chidren=false;
+  $exclude=false;
   if ( is_product_category() ){
   	global $wp_query;
       $cat = $wp_query->get_queried_object();
@@ -19,6 +20,7 @@ if(is_product_category() || is_product()){
          $value= $parent;
          $title= get_the_category_by_ID( $parent );
          $active=$cat_id;
+         $exclude=$parent;
       }
   }elseif( is_product() ){
   	global $post;    
@@ -43,8 +45,9 @@ if(is_product_category() || is_product()){
         }      
   	}
   }
+  $subcats_child=false;
 if(!$is_parent){
-  $subcats = get_categories(array(
+  $subcats_child = get_categories(array(
 
          'hierarchical' => 1,
 
@@ -58,7 +61,7 @@ if(!$is_parent){
 
      ));
 }else{
-  if($has_children){ $subcats=get_categories(array(
+  if($has_children){ $subcats_child=get_categories(array(
 
          'hierarchical' => 1,
 
@@ -70,7 +73,9 @@ if(!$is_parent){
        'taxonomy' => 'product_cat'
 
      ));
-    }else{
+    }
+}
+$exclude=$exclude===false?$cat_id:$exclude;
   $subcats = get_categories(array(
 
          'hierarchical' => 1,
@@ -80,16 +85,34 @@ if(!$is_parent){
          'hide_empty' => 1,
 
          'parent' => 0,
-'exclude'=>$cat_id,
+'exclude'=>$exclude,
        'taxonomy' => 'product_cat'
 
      ));
-}
-}
-  echo '<div class="linea-description">
-  	      <nav class="linea-nav">
-      	    <a href="'. $link .'" title=""><h1 class="linea-nav-title" >'.$title.'</h1></a>
-  		        <ul class="linea-nav-list">';
+
+
+  echo '<div class="linea-description">';
+        if($subcats_child){
+                echo'<nav class="linea-subnav">
+            
+              <ul class="linea-subnav-list">
+              <span>Collections </span>';
+  foreach ($subcats_child as $key => $value2) {
+      $link2=get_term_link($value2);
+      echo '<li class="linea-subnav-listelement';
+      if((is_product_category() && $parent!==0) || is_product()){
+        //echo var_dump($value).var_dump($value2->term_id);
+        if($active===$value2->term_id) {echo ' active';}
+      }
+      echo'" ><a href="'. $link2 .'" title="">'.$value2->name.'</a></li>';
+  }
+  echo '</ul>
+      </nav>';}
+      echo'
+
+  	      <nav class="linea-nav">      	    
+  		        <ul class="linea-nav-list">
+                <a href="'. $link .'" title=""><h1 class="linea-nav-title" >'.$title.'</h1></a>';
   foreach ($subcats as $key => $value2) {
       $link2=get_term_link($value2);
       echo '<li class="linea-nav-listelement';
@@ -99,7 +122,10 @@ if(!$is_parent){
       }
       echo'" ><a href="'. $link2 .'" title="">'.$value2->name.'</a></li>';
   }
+  
   echo '</ul>
-      </nav>
-      </div>';
+      </nav>';
+
+      echo'</div>';
+
 }

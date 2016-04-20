@@ -34,8 +34,8 @@ $args = apply_filters( 'woocommerce_related_products_args', array(
 	'no_found_rows'        => 1,
 	'posts_per_page'       => -1,
 	'orderby'              => 'ID',
-	'post__in'             => $related,
-	'post__not_in'         => array( $product->id )
+	'post__in'             => array_merge(array( $product->id ), $related)
+	//,'post__not_in'         => array( $product->id )
 ) );
 
 $products = new WP_Query( $args );
