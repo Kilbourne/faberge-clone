@@ -37,7 +37,11 @@
                     e.preventDefault();
                     $('.cart-tab').addClass('inview');
                 });
-
+                $(document).click( function(e) {
+                    if (e.which != 2 && !$(e.target).closest('.cart-tab, .wpmenucart-shortcode').length) { 
+                        closeCart() 
+                    } 
+                });
 
                 //if(typeof productVariation !== 'undefined')$('.variation.default').click();
 
@@ -62,6 +66,9 @@
                         }
                         isOpen = false
                     })
+                }
+                 function closeCart() {
+                    $('.cart-tab').removeClass('inview');
                 }
 
                 function UISearch(el, options) {
