@@ -34,11 +34,13 @@
     padding-top: 0 !important;
     height: auto !important;
     padding-bottom: 1rem;
-    left:24px !important;
+    left:0 !important;
 #responsive_menu_pro_search {
     width: auto;
     padding: 0;
     border: none;
+    padding-bottom:2px;
+    border-top: 1px solid #e7e7e7;
     &::before {
         float: right;
         width: 40px;
@@ -46,13 +48,15 @@
         background-color: #000;
         color: #fff;
     }
+
+
 }
 #responsive_menu_pro_search_input {
-    width: calc( 100% - 40px);
+    width: 100%;
     box-sizing: border-box;
     height: 100%;
     border: none;
-    border-top: 1px solid #e7e7e7;
+    
     padding-left: 10%;
     font-size: 0.65rem;
     text-transform: uppercase;
@@ -78,9 +82,10 @@
             padding-left: 0;
         }
         &.menu-home {
-            font-size: 0.75rem;
+            //font-size: 0.75rem;
             border-top: 1px solid rgb(231, 231, 231);
             padding: 2.25rem 0px 0;
+            margin-bottom: 1rem;
         }
         &.divisor {
             >hr {
@@ -125,7 +130,7 @@
 #responsive_menu_pro_additional_content {
     cursor: pointer;
     padding: 10px 10%;
-    width: 80%;
+    box-sizing: border-box;
     >span {
         font-size: 0.65rem;
         text-transform: uppercase;
@@ -137,4 +142,20 @@
         }
     }
 }
+        .account-link{
+        text-transform: uppercase;
+font-family: roboto;
+box-sizing: border-box;
+border-top: 1px solid rgb(231, 231, 231);
+padding: 10px 10% 2px;
+font-size: 0.8rem;
+ li {
+    list-style: none;
+    
+    margin-bottom: .5rem;
+     a {
+    text-decoration: none;
+}
+}
+    }
 }

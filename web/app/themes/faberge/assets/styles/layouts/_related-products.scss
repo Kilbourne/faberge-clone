@@ -1,17 +1,26 @@
 .related.products{
   display: inline-block;
   width: 100%;
+}
+.related.products,body.tax-product_cat #content{
   >h2{
     color: rgb(205, 177, 77);
-    font-size: 1.1875rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
   }
   ul.products{
+//    display: flex;
+//flex-wrap: wrap;
+//justify-content: space-between;
+//&::before,&::after{content:none;}
   li.type-product{
     border: 1px solid #bababa;
     margin-bottom: 8px;
+//   width: 24%;
+//   float:none;
+//   margin-right: 0;
     &.active{
       border: 2px dotted rgb(207, 173, 66);
     }

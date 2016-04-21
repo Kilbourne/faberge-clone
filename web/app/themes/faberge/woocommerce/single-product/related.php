@@ -38,17 +38,18 @@ $args = apply_filters( 'woocommerce_related_products_args', array(
 	//,'post__not_in'         => array( $product->id )
 ) );
 
-$products = new WP_Query( $args );
 
-$woocommerce_loop['columns'] = $columns;
+$products                    = new WP_Query( $args );
+$woocommerce_loop['name']    = 'related';
+$woocommerce_loop['columns'] = apply_filters( 'woocommerce_related_products_columns', $columns );
 
 if ( $products->have_posts() ) : ?>
 
 	<div class="related products">
 
-		<h2><?php _e( 'Scopri tutta la gamma', 'faberge' ); ?></h2>
+		<h2><?php _e( 'Discover the collection', 'faberge' ); ?></h2>
 
-		<?php woocommerce_product_loop_start(); ?>
+		<?php do_action( 'woocommerce_before_shop_loop' );woocommerce_product_loop_start(); ?>
 
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
@@ -56,7 +57,9 @@ if ( $products->have_posts() ) : ?>
 
 			<?php endwhile; // end of the loop. ?>
 
-		<?php woocommerce_product_loop_end(); ?>
+		<?php woocommerce_product_loop_end();
+			  do_action( 'woocommerce_after_shop_loop' );
+		?>
 
 	</div>
 

@@ -3,7 +3,7 @@ html{
 }
 body{
   background-color: #fff;
-  font-family: 'Antic Didone', serif;
+  font-family: 'Georgia','Antic Didone', serif;
   background-image: url('../images/bg.png');
 }
     body.admin-bar{
@@ -20,7 +20,18 @@ a:visited{ color:initial; }
   white-space: nowrap;
   overflow: hidden;
 }
-
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 svg path {
     fill: inherit;
+}
+
+*:link {
+    color: #000;
 }

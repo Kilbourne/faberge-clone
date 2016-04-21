@@ -1,8 +1,9 @@
 .banner {
     //background-image: url('../images/fascia-menu.png');
-    border-bottom: 3px solid rgb(207, 173, 66);
-    border-left: 3px solid rgb(207, 173, 66);
-    border-right: 3px solid #CFAD42;
+    border-bottom: 3px solid #FFF;
+    //border-left: 3px solid rgb(207, 173, 66);
+    //border-right: 3px solid #CFAD42;
+    background-image: url('../images/bg-header.png');
     background-color: #35180F;
 }
 
@@ -11,6 +12,9 @@
     text-align: center;
     z-index: 11;
     list-style: none;
+    >.logo{
+        img{ width:370px; }
+    }
 }
 
 .wpmenucart-shortcode{
@@ -18,12 +22,29 @@
 top: 10px;
 right: 5%;
 z-index: 9999;
+>.reload_shortcode{
+    display:inline-block;
+    
+}
 }
 .wpmenucart-contents{
-
+display: inline-block;
 text-decoration: none;
+>.wpmenucart-icon-shopping-cart-0{ 
+    vertical-align: text-top;
+    &::before{
+        display: inline-block;
+        font-size:21px;
+        vertical-align: text-bottom;
+    }
+}
 >*{
 	color: rgb(255, 255, 255);
+    vertical-align: middle;
+    display: inline-block; 
+}
+@include media-query(palm){
+    >span{display:none;}
 }
 }
 .sub-menu.wpmenucart{
@@ -53,18 +74,85 @@ font-weight: 700;
     position:absolute;    
     &.right{ right: -24em; }
     &.inview{
-        right:0;
+        &:hover{ right:-2px; }
+        right:-2px;
         
     }
 }
-.woocommerce.widget_shopping_cart .cart_list .mini_cart_item{
+.woocommerce.widget_shopping_cart{
+    padding: 1.618em 0;
+ .cart_list .mini_cart_item{
+    padding-top: 1rem;
     padding-left:0;
-    .remove{ position:static;}
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+    .minicart-imagewrapper{
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 2.5%;
+        img{
+            max-width:100%;
+            float:none;
+            margin-left:0;
+            width:auto;
+        }
+    }
+    .minicart-detailswrapper{
+        display: inline-block;
+        vertical-align: top;
+        width: calc( 67% - 1rem );
+        margin-right: 1rem;
+        position: relative;
+        padding: 0 2.5%;
+        .minicart-name-link{
+            text-decoration: none;
+color: rgb(0, 0, 0);
+vertical-align: top;
+        }
+        .minicart-category{
+display: inline-block;
+width: 100%;
+        }
+        .minicart-name{
+            vertical-align: top;
+font-size: 13px;
+line-height: 10px;
+font-weight: 500;
+        }
+    }
+    .price {
+    width: 100%;
+    display: inline-block;
+}
+    .remove{ 
+    left:auto;
+    right:2px;
+    top:2px;
+    }
     >a{ display:inline-block;
         float:left;
         margin: 0 10px;
         text-decoration: none;
         color: #000;
     }
-    .quantity{float:right;}
+    //.quantity{float:right;}
+
 }
+    .totalitems{
+        border-bottom: 1px solid rgb(230, 230, 230);
+        margin: 0px;
+        padding-bottom: 1.5rem;
+    }
+    .total{
+        border-top:none;
+        border-bottom: 1px solid #e6e6e6;
+padding: 1.5rem 0;
+margin: 0;
+    }
+    .buttons{
+        
+padding-top: 1.5rem;
+margin: 0px;
+    }
+    }

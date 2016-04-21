@@ -20,7 +20,9 @@ function body_class($classes) {
       $cat = $wp_query->get_queried_object();
 
       $parent=$cat->parent;
-      if($parent !== 0){ $classes[]= 'single-product';}
+      $children=get_term_children( $cat->ID, "product_cat" );
+
+      if($parent !== 0 || count($children)===0){ $classes[]= 'single-product';}
   }
   // Add class if sidebar is active
   if (Setup\display_sidebar()) {
@@ -75,3 +77,13 @@ add_action('admin_bar_init', __NAMESPACE__ . '\\remove_admin_css');
 
     }
     add_filter('media_view_strings',__NAMESPACE__ . '\\remove_medialibrary_tab');
+
+add_filter( 'woocommerce_account_menu_items',function(){ return array(
+    'dashboard'       => __( 'Profile details', 'woocommerce' ),
+    'orders'          => __( 'Orders', 'woocommerce' ),    
+    'edit-address'    => __( 'Addresses', 'woocommerce' ),
+    'edit-address-billing'    => __( 'Billing address', 'woocommerce' ),
+    'edit-address-shipping'    => __( 'Shipping address', 'woocommerce' ),
+    'payment-methods' => __( 'Payment Methods', 'woocommerce' )    
+  );} );
+ 

@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * Review order table
  *
@@ -36,10 +36,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_checkout_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 					?>
 					<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-						<td class="product-name">
-							<?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;'; ?>
+						<td class="product-name"><?php 	 
+$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+$title=$_product->get_title();
+       ?>
+							<div class="cart-thumbnail-wrapper">
+							<?php
+							
+
+							if ( ! $_product->is_visible() ) {
+								echo $thumbnail;
+							} else {
+								printf( '<a href="%s">%s</a>', esc_url( $_product->get_permalink( $cart_item ) ), $thumbnail );
+							}
+						?>
+					</div>
+					<div class="content-wrapper">
+							 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
+		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
+
+        $single_cat = array_shift( $product_cats ); ?>
+
+        <span class="minicart-category"><?php echo $single_cat->name; ?></span>
+
+<?php }
+		 ?> 
+	<span class="minicart-name">
+		<?php echo  $title ; ?>	
+	</span> 
 							<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?>
 							<?php echo WC()->cart->get_item_data( $cart_item ); ?>
+							</div>
 						</td>
 						<td class="product-total">
 							<?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); ?>

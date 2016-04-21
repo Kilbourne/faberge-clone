@@ -3,6 +3,10 @@
   position:relative;
   display: flex;
   flex-wrap: wrap;
+  @include media-query(palm)
+  {
+    display:none;
+  }
 }
 .linea-nav{
   order:1;
@@ -12,27 +16,30 @@
   border-bottom: 1px solid rgb(207, 173, 66);
   text-align: left;  
   margin:0 1%;
-  nav+&{border-bottom:none;padding-bottom:0;}
-  &-title{
-    font-size: 1rem;
+  padding:0 1%;
+  nav+&{
+    //border-bottom:none;
+    padding-bottom:0;}
+  &-title.linea-nav-listelement{
+    //font-size: 1.1rem;
     
     margin-top: 0px;
-    line-height: 1.125;
+    //line-height: 1.125;
     display: inline-block;
     vertical-align: text-bottom;
     margin-bottom: 0px;
-    margin-right: 0.5rem;
+    //margin-right: 0.5rem;
     background-color: rgb(207, 173, 66);
-  color: #fff;
-    padding: 7px;
   
+    padding: 7px;
+    >a{color: #fff;}
   }
   &-list{
     margin: 0px;
     display: inline-flex;
     align-items: center;
     width: 100%;
-    font-size: 13.5px;
+    font-size: 15px;
     line-height: 1.2;
     vertical-align: middle;
     &>a{
@@ -66,12 +73,12 @@
   &-list{
     margin: 0px;
     display: inline-flex;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.2;
     vertical-align: middle;
     align-items: center;
     width: 100%;
-    padding: 1% 5px;
+    padding: 1% 13px;
     >span{
       font-weight: 900;
       margin-right: 3%;

@@ -20,11 +20,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-if( $product->product_type !== 'variable' ) {
+$price =$product->get_price_html();
+ if( isset( $price ) &&   $price !== '') {
 ?>
 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 
-	<p class="price"><?php echo $product->get_price_html(); ?></p>
+	<p class="price fa fa-tag"><?php echo $product->get_price_html(); ?></p>
 
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
 	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" />

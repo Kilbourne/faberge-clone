@@ -1,0 +1,11 @@
+body.history{
+	.page-header{
+				padding: .5rem 0px;
+		>h1{
+		    @include page-title();
+		}
+	}
+	.content-wrapper{
+		padding:2%;
+	}
+}

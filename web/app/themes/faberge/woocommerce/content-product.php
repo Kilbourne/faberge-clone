@@ -19,39 +19,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-global $product, $woocommerce_loop;
-
-// Store loop count we're currently on
-if ( empty( $woocommerce_loop['loop'] ) ) {
-	$woocommerce_loop['loop'] = 0;
-}
-
-// Store column count for displaying the grid
-if ( empty( $woocommerce_loop['columns'] ) ) {
-	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
-}
+global $product;
+global $woocommerce_loop;
 
 // Ensure visibility
 if ( ! $product || ! $product->is_visible() ) {
 	return;
 }
-
-// Increase loop count
-$woocommerce_loop['loop']++;
-
-// Extra post classes
-$classes = array();
-if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 === $woocommerce_loop['columns'] ) {
-	$classes[] = 'first';
-}
-if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
-	$classes[] = 'last';
-}
 $main_product = $wp_query->get_queried_object();
-if($main_product->ID === $post->ID){ $classes[] = ' active';}
+$classes = array();
+
+
+
+
+if($main_product->ID === $post->ID || ( $main_product->parent > 0 && $main_product->ID === null &&  0 === ( $woocommerce_loop['loop']     ))){ $classes[] = ' active';}
 $classes[]='product';
 ?>
-<li id="product-<?php the_ID() ?>" <?php post_class( $classes ); ?>>
+<li id="product-<?php the_ID() ?>" <?php echo var_dump($woocommerce_loop['loop']);post_class($classes); echo var_dump($woocommerce_loop['loop']); ?> >
 
 	<?php
 	/**

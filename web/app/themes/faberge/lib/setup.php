@@ -105,10 +105,20 @@ function assets() {
     wp_deregister_script('jquery' );
  
   wp_enqueue_script('jquery',  Assets\asset_path('scripts/jquery.js'), array(),null, false);
-  wp_enqueue_script('sage-js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);  
-  wp_localize_script( 'sage-js', 'faberge', array(
-    'ajax_url' => admin_url( 'admin-ajax.php' )
-  ));
+
+  
+
   }
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\wpse8170_enqueue_my_scripts', 0 );
+// or if you enqueue your scripts on init action
+// add_action( 'init', 'wpse8170_enqueue_my_scripts', 0 );
+
+function wpse8170_enqueue_my_scripts() {
+  wp_enqueue_script('sage-js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);  
+      wp_localize_script( 'sage-js', 'faberge', array(
+    'ajax_url' => admin_url( 'admin-ajax.php' )
+  ));
+}

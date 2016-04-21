@@ -61,7 +61,7 @@ $woocommerce_loop['loop'] ++;
 	 * woocommerce_after_subcategory_title hook.
 	 */
 	do_action( 'woocommerce_after_subcategory_title', $category );
-
+?><div class="opacity-effect"></div><?php
 	/**
 	 * woocommerce_after_subcategory hook.
 	 *

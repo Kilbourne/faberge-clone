@@ -4,7 +4,7 @@
     <nav class="nav-primary">
       <?php echo do_shortcode('[responsive_menu_pro_button] ' ); ?>
       <li></li>
-      <li class="logo" ><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.svg" alt=""></div></li>
+      <li class="logo" ><div><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo1.svg" alt=""></a></div></li>
       <li></li>
       <?php 
         $search = '<div id="sb-search" class="search sb-search">';

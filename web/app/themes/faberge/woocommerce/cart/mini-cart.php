@@ -24,10 +24,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php do_action( 'woocommerce_before_mini_cart' ); ?>
-
+<?php if ( ! WC()->cart->is_empty() ){ 
+$totalnumber=WC()->cart->get_cart_contents_count();
+$itemString=$totalnumber>1?'items':'item';
+?>
+<p class="totalitems"><?php echo $totalnumber.' '.$itemString.' '. __( 'in cart', 'woocommerce' ); ?></p>
+<?php } ?>
 <ul class="cart_list product_list_widget <?php echo $args['list_class']; ?>">
 
 	<?php if ( ! WC()->cart->is_empty() ) : ?>
+
 
 		<?php
 			foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -97,7 +103,59 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$product_price = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 					?>
 					<li class="<?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
-						<?php
+					<div class="minicart-imagewrapper">
+						
+					
+											<?php if ( ! $_product->is_visible() ) : ?>
+	<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) ; ?>
+<?php else : ?>
+	<a href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
+		<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail )  ; ?>
+	</a>
+<?php endif; ?>
+</div><div class="minicart-detailswrapper">
+	
+
+					
+
+<?php if ( ! $_product->is_visible() ) : ?>
+	
+		 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
+		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
+
+        $single_cat = array_shift( $product_cats ); ?>
+
+        <span class="minicart-category"><?php echo $single_cat->name; ?></span>
+
+<?php }
+		 ?> 
+	<span class="minicart-name">
+		<?php echo  $product_name ; ?>	
+	</span> 
+	
+<?php else : ?>
+			 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
+		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
+
+        $single_cat = array_shift( $product_cats ); ?>
+
+        
+
+<?php }
+		 ?> 
+	
+	<a class="minicart-name-link"href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
+		<span  class="minicart-category"><?php echo $single_cat->name; ?></span><span class="minicart-name"><?php echo $product_name ; ?></span> 
+	</a>
+
+	
+
+<?php endif; ?>
+	
+						<?php //echo WC()->cart->get_item_data( $cart_item ); ?>
+						<?php echo  '<span class="price">' . sprintf( 'Price: %s', $product_price ) . '</span>'; ?>
+						<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( 'Quantity: %s', $cart_item['quantity'] ) . '</span>', $cart_item, $cart_item_key ); ?>
+							<?php
 						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 							'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
 							esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
@@ -106,24 +164,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							esc_attr( $_product->get_sku() )
 						), $cart_item_key );
 						?>
-						<?php if ( ! $_product->is_visible() ) : ?>
-	<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) ; ?>
-<?php else : ?>
-	<a href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
-		<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail )  ; ?>
-	</a>
-<?php endif; ?>
-<?php if ( ! $_product->is_visible() ) : ?>
-	<?php echo  $product_name ; ?>
-<?php else : ?>
-	<a href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
-		<?php echo $product_name ; ?>
-	</a>
-<?php endif; ?>
-	
-						<?php //echo WC()->cart->get_item_data( $cart_item ); ?>
-
-						<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); ?>
+						</div>
 					</li>
 					<?php
 				}
@@ -136,11 +177,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php endif; ?>
 
-</ul><!-- end product list -->
+</ul><!-- end product list --> 
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
 
-	<p class="total"><strong><?php _e( 'Subtotal', 'woocommerce' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
+	<p class="total"><strong><?php _e( 'Total', 'woocommerce' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 

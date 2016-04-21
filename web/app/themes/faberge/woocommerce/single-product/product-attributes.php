@@ -46,13 +46,20 @@ ob_start();
 			</tr>
 		<?php endif; ?>
 
-	<?php endif; ?>
+	<?php endif; 
+	$variation_attributes=$product->is_type( 'variable' )?array_keys($product->get_variation_attributes( )):array();
+ ksort ($attributes);
+if(isset($attributes['pa_measure'])){
+	$measure=$attributes['pa_measure'];
+	unset($attributes['pa_measure']);
+	 $attributes=array('pa_measure' => $measure) + $attributes;
+}
+	?>
 
 	<?php foreach ( $attributes as $attribute ) :
+	if(in_array($attribute['name'], $variation_attributes)){ continue;}
     
-    						if ( $attribute['is_variation'] ) {
-							continue;
-						}
+if ($attribute['name']==='pa_color' || $attribute['name']==='pa_note')continue;
 		if ( empty( $attribute['is_visible'] ) || ( $attribute['is_taxonomy'] && ! taxonomy_exists( $attribute['name'] ) ) ) {
 			continue;
 		} else {
