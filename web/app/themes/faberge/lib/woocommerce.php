@@ -392,3 +392,10 @@ function save_attribute_url( $term_id ) {
         update_term_meta( $term_id, 'attribute_url', $new_url, $old_url );
     }
 }
+
+add_action( 'pre_get_posts', 'mp_design_cat_posts_per_page' );
+function mp_design_cat_posts_per_page( $query ) {
+  if( is_category( )  ) {
+    $query->set( 'posts_per_page', '-1' );
+  }
+}

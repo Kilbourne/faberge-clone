@@ -58,7 +58,7 @@ if ( $products->have_posts() ) : ?>
 			<?php endwhile; // end of the loop. ?>
 
 		<?php woocommerce_product_loop_end();
-			  do_action( 'woocommerce_after_shop_loop' );
+			  //do_action( 'woocommerce_after_shop_loop' );
 		?>
 
 	</div>

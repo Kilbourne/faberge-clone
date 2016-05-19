@@ -5,7 +5,7 @@
             overflow:hidden;
             max-width: 450px;
             display: block;
-            margin: 0 auto;
+            margin: 0 auto 1rem;
             @include media-query(lap-and-up) {
                 width: 52.6%;
 
@@ -41,7 +41,11 @@
             margin-bottom: 1rem;
             >*{ font-size:1rem;}
             >h1 {
+<<<<<<< HEAD
                 font-family: "bebas_neueregular";
+=======
+                font-family: "bebasneue-webfontregular";
+>>>>>>> 4894c98... ffff
                 color: rgb(160, 160, 160);
                 margin: 0px;
                 font-size: 2.25rem;
@@ -49,6 +53,7 @@
                 width: 100%;
                 vertical-align: top;
                 line-height: 1;
+                font-weight: 400;
             }
             >h2 {
                 font-size: 0.75rem;
@@ -79,6 +84,10 @@
                 border-top: 1px solid rgb(191, 175, 175);
             }
             p{ margin:0;}
+              .product-notes{
+    margin-bottom: 1rem !important;
+    text-decoration: none;
+}
             .price {
 
                 font-weight: 400;
@@ -96,7 +105,11 @@
                     color: #fff;
                     height: 100%;
                     display: inline-block;
+<<<<<<< HEAD
                     border-right: 5px solid #fff;
+=======
+
+>>>>>>> 8cf8c89... ccc
                     padding: 0 8px;
                     width: 44px;
                     text-align: center;
@@ -129,9 +142,13 @@
                     width:auto;
                     .select_box{
                         overflow: hidden;
-                        flex-wrap: wrap;
-                        display: flex;
-                        .select_option { margin-bottom: 3px; }
+                        //flex-wrap: wrap;
+                        //display: flex;
+                        .select_option { margin-bottom: 3px; 
+                            &.hover,&.selected{
+                                border-width: 2px;
+                            }
+                        }
                     }
                     .reset_variations{
                         display: inline-block;
@@ -141,9 +158,13 @@
                         color:#000;
                     }
                 }
+<<<<<<< HEAD
                 .product-notes{
     margin-bottom: 1rem;
 }
+=======
+
+>>>>>>> 8cf8c89... ccc
                 .single_variation_wrap{
                     display: flex;
                     justify-content: space-between;
@@ -210,7 +231,7 @@
                                 .added_to_cart.wc-forward{
                             position: absolute;
                             left: 4px;
-                            bottom:-4px; 
+                            bottom:-4px;
                         }
     }
 }
@@ -313,11 +334,12 @@ div.ppt,
         display: inline-block;
         padding: 5px;
         width:68px;
-        &::before{
-            content:attr(data-value);
+        &::after{
+            content:attr(data-name);
             display: block;
             font-size: 0.75rem;
             line-height: 1;
+            padding-bottom: 2px;
         }
         .yith_wccl_value{
             height: auto;

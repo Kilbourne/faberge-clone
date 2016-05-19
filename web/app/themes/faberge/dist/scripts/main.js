@@ -7920,6 +7920,11 @@ return ImagesLoaded;
                 if (loading.length) loading.hide();
 
                 $('#content').empty().html(returned).fadeIn(400, function() {
+<<<<<<< HEAD
+=======
+
+                    $(window).scrollTop(0);
+>>>>>>> 8cf8c89... ccc
                     $form = $('.variations_form');
                     if ($form && typeof $form.wc_variation_form === 'function') {
                         $form.wc_variation_form();
@@ -8547,13 +8552,23 @@ return ImagesLoaded;
         // All pages
         'common': {
             init: function() {
+<<<<<<< HEAD
                 Menu();
+=======
+                       $('#responsive_menu_pro_menu .nolink>a').off('click').click(function(e) { e.preventDefault(); })
+        $('#responsive_menu_pro_additional_content').click(closeRM);
+        jQuery(document.body).on('click','.wpmenucart-contents',function(e) { e.preventDefault();
+            $('.cart-tab').addClass('inview'); });
+        $(document).click(function(e) {
+            if (e.which != 2 && !$(e.target).closest('.cart-tab, .wpmenucart-shortcode').length) { closeCart() } });
+
+>>>>>>> 8cf8c89... ccc
                 Search();
                 $('body').on('click', '.quantity .minus,.quantity .plus', quantityController);
 
                 // !!!! page height
                 var specialH = $('#responsive_menu_pro').outerHeight() - $('.page-wrapper').outerHeight();
-                if (specialH > 0) $('main.main').css('paddingBottom', specialH);
+                //if (specialH > 0) $('main.main').css('paddingBottom', specialH);
 
                 // !!!! popstate_callback
                 window.onpopstate = popstateCallback;
@@ -8602,6 +8617,12 @@ return ImagesLoaded;
                 variation_slider();
                 // !!!! ???
                 $('.variation.default').addClass('active');
+<<<<<<< HEAD
+=======
+                $( document.body ).on( 'added_to_cart', updateCartOnAjaxfunction  );
+                    $(".product-type-simple form.cart").on("change", "input.qty", function() {
+                        $(this.form).find("[data-quantity]")[0].dataset.quantity=this.value;
+>>>>>>> 8cf8c89... ccc
 
             }
         },

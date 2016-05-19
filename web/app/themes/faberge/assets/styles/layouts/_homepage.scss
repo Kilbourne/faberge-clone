@@ -2,8 +2,31 @@
     @include media-query(palm)
     {
         background-image:url('../images/bg.jpg');
-        
+
     }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+    >.panel-grid:last-child{
+        margin-bottom:0 !important;
+        border-top: 2px solid rgb(134, 134, 134);
+    }
+>>>>>>> b92798b... eee
+    .homen9{
+
+        background-image: url(../images/logo-9.svg);
+        background-size: cover;
+        height: 127px;
+        @include media-query(palm)
+    {
+                background-image: url(../images/logo-9-w.svg);
+        background-size: cover;
+        height: 127px;
+
+    }
+    }
+>>>>>>> 8cf8c89... ccc
 }
 .panel-grid{
     margin-bottom: 3px !important;
@@ -79,6 +102,9 @@
                 margin-right: 10px;
                 padding-bottom: 2.3em;
                 line-height: 1;
+                @include media-query(palm){
+                  background-image: url(../images/tf.svg);
+                }
             }
             >.widget-title {
                 display: inline-block;
@@ -88,8 +114,13 @@
         color: rgb(255, 255, 255);
         .widget-title {
             font-size: 3.8em;
+<<<<<<< HEAD
             font-family: "bebas_neueregular";
+=======
+            font-family: "bebasneue-webfontregular";
+>>>>>>> 4894c98... ffff
             margin-bottom: 0;
+            font-weight: 400; 
         }
         .textwidget {
             p {
@@ -126,7 +157,7 @@
 .panel-row-style-history-locator{
     display: flex;
     width:100%;
-    
+
     @include media-query(palm)
     {
         flex-wrap:wrap;
@@ -135,39 +166,44 @@
         display: flex;
         width:100% !important;
         margin-bottom:0 !important;
-        
+
         >.so-panel{
             display: flex;
             width:100%;
             >.panel-widget-style{
                 display: flex;
                 width:100%;
+                &.locator{background-color: RGBA(240, 212, 134, 0.41) !important;}
                 >.parallax{
                     display: flex;
                     width:100%;
                     >.panel-grid{
-
+                        margin-bottom: 0 !important;
                         display: flex;
                         width:100%;
                         >.panel-row-style{
                             >.panel-grid-cell{
+                                margin-bottom: 0;
                                 @include media-query(palm)
                                {
                                 width: 24% !important;
                                 justify-content:flex-end;
-                               } 
-                              &:first-child{  
+                               }
+                              &:first-child{
                                @include media-query(palm)
                                {
                                 max-width: 76%;
-                                
-                               } 
+
+                               }
                                }
                                @include media-query(lap-and-up)
                                {
                                  img{ max-width:none !important;}
                                }
-                            }
+                               .widget-title,.textwidget a{
+                                color:#000;
+                               }
+                                                           }
                         }
                     }
                 }
@@ -219,7 +255,7 @@ margin-right: 1.5rem;
         background-color: rgb(207, 173, 66);
         height:30px;
         width:1.8rem;
-    }     
+    }
 }
 #searchd{
     width: 290px;
@@ -228,8 +264,8 @@ margin-right: 1.5rem;
     border: medium none;
     color: rgb(15, 13, 13);
     font-weight: 500;
-    padding-left: 15px;  
-    padding-right: 36px; 
+    padding-left: 15px;
+    padding-right: 36px;
     vertical-align: middle;
     max-width: 100%;
 }
@@ -251,3 +287,15 @@ body.home .wrap.container>.content {
     //background-image: url('../images/bg.jpg');
     //background-color: #000;
 }
+<<<<<<< HEAD
+=======
+.panel-grid-cell .locator.panel-widget-style{
+
+  .textwidget a{
+
+    padding: 4px 0;
+    font-size: 1em;
+    background-color: transparent;
+}
+}
+>>>>>>> 8cf8c89... ccc
