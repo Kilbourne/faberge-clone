@@ -12,7 +12,7 @@ web/app/upgrade
 # WordPress
 web/wp
 web/.htaccess
-
+.htaccess
 # WP-CLI
 db-sync
 sql-dump-*.sql
