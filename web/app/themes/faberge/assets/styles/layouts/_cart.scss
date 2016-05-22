@@ -39,7 +39,7 @@
 				margin-top: 1rem;
 				dd,dt{float:none;}
 				dd{
-					    margin: 0px;					    
+					    margin: 0px;
 					    vertical-align: middle;
 					    .select_box::after{ margin-bottom: 0;}
 				}
@@ -54,14 +54,16 @@
 			font-size: 1.5rem;
 			line-height: 1;
 		}
-		.quantity{			
+		.quantity{
 			white-space: nowrap;
+      font-size: 0px;
 			.minus,.plus{
-				height: 32px;
+				height: 37px;
 				font-size:1rem;
+        float:none;
 				&::before{
 					display: inline-block;
-					line-height: 31px;
+					line-height: 36px;
 				}
 			}
 			.qty{ font-size: 1.5rem; padding: 0px 0px 6px;}
@@ -111,7 +113,7 @@
 
 .woocommerce-page table.shop_table td {
     /* Behave like a "row" */
-    
+
     position: relative;
     padding-left: 30% !important;
     border: none;

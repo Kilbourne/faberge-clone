@@ -14,12 +14,12 @@
   padding: 10px 0;
   margin: .75rem 0px;
   color: rgb(0, 0, 0);
-  
+
 }
 .term-description{
   @include media-query(lap-and-up)
-  {      
-    position: absolute;    
+  {
+    position: absolute;
     text-align: left;
     padding-left: 10px;
     max-width: 25%;
@@ -41,7 +41,7 @@
     margin-right: .5%;
     margin-bottom: 5px;
     //padding: 1rem;
-    //box-sizing: content-box;    
+    //box-sizing: content-box;
     //background-color: #F1F1F1;
     @include media-query(lap-and-up)
       {
@@ -103,4 +103,8 @@ background-color: rgba(198,189,189,.5);
       }
     }
   }
+}
+.woocommerce td.product-name dl.variation dd {
+    padding:0;
+    margin: 0 0 .5rem .25rem;
 }

@@ -4,6 +4,7 @@ $light-grey:#e6e6e6;
 $light-gold:#F9F5E8;
 $mid-grey:#9b9b9b;
 $hard-gold:#CFAD42;
+$other-ocra:#F9EDCD;
 @mixin page-title(){
 			    text-align: center;
 		    //background-color: rgb(249, 245, 232);
@@ -17,14 +18,14 @@ $hard-gold:#CFAD42;
 body.store-locator{
 	#address_search{
 	#addy_in_state,#radius_in_submit{
-		display: none; 
+		display: none;
 	}
 	}
 	.text_below_map{
-		display: none; 
+		display: none;
 	}
 	div#sl_div div#slp_tagline{
-		display: none; 
+		display: none;
 	}
 	.page-header{
 		padding: .5rem 0px;
@@ -33,11 +34,11 @@ body.store-locator{
 		}
 	}
 	h3{
-		
+
 	}
 	section{
-		padding: 2.5%; 
-		background-color: #fff; 
+		padding: 2.5%;
+		background-color: #fff;
 		color: $hard-grey;
 	}
 }
@@ -45,7 +46,7 @@ body.store-locator{
 	padding: 0 2%;
 	@include media-query(palm){
 		float:none;
-		
+
 		width:100%;
 	}
 	ul {
@@ -255,7 +256,7 @@ body.my-account{
 margin: 1rem 0;
 padding: .5rem;
 overflow: hidden;
-background-color: $hard-gold;
+background-color: $other-ocra;
 color: #fff;
 			>.right{
 				float:right;
@@ -271,7 +272,7 @@ color: #fff;
 			}
 		}
 		.woocommerce-MyAccount-navigation-link--edit-address{
-			padding: .857em 0;
+			//padding: .857em 0;
 		}
 		.woocommerce-MyAccount-navigation-link--edit-address-billing,.woocommerce-MyAccount-navigation-link--edit-address-shipping{
 		    margin-left: .6rem;
@@ -285,7 +286,7 @@ float: none;
 opacity: 1;
 border-radius: 50%;
 color: #fff;
-background-color: $hard-gold;
+background-color: rgb(193, 168, 125);
 padding: 0;
 height: 0;
 padding-bottom: 2rem;

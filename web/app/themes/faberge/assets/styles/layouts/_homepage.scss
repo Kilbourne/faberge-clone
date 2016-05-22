@@ -120,7 +120,7 @@
             font-family: "bebasneue-webfontregular";
 >>>>>>> 4894c98... ffff
             margin-bottom: 0;
-            font-weight: 400; 
+            font-weight: 400;
         }
         .textwidget {
             p {
@@ -288,9 +288,14 @@ body.home .wrap.container>.content {
     //background-color: #000;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .panel-grid-cell .locator.panel-widget-style{
 
+=======
+.panel-grid-cell .panel-widget-style{
+&.history,&.locator{
+>>>>>>> faada79... fggf
   .textwidget a{
 
     padding: 4px 0;
@@ -298,4 +303,8 @@ body.home .wrap.container>.content {
     background-color: transparent;
 }
 }
+<<<<<<< HEAD
 >>>>>>> 8cf8c89... ccc
+=======
+}
+>>>>>>> faada79... fggf

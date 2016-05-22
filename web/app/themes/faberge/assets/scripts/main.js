@@ -762,9 +762,13 @@
         'common': {
             init: function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Menu();
 =======
                        $('#responsive_menu_pro_menu .nolink>a').off('click').click(function(e) { e.preventDefault(); })
+=======
+        $('#responsive_menu_pro_menu .nolink>a').off('click').click(function(e) { e.preventDefault(); })
+>>>>>>> faada79... fggf
         $('#responsive_menu_pro_additional_content').click(closeRM);
         jQuery(document.body).on('click','.wpmenucart-contents',function(e) { e.preventDefault();
             $('.cart-tab').addClass('inview'); });
@@ -827,7 +831,7 @@
                 // !!!! ??? -> variationhandler
                 $('.variation.default').addClass('active');
                 $( document.body ).on( 'added_to_cart', updateCartOnAjaxfunction  );
-                    $(".product-type-simple form.cart").on("change", "input.qty", function() {
+                    $("body").on("change", ".product-type-simple form.cart input.qty", function() {
                         $(this.form).find("[data-quantity]")[0].dataset.quantity=this.value;
 
                     });
