@@ -51,7 +51,7 @@
     h3,.count{display:none;}
     img{ margin-bottom: 0;}
     h3{ font-size: 0.75rem;}
-      &:hover {
+      &:hover,&.empty {
         background-color: #fff;
         .opacity-effect{
           width: 100%;
@@ -75,6 +75,17 @@ background-color: rgba(198,189,189,.5);
           text-align: center;
         }
         */
+      }
+      &.empty{
+        img{max-width: 100%}
+        .opacity-effect:before{
+            content:'Coming Soon';
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 700;
+        }
       }
   }
 }

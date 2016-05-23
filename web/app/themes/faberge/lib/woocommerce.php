@@ -399,3 +399,10 @@ function mp_design_cat_posts_per_page( $query ) {
     $query->set( 'posts_per_page', '-1' );
   }
 }
+
+add_filter( 'woocommerce_product_subcategories_hide_empty', 'so_28060317', 10, 1 );
+function so_28060317 ( $show_empty ) {
+    $show_empty  =  true;
+
+    return $show_empty;
+}

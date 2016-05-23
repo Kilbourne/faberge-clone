@@ -33,16 +33,19 @@ if ( empty( $woocommerce_loop['columns'] ) ) {
 
 // Increase loop count
 $woocommerce_loop['loop'] ++;
+$empty=$category->count>0?false:true;
+$empty_class=$empty?'empty':'';
 ?>
-<li <?php wc_product_cat_class(); ?>>
+<li <?php wc_product_cat_class($empty_class); ?>>
 	<?php
 	/**
 	 * woocommerce_before_subcategory hook.
 	 *
 	 * @hooked woocommerce_template_loop_category_link_open - 10
 	 */
+  if(!$empty){
 	do_action( 'woocommerce_before_subcategory', $category );
-
+}
 	/**
 	 * woocommerce_before_subcategory_title hook.
 	 *
@@ -67,5 +70,6 @@ $woocommerce_loop['loop'] ++;
 	 *
 	 * @hooked woocommerce_template_loop_category_link_close - 10
 	 */
-	do_action( 'woocommerce_after_subcategory', $category ); ?>
+   if(!$empty){
+	do_action( 'woocommerce_after_subcategory', $category ); }?>
 </li>
