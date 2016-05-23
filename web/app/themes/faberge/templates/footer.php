@@ -15,7 +15,7 @@
       <span>GENEVE</span>
       <span>Fondée en 1974</span>    </div>
       <div class="right"><span>web agency</span>
-      <span><img src="" alt="MENTHALIA LOGO"> </span> </div>
+      <span><a href="http://www.menthalia.com"><img src="<?php echo get_stylesheet_directory_uri().'/dist/images/logo-menthalia.png' ?>" alt="MENTHALIA LOGO"></a> </span> </div>
     </div>
   </div>
 </footer>
