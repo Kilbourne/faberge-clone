@@ -183,6 +183,9 @@
                         width:100%;
                         >.panel-row-style{
                             >.panel-grid-cell{
+                              >.widget_sp_image{
+                                overflow: hidden;
+                              }
                                 margin-bottom: 0;
                                 @include media-query(palm)
                                {
