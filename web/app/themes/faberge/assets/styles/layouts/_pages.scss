@@ -9,3 +9,46 @@ body.history{
 		padding:2%;
 	}
 }
+body.contacts,body.contatti{
+	.page-header{
+				padding: .5rem 0px;
+		>h1{
+		    @include page-title();
+		}
+	}
+	.content-wrapper{
+		padding:2%;
+	}
+	.contact-wrapper{
+		text-align: center;
+	}
+	.intern-dist{ margin-right: 2rem;}
+		.intern-dist,.ita-dist{
+		text-align: left;
+		p{
+			margin-bottom: .5rem;
+		}
+		@include media-query(lap-and-up)
+		{
+			display:inline-block;
+			vertical-align: top;
+		}
+		
+	}
+}
+body.page{
+		.page-header{
+				padding: .5rem 0px;
+		>h1{
+		    @include page-title();
+		}
+	}
+	.content-wrapper{
+		padding:2%;
+	}
+}
+body.page.home{
+		.content-wrapper{
+		padding:0;
+	}
+}
