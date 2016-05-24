@@ -15,7 +15,9 @@
 	    $search .= '</form>';
 	    $search .= '</div>';
 	    do_action( 'myplugin_after_form_settings' );
-      echo do_shortcode(' [wpmenucart-button]' );
+      if (! WC()->cart->get_cart_contents_count() == 0 ) {
+        echo do_shortcode(' [wpmenucart-button]' );
+      }
       ?>
     </nav>
   </div>
