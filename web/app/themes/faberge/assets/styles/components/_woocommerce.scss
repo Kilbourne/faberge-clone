@@ -89,7 +89,10 @@ background-color: rgba(198,189,189,.5);
       }
   }
 }
-
+.tax-product_cat ul.products{
+  display:flex;
+  flex-wrap:wrap;
+}
 .woocommerce{
   .quantity{
     .minus,.plus{
