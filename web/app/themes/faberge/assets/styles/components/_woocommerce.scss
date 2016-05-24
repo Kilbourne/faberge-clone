@@ -45,7 +45,7 @@
     //background-color: #F1F1F1;
     @include media-query(lap-and-up)
       {
-        width:24.5%;
+        width:calc( 24.5% - 1px );
       }
     >a{font-size:0;}
     h3,.count{display:none;}
