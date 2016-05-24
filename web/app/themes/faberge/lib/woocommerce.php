@@ -236,7 +236,11 @@ function faberge_woocommerce_single_product_variations(){
                 $x++;
                 $active=$default==$color?true:false;
                 $image=$variation_obj-> get_image('thumbnail');
-                $image_ids = get_post_meta( $var_id, '_wc_additional_variation_images' );
+
+                $original_id = apply_filters( 'wpml_object_id', $var_id, 'product',false,'en' );
+
+                $image_ids = get_post_meta( $original_id , '_wc_additional_variation_images' );
+
                 $gallery_image_link  = wp_get_attachment_url( $image_ids[0]);
                 $display.='<div id="var-'.$var_id.'"class="variation';
                 if($count>6){$display.=' swiper-slide ';}
@@ -324,13 +328,13 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 add_filter( 'woocommerce_stock_html', function(){ return ''; } );
 
 add_action( 'woocommerce_before_add_to_cart_button', 'woocommerce_before_add_to_cart_button_faberge');
-function woocommerce_before_add_to_cart_button_faberge(){  
+function woocommerce_before_add_to_cart_button_faberge(){
   global $product;
   $notes=get_the_terms( $product->id, 'pa_note');
 
-  if(is_array($notes)) 
+  if(is_array($notes))
    echo '<p class="product-notes">'.$notes[0]->name.'</p>';
-  
+
 
 }
 
