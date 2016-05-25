@@ -187,6 +187,9 @@
                                 overflow: hidden;
                               }
                                 margin-bottom: 0;
+                                &:last-child{
+                                  width:auto !important;
+                                }
                                 @include media-query(palm)
                                {
                                 width: 24% !important;
@@ -298,13 +301,20 @@ body.home .wrap.container>.content {
 =======
 .panel-grid-cell .panel-widget-style{
 &.history,&.locator{
+<<<<<<< HEAD
 >>>>>>> faada79... fggf
   .textwidget a{
+=======
+  .textwidget{
+padding: 0px 10% 0px 0px;
+font-size: 1rem;
+    a{
+>>>>>>> 9902534... homepage wide last row
 
     padding: 4px 0;
     font-size: 1em;
     background-color: transparent;
-}
+}}
 }
 <<<<<<< HEAD
 >>>>>>> 8cf8c89... ccc

@@ -1,6 +1,12 @@
 {
   "customizer.js": "customizer-2d71a5cf56.js",
+<<<<<<< HEAD
   "jquery.js": "jquery-599d728eab.js",
   "main.css": "main-67b72ab5dc.css",
   "main.js": "main-45bb76470d.js"
+=======
+  "jquery.js": "jquery-7decc060e1.js",
+  "main.css": "main-1113aff401.css",
+  "main.js": "main-4f45bfc22b.js"
+>>>>>>> 9902534... homepage wide last row
 }
