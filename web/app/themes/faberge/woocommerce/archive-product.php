@@ -19,8 +19,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 global $wp_query;
+$en_id=get_term_by( 'slug', 'eggs', 'product_cat');
+$original_cat_id =  apply_filters( 'wpml_object_id', $en_id->term_id, 'product_cat', true,ICL_LANGUAGE_CODE);
+$final_term=get_term( $original_cat_id, 'product_cat');
 $wp_query = new WP_Query( array(
-  "product_cat" => "eggs"
+  "product_cat" => $final_term->slug
 ) );
 
 

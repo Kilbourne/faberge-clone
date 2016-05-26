@@ -150,8 +150,10 @@ function attribute_size_image( $wpautop,$attribute,$values){
     $right_cat=false;
 
     foreach ($product_cats as $key1 => $cat) {
-      $parent_slug=$cat->parent?get_term($cat->parent)->slug:'';
-      if($cat->slug === 'tf-9' || $cat->slug==='eggs' || $parent_slug === 'eggs' )$right_cat=true;
+      $original_cat_id =  apply_filters( 'wpml_object_id', $cat->term_id, 'product_cat', FALSE,'en');
+      $original_cat=get_term($original_cat_id, 'product_cat');
+      $parent_slug=$original_cat->parent?get_term($original_cat->parent)->slug:'';
+      if($original_cat->slug === 'tf-9' || $original_cat->slug==='eggs' || $parent_slug === 'eggs' )$right_cat=true;
     }
     if($right_cat){
     foreach ($values as $key => $value) {
