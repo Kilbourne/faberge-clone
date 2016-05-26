@@ -7,9 +7,9 @@ body{
   //background-image: url('../images/bg.png');
 }
     body.admin-bar{
-      header.banner { margin-top: 32px !important; }
+      header.banner,#responsive_menu_pro_button,.wpmenucart-shortcode  { margin-top: 32px !important; }
       @media screen and ( max-width: 782px ) {
-          header.banner { margin-top: 46px !important; }
+          header.banner,#responsive_menu_pro_button,.wpmenucart-shortcode  { margin-top: 46px !important; }
       }
   }
 body.home{
