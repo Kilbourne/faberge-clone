@@ -34,7 +34,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		<table class="variations" cellspacing="0">
 			<tbody>
 				<?php foreach ( $attributes as $attribute_name => $options ) :  ?>
-					<tr class="<?php 	echo sanitize_title( $attribute_name ); ?>" <?php if( sanitize_title( $attribute_name ) === 'pa_color' && !( count($attributes) > 1 || has_term( 'hermitage', 'product_cat', $product->id ) ))echo 'hidden'; ?>>
+					<tr class="<?php 	echo sanitize_title( $attribute_name ); ?>" <?php $hermArr=['hermitage','hermitage-it','hermitage-fr'];if( sanitize_title( $attribute_name ) === 'pa_color' && !( count($attributes) > 1 || has_term( $hermArr , 'product_cat', $product->id ) ))echo 'hidden'; ?>>
 						<td class="label"><label for="<?php echo sanitize_title( $attribute_name ); ?>"><?php echo wc_attribute_label( $attribute_name ); ?></label></td>
 						<td class="value">
 							<?php
