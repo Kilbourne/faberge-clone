@@ -12,7 +12,7 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	http://docs.woothemes.com/document/template-structure/
+ * @see 	https://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
  * @version 2.6.0
@@ -45,7 +45,7 @@ wc_print_notices(); ?>
 			</thead>
 			<?php foreach ( $saved_methods as $type => $methods ) : ?>
 				<?php foreach ( $methods as $method ) : ?>
-					<tr>
+					<tr class="payment-method<?php echo ! empty( $method['is_default'] ) ? ' default-payment-method' : '' ?>">
 						<?php foreach ( wc_get_account_payment_methods_columns() as $column_id => $column_name ) : ?>
 							<td class="woocommerce-PaymentMethod woocommerce-PaymentMethod--<?php echo esc_attr( $column_id ); ?> payment-method-<?php echo esc_attr( $column_id ); ?>" data-title="<?php echo esc_attr( $column_name ); ?>">
 								<?php

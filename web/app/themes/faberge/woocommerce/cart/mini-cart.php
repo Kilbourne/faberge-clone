@@ -6,12 +6,13 @@
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/cart/mini-cart.php.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
- * will need to copy the new files to your theme to maintain compatibility. We try to do this.
- * as little as possible, but it does happen. When this occurs the version of the template file will.
- * be bumped and the readme will list any important changes.
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
  *
- * @see     http://docs.woothemes.com/document/template-structure/
+ * @see     https://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
  * @version 2.5.0
@@ -24,16 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php do_action( 'woocommerce_before_mini_cart' ); ?>
-<?php if ( ! WC()->cart->is_empty() ){ 
-$totalnumber=WC()->cart->get_cart_contents_count();
-$itemString=$totalnumber>1?'items':'item';
-?>
-<p class="totalitems"><?php echo $totalnumber.' '.$itemString.' '. __( 'in cart', 'woocommerce' ); ?></p>
-<?php } ?>
+
 <ul class="cart_list product_list_widget <?php echo $args['list_class']; ?>">
 
 	<?php if ( ! WC()->cart->is_empty() ) : ?>
-
 
 		<?php
 			foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -41,6 +36,7 @@ $itemString=$totalnumber>1?'items':'item';
 				$product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
 
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
+<<<<<<< HEAD
 
       $item_data = array();
 
@@ -101,61 +97,15 @@ $itemString=$totalnumber>1?'items':'item';
 					
 					$thumbnail     = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 					$product_price = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+=======
+					$product_name      = apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key );
+					$thumbnail         = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+					$product_price     = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
+>>>>>>> 49fa118... original
 					?>
 					<li class="<?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
-					<div class="minicart-imagewrapper">
-						
-					
-											<?php if ( ! $_product->is_visible() ) : ?>
-	<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) ; ?>
-<?php else : ?>
-	<a href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
-		<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail )  ; ?>
-	</a>
-<?php endif; ?>
-</div><div class="minicart-detailswrapper">
-	
-
-					
-
-<?php if ( ! $_product->is_visible() ) : ?>
-	
-		 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
-		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
-
-        $single_cat = array_shift( $product_cats ); ?>
-
-        <span class="minicart-category"><?php echo $single_cat->name; ?></span>
-
-<?php }
-		 ?> 
-	<span class="minicart-name">
-		<?php echo  $product_name ; ?>	
-	</span> 
-	
-<?php else : ?>
-			 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
-		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
-
-        $single_cat = array_shift( $product_cats ); ?>
-
-        
-
-<?php }
-		 ?> 
-	
-	<a class="minicart-name-link"href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
-		<span  class="minicart-category"><?php echo $single_cat->name; ?></span><span class="minicart-name"><?php echo $product_name ; ?></span> 
-	</a>
-
-	
-
-<?php endif; ?>
-	
-						<?php //echo WC()->cart->get_item_data( $cart_item ); ?>
-						<?php echo  '<span class="price">' . sprintf( 'Price: %s', $product_price ) . '</span>'; ?>
-						<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( 'Quantity: %s', $cart_item['quantity'] ) . '</span>', $cart_item, $cart_item_key ); ?>
-							<?php
+						<?php
 						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 							'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
 							esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
@@ -164,7 +114,16 @@ $itemString=$totalnumber>1?'items':'item';
 							esc_attr( $_product->get_sku() )
 						), $cart_item_key );
 						?>
-						</div>
+						<?php if ( ! $_product->is_visible() ) : ?>
+							<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) . $product_name . '&nbsp;'; ?>
+						<?php else : ?>
+							<a href="<?php echo esc_url( $product_permalink ); ?>">
+								<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) . $product_name . '&nbsp;'; ?>
+							</a>
+						<?php endif; ?>
+						<?php echo WC()->cart->get_item_data( $cart_item ); ?>
+
+						<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); ?>
 					</li>
 					<?php
 				}
@@ -177,11 +136,11 @@ $itemString=$totalnumber>1?'items':'item';
 
 	<?php endif; ?>
 
-</ul><!-- end product list --> 
+</ul><!-- end product list -->
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
 
-	<p class="total"><strong><?php _e( 'Total', 'woocommerce' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
+	<p class="total"><strong><?php _e( 'Subtotal', 'woocommerce' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 

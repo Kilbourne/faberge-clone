@@ -4,12 +4,13 @@
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/emails/email-order-items.php.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
- * will need to copy the new files to your theme to maintain compatibility. We try to do this.
- * as little as possible, but it does happen. When this occurs the version of the template file will.
- * be bumped and the readme will list any important changes.
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
  *
- * @see 	    http://docs.woothemes.com/document/template-structure/
+ * @see 	    https://docs.woothemes.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates/Emails
  * @version     2.1.2
@@ -23,27 +24,6 @@ foreach ( $items as $item_id => $item ) :
 	$_product     = apply_filters( 'woocommerce_order_item_product', $order->get_product_from_item( $item ), $item );
 	$item_meta    = new WC_Order_Item_Meta( $item, $_product );
 
-//$is_visible = $product && $product->is_visible();
-      if(isset($item["item_meta"]['_variation_id'])){
-      $variation_id=$item ["item_meta"]['_variation_id'][0];
-        $variation = wc_get_product($variation_id);
-        if($variation){
-$thumbnail =  $variation->get_image();
-$title=$variation->get_sku();
-        }
-      }else{
-
-  $variation_id=$item["item_meta"]["_product_id"][0];
-        $variation = wc_get_product($variation_id);
-           if($variation){
-$thumbnail =  $variation->get_image();
-$title=$variation->get_title();
-}
-      }
-
-    $thumbnail=isset($thumbnail)?$thumbnail:'';
-      echo '<div class="order-item-thumb-wrapper">'.$thumbnail.'</div>'.$title;
-      echo apply_filters( 'woocommerce_order_item_quantity_html', ' <strong class="product-quantity">' . sprintf( '&times; %s', $item['qty'] ) . '</strong>', $item );
 	if ( apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 		?>
 		<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_order_item_class', 'order_item', $item, $order ) ); ?>">
@@ -51,11 +31,11 @@ $title=$variation->get_title();
 
 				// Show title/image etc
 				if ( $show_image ) {
-					echo apply_filters( 'woocommerce_order_item_thumbnail', '<div style="margin-bottom: 5px"><img src="' .wp_get_attachment_image_src( $thumbnail, 'thumbnail')  .'" alt="' . esc_attr__( 'Product Image', 'woocommerce' ) . '" height="' . esc_attr( $image_size[1] ) . '" width="' . esc_attr( $image_size[0] ) . '" style="vertical-align:middle; margin-right: 10px;" /></div>', $item );
+					echo apply_filters( 'woocommerce_order_item_thumbnail', '<div style="margin-bottom: 5px"><img src="' . ( $_product->get_image_id() ? current( wp_get_attachment_image_src( $_product->get_image_id(), 'thumbnail') ) : wc_placeholder_img_src() ) .'" alt="' . esc_attr__( 'Product Image', 'woocommerce' ) . '" height="' . esc_attr( $image_size[1] ) . '" width="' . esc_attr( $image_size[0] ) . '" style="vertical-align:middle; margin-right: 10px;" /></div>', $item );
 				}
-        $title=isset($title)?$title:$item['name'];
+
 				// Product name
-				echo apply_filters( 'woocommerce_order_item_name', $title , $item, false );
+				echo apply_filters( 'woocommerce_order_item_name', $item['name'], $item, false );
 
 				// SKU
 				if ( $show_sku && is_object( $_product ) && $_product->get_sku() ) {
@@ -63,7 +43,7 @@ $title=$variation->get_title();
 				}
 
 				// allow other plugins to add additional product information here
-				do_action( 'woocommerce_order_item_meta_start', $item_id, $item, $order );
+				do_action( 'woocommerce_order_item_meta_start', $item_id, $item, $order, $plain_text );
 
 				// Variation
 				if ( ! empty( $item_meta->meta ) ) {
@@ -76,7 +56,7 @@ $title=$variation->get_title();
 				}
 
 				// allow other plugins to add additional product information here
-				do_action( 'woocommerce_order_item_meta_end', $item_id, $item, $order );
+				do_action( 'woocommerce_order_item_meta_end', $item_id, $item, $order, $plain_text );
 
 			?></td>
 			<td class="td" style="text-align:left; vertical-align:middle; border: 1px solid #eee; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;"><?php echo apply_filters( 'woocommerce_email_order_item_quantity', $item['qty'], $item ); ?></td>

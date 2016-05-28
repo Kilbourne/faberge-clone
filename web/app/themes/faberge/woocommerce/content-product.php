@@ -4,12 +4,13 @@
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/content-product.php.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
- * will need to copy the new files to your theme to maintain compatibility. We try to do this.
- * as little as possible, but it does happen. When this occurs the version of the template file will.
- * be bumped and the readme will list any important changes.
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
  *
- * @see     http://docs.woothemes.com/document/template-structure/
+ * @see     https://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
  * @version 2.5.0
@@ -20,23 +21,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-global $woocommerce_loop;
 
 // Ensure visibility
-if ( ! $product || ! $product->is_visible() ) {
+if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
-$main_product = $wp_query->get_queried_object();
-$classes = array();
-
-
-
-
-if($main_product->ID === $post->ID || ( $main_product->parent > 0 && $main_product->ID === null &&  0 === ( $woocommerce_loop['loop']     ))){ $classes[] = ' active';}
-$classes[]='product';
 ?>
-<li id="product-<?php the_ID() ?>" <?php echo var_dump($woocommerce_loop['loop']);post_class($classes); echo var_dump($woocommerce_loop['loop']); ?> >
-
+<li <?php post_class(); ?>>
 	<?php
 	/**
 	 * woocommerce_before_shop_loop_item hook.
@@ -76,5 +67,4 @@ $classes[]='product';
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
-
 </li>
