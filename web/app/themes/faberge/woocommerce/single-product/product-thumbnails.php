@@ -4,13 +4,12 @@
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/single-product/product-thumbnails.php.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you
- * (the theme developer) will need to copy the new files to your theme to
- * maintain compatibility. We try to do this as little as possible, but it does
- * happen. When this occurs the version of the template file will be bumped and
- * the readme will list any important changes.
+ * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
+ * will need to copy the new files to your theme to maintain compatibility. We try to do this.
+ * as little as possible, but it does happen. When this occurs the version of the template file will.
+ * be bumped and the readme will list any important changes.
  *
- * @see 	    https://docs.woothemes.com/document/template-structure/
+ * @see 	    http://docs.woothemes.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
  * @version     2.3.0
@@ -21,10 +20,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $post, $product, $woocommerce;
-
+	
 $attachment_ids = $product->get_gallery_attachment_ids();
 
-if ( $attachment_ids ) {
+foreach( $attachment_ids as $key => $attachment_id ) 
+{
+	$filename_only = basename( get_attached_file( $attachment_id ) );
+//echo var_dump( strpos($filename_only, '_zoom') );
+  if(strpos($filename_only, '_zoom')) unset($attachment_ids[$key]);
+}
+
+if (count($attachment_ids) ) {
 	$loop 		= 0;
 	$columns 	= apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
 	?>
@@ -39,12 +45,19 @@ if ( $attachment_ids ) {
 
 			if ( ( $loop + 1 ) % $columns === 0 )
 				$classes[] = 'last';
-
-			$image_link = wp_get_attachment_url( $attachment_id );
+			$file=get_attached_file( $attachment_id );
+			$url=wp_get_attachment_url( $attachment_id );
+			$path = pathinfo($file);
+			$path_u = pathinfo($url);
+			 $newfile = $path['dirname']."/".$path['filename']."_zoom.".$path['extension'];
+			 $newurl=$path_u['dirname']."/".$path_u['filename']."_zoom.".$path_u['extension'];
+			$image_link = file_exists($newfile) ? $newurl : $url;
 
 			if ( ! $image_link )
 				continue;
+						 $pathinfo=pathinfo(parse_url($image_link, PHP_URL_PATH));
 
+					//$image_link=$pathinfo['dirname'].'/'.$pathinfo['filename'].'_zoom'.'.'.$pathinfo['extension'];
 			$image_title 	= esc_attr( get_the_title( $attachment_id ) );
 			$image_caption 	= esc_attr( get_post_field( 'post_excerpt', $attachment_id ) );
 
@@ -63,3 +76,4 @@ if ( $attachment_ids ) {
 	?></div>
 	<?php
 }
+?>

@@ -1,16 +1,15 @@
-<?php
+ <?php
 /**
  * Review order table
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/checkout/review-order.php.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you
- * (the theme developer) will need to copy the new files to your theme to
- * maintain compatibility. We try to do this as little as possible, but it does
- * happen. When this occurs the version of the template file will be bumped and
- * the readme will list any important changes.
+ * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
+ * will need to copy the new files to your theme to maintain compatibility. We try to do this.
+ * as little as possible, but it does happen. When this occurs the version of the template file will.
+ * be bumped and the readme will list any important changes.
  *
- * @see 	    https://docs.woothemes.com/document/template-structure/
+ * @see 	    http://docs.woothemes.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
  * @version     2.3.0
@@ -38,9 +37,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 					?>
 					<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<td class="product-name"><?php 	 
 $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 $title=$_product->get_title();
+=======
+						<td class="product-name"><?php 	 
+$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+
+$title=$_product->get_title();
+if ( ! empty( $cart_item['data']->variation_id ) && is_array( $cart_item['variation'] ) ) {
+	        $variation_id=$cart_item["variation_id"];
+                
+        $variation = wc_get_product($variation_id);
+        $sku=$variation->get_sku();
+        
+        $title  = $sku;
+}
+>>>>>>> 31be2e1... template
        ?>
 							<div class="cart-thumbnail-wrapper">
 							<?php
@@ -66,12 +80,16 @@ $title=$_product->get_title();
 	<span class="minicart-name">
 		<?php echo  $title ; ?>	
 	</span> 
+<<<<<<< HEAD
 =======
 						<td class="product-name">
 							<?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;'; ?>
 >>>>>>> 49fa118... original
+=======
+>>>>>>> 31be2e1... template
 							<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?>
 							<?php echo WC()->cart->get_item_data( $cart_item ); ?>
+							</div>
 						</td>
 						<td class="product-total">
 							<?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); ?>
