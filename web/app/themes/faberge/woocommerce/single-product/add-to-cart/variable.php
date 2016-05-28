@@ -4,13 +4,12 @@
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/single-product/add-to-cart/variable.php.
  *
- * HOWEVER, on occasion WooCommerce will need to update template files and you
- * (the theme developer) will need to copy the new files to your theme to
- * maintain compatibility. We try to do this as little as possible, but it does
- * happen. When this occurs the version of the template file will be bumped and
- * the readme will list any important changes.
+ * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
+ * will need to copy the new files to your theme to maintain compatibility. We try to do this.
+ * as little as possible, but it does happen. When this occurs the version of the template file will.
+ * be bumped and the readme will list any important changes.
  *
- * @see 	https://docs.woothemes.com/document/template-structure/
+ * @see 	http://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
  * @version 2.5.0
@@ -31,14 +30,15 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
 		<p class="stock out-of-stock"><?php _e( 'This product is currently out of stock and unavailable.', 'woocommerce' ); ?></p>
 	<?php else : ?>
+		<?php $hermArr=['hermitage','hermitage-it','hermitage-fr'];if( count($attributes) === 1 && isset($attributes[sanitize_title( 'pa_color'  ) ] ) && !has_term( $hermArr, 'product_cat', $product->id ) ){}else{echo '<h3 class="variation-form-title">Variations</h3>' ;} ?>
 		<table class="variations" cellspacing="0">
 			<tbody>
-				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
-					<tr>
+				<?php foreach ( $attributes as $attribute_name => $options ) :  ?>
+					<tr class="<?php 	echo sanitize_title( $attribute_name ); ?>" <?php if( sanitize_title( $attribute_name ) === 'pa_color' && !( count($attributes) > 1 || has_term( $hermArr , 'product_cat', $product->id ) ))echo 'hidden'; ?>>
 						<td class="label"><label for="<?php echo sanitize_title( $attribute_name ); ?>"><?php echo wc_attribute_label( $attribute_name ); ?></label></td>
 						<td class="value">
 							<?php
-								$selected = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ? wc_clean( urldecode( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ) : $product->get_variation_default_attribute( $attribute_name );
+								$selected = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ? wc_clean( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) : $product->get_variation_default_attribute( $attribute_name );
 								wc_dropdown_variation_attribute_options( array( 'options' => $options, 'attribute' => $attribute_name, 'product' => $product, 'selected' => $selected ) );
 								echo end( $attribute_keys ) === $attribute_name ? apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . __( 'Clear', 'woocommerce' ) . '</a>' ) : '';
 							?>
@@ -52,6 +52,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 		<div class="single_variation_wrap">
 			<?php
+				woocommerce_template_single_price();
 				/**
 				 * woocommerce_before_single_variation Hook.
 				 */
@@ -78,5 +79,4 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	<?php do_action( 'woocommerce_after_variations_form' ); ?>
 </form>
 
-<?php
-do_action( 'woocommerce_after_add_to_cart_form' );
+<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>

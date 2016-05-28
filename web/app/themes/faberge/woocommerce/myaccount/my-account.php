@@ -10,7 +10,7 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see     https://docs.woothemes.com/document/template-structure/
+ * @see     http://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
  * @version 2.6.0
@@ -25,17 +25,9 @@ wc_print_notices(); ?>
 <?php wc_get_template( 'myaccount/navigation.php' ); ?>
 
 <div class="woocommerce-MyAccount-content">
-	<p>
-		<?php
-			echo sprintf( esc_attr__( 'Hello %s%s%s (not %2$s? %sSign out%s)', 'woocommerce' ), '<strong>', esc_html( $current_user->display_name ), '</strong>', '<a href="' . esc_url( wc_get_endpoint_url( 'customer-logout', '', wc_get_page_permalink( 'myaccount' ) ) ) . '">', '</a>' );
-		?>
-	</p>
 
-	<p>
-		<?php
-			echo sprintf( esc_attr__( 'From your account dashboard you can view your %1$srecent orders%2$s, manage your %3$sshipping and billing addresses%2$s and %4$sedit your password and account details%2$s.', 'woocommerce' ), '<a href="' . esc_url( wc_get_endpoint_url( 'orders' ) ) . '">', '</a>', '<a href="' . esc_url( wc_get_endpoint_url( 'edit-address' ) ) . '">', '<a href="' . esc_url( wc_get_endpoint_url( 'edit-account' ) ) . '">' );
-		?>
-	</p>
+
+
 
 	<?php
 		/**
@@ -44,7 +36,7 @@ wc_print_notices(); ?>
 		 * @since 2.6.0
 		 */
 		do_action( 'woocommerce_account_dashboard' );
-
+wc_get_template( 'myaccount/form-edit-account.php', array( 'user' => get_user_by( 'id', get_current_user_id() ) ) );
 		/**
 		 * Deprecated woocommerce_before_my_account action.
 		 *

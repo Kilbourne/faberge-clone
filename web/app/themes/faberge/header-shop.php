@@ -99,7 +99,7 @@ if (is_product_category() || is_product()) {
         echo '<nav class="linea-subnav">
 
               <ul class="linea-subnav-list">
-              <span>Collections </span>';
+              <span>'.__('Collections','sage').' </span>';
         foreach ($subcats_child as $key => $value2) {
             $link2 = get_term_link($value2);
             echo '<li class="linea-subnav-listelement';
@@ -116,14 +116,14 @@ if (is_product_category() || is_product()) {
           <nav class="linea-nav">
               <ul class="linea-nav-list">
             ';
-        
+
     foreach ($subcats as $key => $value2) {
         $link2 = get_term_link($value2);
         echo '<li class="linea-nav-listelement';
-        
+
             //echo var_dump($value).var_dump($value2->term_id);
             if ($active === $value2->term_id) {echo ' active linea-nav-title ';}
-        
+
         echo '" ><a href="' . $link2 . '" title="">' . $value2->name . '</a></li>';
     }
 

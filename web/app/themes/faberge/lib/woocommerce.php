@@ -117,7 +117,7 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_before_single_pro
 
 function woocommerce_before_single_product_price_single_add_to_cart(){
     echo '<div class="buy-section"><div class="accordion-title-wrap">
-          <a href="#buy-wrapper" aria-expanded="false" aria-controls="buy-wrapper" class="accordion-title accordionTitle js-accordionTrigger fa fa-caret-right"><i class="wpmenucart-icon-shopping-cart-0"></i>Buy Information</a></div><div id="buy-wrapper"class="accordion-content accordionItem is-collapsed"  >';
+          <a href="#buy-wrapper" aria-expanded="false" aria-controls="buy-wrapper" class="accordion-title accordionTitle js-accordionTrigger fa fa-caret-right"><i class="wpmenucart-icon-shopping-cart-0"></i>'.__('Buy Information','sage') .'</a></div><div id="buy-wrapper"class="accordion-content accordionItem is-collapsed"  >';
 
 
 };
