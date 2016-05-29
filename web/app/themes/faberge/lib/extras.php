@@ -80,10 +80,24 @@ add_action('admin_bar_init', __NAMESPACE__ . '\\remove_admin_css');
 
 add_filter( 'woocommerce_account_menu_items',function(){ return array(
     'dashboard'       => __( 'Profile details', 'woocommerce' ),
-    'orders'          => __( 'Orders', 'woocommerce' ),    
+    'orders'          => __( 'Orders', 'woocommerce' ),
     'edit-address'    => __( 'Addresses', 'woocommerce' ),
     'edit-address-billing'    => __( 'Billing address', 'woocommerce' ),
     'edit-address-shipping'    => __( 'Shipping address', 'woocommerce' ),
-    'payment-methods' => __( 'Payment Methods', 'woocommerce' )    
+    'payment-methods' => __( 'Payment Methods', 'woocommerce' )
   );} );
- 
+
+ function language_selector(){
+$languages = icl_get_languages('skip_missing=0');
+if(!empty($languages)){
+echo '<ul id="lansel">';
+foreach($languages as $l){
+echo '<li '.($l['active']?'class="active"':'').'>';
+if(!$l['active']) echo '<a href="'.$l['url'].'">';
+echo ''.$l['language_code'].'';
+if(!$l['active']) echo '</a>';
+echo '</li>';
+}
+}
+echo '</ul>';
+}
