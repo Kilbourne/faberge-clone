@@ -7,9 +7,9 @@ body{
   //background-image: url('../images/bg.png');
 }
     body.admin-bar{
-      header.banner,#responsive_menu_pro_button,.wpmenucart-shortcode  { margin-top: 32px !important; }
+      header.banner,#responsive_menu_pro_button,.wpmenucart-shortcode,#responsive_menu_pro  { margin-top: 32px !important; }
       @media screen and ( max-width: 782px ) {
-          header.banner,#responsive_menu_pro_button,.wpmenucart-shortcode  { margin-top: 46px !important; }
+          header.banner,#responsive_menu_pro_button,.wpmenucart-shortcode,#responsive_menu_pro  { margin-top: 46px !important; }
       }
   }
 body.home{
@@ -25,10 +25,10 @@ a:visited{ color:initial; }
 input[type=number] {
     -moz-appearance: textfield;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 svg path {
     fill: inherit;
