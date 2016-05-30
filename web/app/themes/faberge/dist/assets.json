@@ -2,6 +2,7 @@
   "customizer.js": "customizer-2d71a5cf56.js",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "jquery.js": "jquery-599d728eab.js",
 <<<<<<< HEAD
   "main.css": "main-67b72ab5dc.css",
@@ -19,4 +20,9 @@
   "main.css": "main-4d8f090bf7.css",
   "main.js": "main-4f45bfc22b.js"
 >>>>>>> 660661d... fd
+=======
+  "jquery.js": "jquery-599d728eab.js",
+  "main.css": "main-cd21324c6b.css",
+  "main.js": "main-45bb76470d.js"
+>>>>>>> de4a673... safari bug
 }
