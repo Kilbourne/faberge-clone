@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: 404.php:4
@@ -32,7 +32,7 @@ msgstr "Erreurr localiser %s pour inclusion"
 
 #: header-shop.php:102
 msgid "Collections"
-msgstr "Collectiones"
+msgstr "Collections"
 
 #: index.php:5 page-storelocator.php:19 search.php:21
 msgid "Sorry, no results were found."
