@@ -101,3 +101,20 @@ echo '</li>';
 }
 echo '</ul>';
 }
+
+add_filter( 'wpseo_xml_sitemap_post_priority', __NAMESPACE__ . '\\my_custom_post_xml_priority', 10, 3 );
+
+function my_custom_post_xml_priority( $return, $type, $post) {
+    if ($type == 'page'){
+      if(get_the_title($post->ID)=='Homepage'){
+      $return = 1;  
+      }else{
+      $return = 0.6;
+      }
+    }
+    else if ($type == 'post')
+        $return = 0.3;
+    else if ($type == 'product')
+        $return = 1;
+    return $return;
+}
