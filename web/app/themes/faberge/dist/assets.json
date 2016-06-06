@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "jquery.js": "jquery-599d728eab.js",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,6 +13,7 @@
 >>>>>>> fafa123... dssd
 =======
   "main.css": "main-39ddaa9626.css",
+<<<<<<< HEAD
 >>>>>>> 605c150... img history
   "main.js": "main-45bb76470d.js"
 =======
@@ -29,4 +31,12 @@
   "main.css": "main-cd21324c6b.css",
   "main.js": "main-45bb76470d.js"
 >>>>>>> de4a673... safari bug
+=======
+  "main.js": "main-613071d501.js"
+>>>>>>> 78a0087... update analycts part two
+=======
+  "jquery.js": "jquery-7decc060e1.js",
+  "main.css": "main-d3c724b1e4.css",
+  "main.js": "main-95efc0eccc.js"
+>>>>>>> a06ab31... ajax analytics
 }

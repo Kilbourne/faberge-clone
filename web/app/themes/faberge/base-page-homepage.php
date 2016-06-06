@@ -116,10 +116,18 @@ use Roots\Sage\Wrapper;
       <span><a href="http://www.menthalia.com"><img src="<?php echo get_stylesheet_directory_uri().'/dist/images/logo-menthalia.png' ?>" alt="MENTHALIA LOGO"></a> </span> </div>
     </div>
       <?php
-      echo do_shortcode('[responsive_menu_pro_menu] ' ); 
-      
+      echo do_shortcode('[responsive_menu_pro_menu] ' );
+
     ?>
     </div>
     <?php wp_footer(); ?>
+              <script>
+
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-78528632-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
   </body>
 </html>

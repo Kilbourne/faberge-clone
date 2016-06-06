@@ -135,7 +135,12 @@
                 });
                 document.title = title;
                 ajaxPush(e.currentTarget.href, true, title)
+                 function gaTrack(path, title) {
+  ga('set', { page: path, title: title });
+  ga('send', 'pageview');
+}
 
+gaTrack(e.currentTarget.href,title);
 
 
 
