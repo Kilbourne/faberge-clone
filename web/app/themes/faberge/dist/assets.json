@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "jquery.js": "jquery-599d728eab.js",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,4 +40,9 @@
   "main.css": "main-d3c724b1e4.css",
   "main.js": "main-95efc0eccc.js"
 >>>>>>> a06ab31... ajax analytics
+=======
+  "jquery.js": "jquery-599d728eab.js",
+  "main.css": "main-e65b63f73f.css",
+  "main.js": "main-613071d501.js"
+>>>>>>> 68a1b09... aaa
 }
