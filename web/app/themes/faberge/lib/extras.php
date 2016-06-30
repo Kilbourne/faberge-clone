@@ -107,7 +107,7 @@ add_filter( 'wpseo_xml_sitemap_post_priority', __NAMESPACE__ . '\\my_custom_post
 function my_custom_post_xml_priority( $return, $type, $post) {
     if ($type == 'page'){
       if(get_the_title($post->ID)=='Homepage'){
-      $return = 1;  
+      $return = 1;
       }else{
       $return = 0.6;
       }
@@ -117,4 +117,32 @@ function my_custom_post_xml_priority( $return, $type, $post) {
     else if ($type == 'product')
         $return = 1;
     return $return;
+}
+
+if (isset($sitepress)){
+  add_filter('wpseo_posts_join', __NAMESPACE__ . '\\sitemap_per_language', 10, 2);
+  add_filter('wpseo_sitemap_entry', __NAMESPACE__ . '\\sitemap_per_language2', 10, 3);
+}
+
+function sitemap_per_language($join, $type) {
+    global $wpdb, $sitepress;
+    $lang = $sitepress->get_current_language();
+    return " JOIN " . $wpdb->prefix . "icl_translations ON element_id = ID AND element_type = 'post_$type' AND language_code = '$lang'";
+}
+function sitemap_per_language2($url, $type,$obj){
+
+  if($type==='term'){
+    global $sitepress;
+  $lang = $sitepress->get_current_language();
+  $string=parse_url($url['loc'], PHP_URL_PATH);
+  $query='/'.$lang.'/';
+  $start=0;
+  if($lang==='en'){
+    $query='/';
+    $start=3;
+     if(substr($string, $start, strlen($query)) === $query)
+   return false;}elseif(substr($string, $start, strlen($query)) !== $query ){ return false;}
+  }
+
+return $url;
 }
