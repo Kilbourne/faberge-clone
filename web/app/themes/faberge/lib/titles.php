@@ -6,7 +6,9 @@ namespace Roots\Sage\Titles;
  * Page titles
  */
 function title() {
-  if (is_home()) {
+  if(is_front_page()){
+    return get_bloginfo() . ' | ' . get_bloginfo('description');
+  }elseif (is_home()) {
     if (get_option('page_for_posts', true)) {
       return get_the_title(get_option('page_for_posts', true));
     } else {
