@@ -648,6 +648,7 @@ gaTrack(e.currentTarget.href,title);
     }
 
     function variationHandler(e) {
+      $('body').off('click', '.variation', variationHandler);
         var target = e.currentTarget,
             variationID = target.id.split('-')[1],
             variation = productVariation[variationID],
@@ -714,6 +715,7 @@ gaTrack(e.currentTarget.href,title);
                     })
                 }
             })
+            $('body').on('click', '.variation', variationHandler);
         });
     }
 
