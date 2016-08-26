@@ -8493,7 +8493,7 @@ return ImagesLoaded;
 
             $('#pa_color>option').filter(function() {
                 //may want to use $.trim in here
-                return $(this).text().toLowerCase() == color;
+                return $(this).attr('value') == color;
             }).prop('selected', true);
             $form = $('.variations_form');
             $form.find('.variations select').change();
