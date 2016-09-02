@@ -36,3 +36,30 @@
 main > .woocommerce{
   padding:1rem 2%;
 }
+
+body.blog{
+  main{ padding:0 5%; }
+  .page-header>h1{ 
+    text-align: center;
+background-color: #e6e6e6;
+color: #CFAD42;
+padding: 1rem 10%;
+margin: 1rem 0;
+border: 1px solid #cfad42;
+  }
+  .type-post{
+    header{
+      margin: 0px 0px 1rem;
+    }    
+    .entry-title{
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      >a{ text-decoration: none;}
+    }
+  }
+}
+body.single-post{
+  .type-post{
+    padding: 1.5rem 5%;
+  }
+}

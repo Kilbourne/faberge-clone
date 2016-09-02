@@ -10,6 +10,41 @@
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
 
+       function fabmapinit(){
+
+    var countryInput=document.getElementById('addressInputCountry'),
+    regioneInput=document.getElementById('addressInputState'),
+    sidebar=document.getElementById('map_sidebar');
+    var italia=['Italia'];
+    if (jQuery('#addressInputCountry').val() !== '') {
+        if (italia.indexOf(jQuery('#addressInputCountry').val()) !== -1){
+            if(jQuery('#addressInputState option').length > 1){
+                if(jQuery('#addressInputState').val() !== ''){
+                    jQuery('#addy_in_state').show();
+                    cslmap.searchLocations();
+                }else{
+                    jQuery('#addy_in_state').show();
+                    jQuery(sidebar).empty();
+                }
+              
+            }else{
+                cslmap.searchLocations();
+            }
+        }else{
+            jQuery('#addy_in_state').hide();
+            jQuery('#addressInputState').val('');
+            cslmap.searchLocations();
+        }
+
+                    
+
+    }else{
+jQuery('#addy_in_state').hide();
+            jQuery('#addressInputState').val('');
+jQuery(sidebar).empty();
+    }
+
+}
 (function($) {
     function Accordion() {
         var d = document,
@@ -794,32 +829,6 @@ gaTrack(e.currentTarget.href,title);
                 window.onpopstate = popstateCallback;
             }
         },
-        'store_locator': {
-            init: function() {
-                if ($('#addressInputCountry').val() !== '') {
-                    if ($('#addressInputState option').length > 1) {
-                        $('#addy_in_state').show();
-                    } else {
-                        cslmap.searchLocations();
-                    }
-                }
-                $('#addressInputCountry').change(function(e) {
-                    if ($(this).val() !== '') {
-                        if ($('#addressInputState option').length > 1) {
-                            $('#addy_in_state').show();
-                        } else {
-                            cslmap.searchLocations();
-                        }
-                    } else {
-                        $('#addy_in_state').hide();
-                    }
-                });
-                $('#addressInputState').change(function(e) {
-                    cslmap.searchLocations();
-                });
-
-            }
-        },
         'woocommerce': {
             init: function() {
                 // !!!! sku
@@ -848,6 +857,16 @@ gaTrack(e.currentTarget.href,title);
             init: function() {
               // !!!! parallax
                 homepageParallax();
+            }
+        },
+                'store_locator': {
+            init: function() {
+
+jQuery('#addressInputState,#addressInputCountry').change(function(e) {
+                    fabmapinit();
+                });
+                
+
             }
         }
     };

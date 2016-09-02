@@ -41,6 +41,79 @@ body.store-locator{
 		background-color: #fff;
 		color: $hard-grey;
 	}
+	.national-list{
+		list-style:none;
+		overflow:hidden;
+		margin:0;
+	}
+	.national-element{
+		display:inline-block;
+		float:left;
+		width:100%;
+		@media(min-width: 650px){
+			width:50%;
+		}
+		vertical-align:top;
+		margin-bottom: 1.5rem;
+	}
+	.national-title{
+		margin-bottom: .5rem;
+	}
+	.area-comp{
+		color: #D2AD42;
+	}
+	.national-p{
+		margin-bottom: 0;
+	}
+	.national-name{
+		display:block;
+	}
+	#map_sidebar{
+		width: 100%;
+overflow: hidden;
+display: flex;
+flex-wrap: wrap;	
+height:auto;
+a.storelocatorlink{
+	text-decoration: none;
+	color:#000;
+}
+	}
+	#searchForm{
+		margin-bottom: 1.5rem;
+		label{ font-size:1rem;line-height: 1.5;}
+		select{ font-size:1.25rem;max-width:100%;}
+	}
+	.slp_result_email+.slp_result_directions{
+		&::before{
+			content:' - ';
+			display:inline-block;
+			margin: 0 4px;
+		}
+	}
+	.search_item{ margin-bottom: .5rem;}
+	.results_wrapper{
+		width: 100%;
+				@media(min-width: 650px){
+			width: 33.333%;
+		}
+float: left;
+display: inline-block;
+vertical-align: top;
+margin-bottom: 1rem;
+	}
+	#address_search{ max-width:100%;}
+	.results_entry{
+		font-size: 0.8rem;
+		border:none;
+		&:hover {
+    background-color: #CFAD42;
+    color:#fff;
+}
+		>div{ width:auto;}
+	}
+	.location_distance{ display:none;}
+	.results_row_right_column{ text-align: left;}
 }
 .woocommerce-account .woocommerce-MyAccount-navigation {
 	padding: 0 2%;

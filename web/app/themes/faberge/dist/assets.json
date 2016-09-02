@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "jquery.js": "jquery-599d728eab.js",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -50,4 +51,9 @@
   "main.css": "main-3202726d24.css",
   "main.js": "main-55245d9409.js"
 >>>>>>> 42f8afb... disable dbclick on variation image
+=======
+  "jquery.js": "jquery-599d728eab.js",
+  "main.css": "main-4e36f1ed4b.css",
+  "main.js": "main-a62c7837d4.js"
+>>>>>>> c954842... Store Locator & News
 }
