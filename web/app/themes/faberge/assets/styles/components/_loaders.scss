@@ -1,0 +1,29 @@
+.whirl.traditional{
+    min-height: 40px;
+    padding: 50% 0;
+    &::after {
+    border-right: 4px solid #777;
+    border-top: 4px solid #777;
+    border-left: 4px solid #999;
+    border-bottom: 4px solid #bbb;
+    }
+}
+.whirl::after {
+    z-index: 2;
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    -webkit-transition: all .75s ease 0s;
+    transition: all .75s ease 0s;
+    border-radius: 100%;
+    border-top: 4px solid #555;
+    -webkit-animation: standard .75s infinite linear;
+    animation: standard .75s infinite linear;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
