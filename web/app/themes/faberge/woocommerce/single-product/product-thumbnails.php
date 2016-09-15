@@ -26,8 +26,8 @@ $attachment_ids = $product->get_gallery_attachment_ids();
 foreach( $attachment_ids as $key => $attachment_id ) 
 {
 	$filename_only = basename( get_attached_file( $attachment_id ) );
-echo var_dump($filename_only);
-  //if(strpos($filename_only, '_zoom')) unset($attachment_ids[$key]);
+//echo var_dump( strpos($filename_only, '_zoom') );
+  if(strpos($filename_only, '_zoom')) unset($attachment_ids[$key]);
 }
 
 if (count($attachment_ids) ) {
@@ -45,8 +45,13 @@ if (count($attachment_ids) ) {
 
 			if ( ( $loop + 1 ) % $columns === 0 )
 				$classes[] = 'last';
-
-			$image_link = wp_get_attachment_url( $attachment_id );
+			$file=get_attached_file( $attachment_id );
+			$url=wp_get_attachment_url( $attachment_id );
+			$path = pathinfo($file);
+			$path_u = pathinfo($url);
+			 $newfile = $path['dirname']."/".$path['filename']."_zoom.".$path['extension'];
+			 $newurl=$path_u['dirname']."/".$path_u['filename']."_zoom.".$path_u['extension'];
+			$image_link = file_exists($newfile) ? $newurl : $url;
 
 			if ( ! $image_link )
 				continue;
@@ -71,3 +76,4 @@ if (count($attachment_ids) ) {
 	?></div>
 	<?php
 }
+?>

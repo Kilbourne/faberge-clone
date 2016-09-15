@@ -49,7 +49,10 @@ ob_start();
 	<?php endif; ?>
 
 	<?php foreach ( $attributes as $attribute ) :
-    if($attribute['name']=="pa_color")continue;
+    
+    						if ( $attribute['is_variation'] ) {
+							continue;
+						}
 		if ( empty( $attribute['is_visible'] ) || ( $attribute['is_taxonomy'] && ! taxonomy_exists( $attribute['name'] ) ) ) {
 			continue;
 		} else {
