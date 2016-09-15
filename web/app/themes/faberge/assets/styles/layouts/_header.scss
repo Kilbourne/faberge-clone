@@ -53,3 +53,13 @@ font-weight: 700;
     position:absolute;
     top:0
 }
+
+.woocommerce.widget_shopping_cart .cart_list .mini_cart_item{
+    padding-left:0;
+    .remove{ position:static;}
+    >a{ display:inline-block;
+        float:left;
+        margin: 0 10px;
+    }
+    .quantity{float:right;}
+}
