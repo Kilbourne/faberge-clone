@@ -33,7 +33,10 @@
 
                 $('#responsive_menu_pro_additional_content').click(closeRM);
                 window.onpopstate = popstateCallback;
-
+                $('.wpmenucart-contents').click(function(e){ 
+                    e.preventDefault();
+                    $('.cart-tab').addClass('inview');
+                });
 
 
                 //if(typeof productVariation !== 'undefined')$('.variation.default').click();
