@@ -9,15 +9,16 @@
   height: 100%;
   padding: 2.25rem 0;
   .variation{
-    border: 1px solid #DAC278;
+    height: 19.18%;
+width: 100%;
+max-height: 70px;
+    
     max-width: 70px;
     margin-bottom: 5px;
     cursor:pointer;
-    >img{
-      width: 100%;
-      height: auto;
+
     }
-  }
+  
   .variation.active{ display:none;}
 }
 #slider-variation{
@@ -38,4 +39,10 @@
   .swiper-button-next{
       top: 93%;
   }
+}
+
+.woocommerce div.variations-thumbs > div.variation >img{
+    height: 100%;
+    width: auto;
+    border: 1px solid rgb(218, 194, 120);
 }

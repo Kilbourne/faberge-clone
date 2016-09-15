@@ -110,6 +110,20 @@
         td p {
             padding: 0 0 1rem;
         }
+
+        .size-wrap{
+            display:inline-block;
+            margin-right: 5px;
+            p{ 
+                display:inline-block;
+                font-size: 0.7rem;
+                padding: 0 6px;
+            }
+            >img{
+                margin: 0px auto;
+                display: block;
+            }
+        }
     }
     .product .social {
         display: inline-block;
@@ -130,7 +144,9 @@
 }
 
 .variations_form>.variations {
-    display: none;
+    .pa_color{
+      display: none;  
+    }
 }
 
 .pp_hoverContainer,
@@ -148,3 +164,4 @@ div.ppt,
     background-color:#A17D54;
     color:#fff
 }
+
