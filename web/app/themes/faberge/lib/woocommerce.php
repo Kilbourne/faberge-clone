@@ -132,9 +132,9 @@ function attribute_size_image( $wpautop,$attribute,$values){
     
     foreach ($values as $key => $value) {
       if(strpos($value, 'mm')){
-        $val= intval($value);
+        $val= ((intval($value)*46)/28);
         $display='';
-      $display.='<div class="size-wrap" data-size="'.$val.'">'.wp_get_attachment_image( 2620 , 'thumb' ).'<div >
+      $display.='<div class="size-wrap" >'.wp_get_attachment_image( 2620 , 'thumb', false, array("style"=>"width:".$val."px;") ).'<div >
         <p>'.$value.'</p>
       </div></div>';
       }      
