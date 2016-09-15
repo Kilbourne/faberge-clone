@@ -4,7 +4,9 @@
 		>h1{
 		    @include page-title();
 		}
+
 	}
+	.wpmenucart-shortcode { display:none;}
 	.shop_table.cart{
 		td.not-empty,th.not-empty{
 			border-left: 1px solid #e6e6e6;
