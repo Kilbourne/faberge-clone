@@ -56,9 +56,9 @@ ob_start();
 			$has_row = true;
 		}
 		?>
-		<tr class="<?php if ( ( $alt = $alt * -1 ) == 1 ) echo 'alt'; ?>">
+		<tr  class="<?php if ( ( $alt = $alt * -1 ) == 1 ) echo 'alt'; ?> <?php echo sanitize_title( $attribute['name'] ); ?>">
 			<th><?php echo wc_attribute_label( $attribute['name'] ); ?></th>
-			<td><?php
+			<td class="value"><?php
 				if ( $attribute['is_taxonomy'] ) {
 
 					$values = wc_get_product_terms( $product->id, $attribute['name'], array( 'fields' => 'names' ) );

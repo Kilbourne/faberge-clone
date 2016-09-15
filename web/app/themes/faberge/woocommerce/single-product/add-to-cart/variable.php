@@ -33,7 +33,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		<table class="variations" cellspacing="0">
 			<tbody>
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
-					<tr>
+					<tr class="<?php 	echo sanitize_title( $attribute_name ); ?>">
 						<td class="label"><label for="<?php echo sanitize_title( $attribute_name ); ?>"><?php echo wc_attribute_label( $attribute_name ); ?></label></td>
 						<td class="value">
 							<?php
