@@ -127,6 +127,7 @@ remove_action( 'woocommerce_single_product_summary','woocommerce_template_single
 add_filter( 'woocommerce_attribute','attribute_size_image',10,3);
 
 function attribute_size_image( $wpautop,$attribute,$values){
+  $display=$wpautop;
   if($attribute['name']=="pa_measure"   ){
     global $product;
     
@@ -139,10 +140,9 @@ function attribute_size_image( $wpautop,$attribute,$values){
       </div></div>';
       }      
     }
-    return $display ;
-  }else{
-    return $wpautop;
   }
+    return $display ;
+  
 }
 
 
