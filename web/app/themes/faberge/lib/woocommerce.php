@@ -182,33 +182,40 @@ function faberge_woocommerce_single_product_variations(){
         $used_color=array();
         $display="";
         $count=count($available_variations);
-        if($count>6) $display.='<div id="slider-variation">
+        $slider='';
+        $x=0;
+        if($count>6) $slider.='<div id="slider-variation">
     <div class="swiper-wrapper">';
         foreach( $available_variations as $key => $variation ){
           $var_id = $variation["variation_id"];
-          $variation_obj=$product->get_child($var_id);
-          $value=$variation_obj->get_sku();
-          $price=$variation_obj->get_price();
-          $gallery_image_link=false;
-          if($variation_data['pa_color'] && count($variation_data['pa_color'])>1){
-            // !
-            $color=$variation['attributes']["attribute_pa_color"];
-            if(!in_array($color, $used_color)){
-              $active=$default==$color?true:false;
-
-              $image=$variation_obj-> get_image('thumbnail');
-              $image_ids = get_post_meta( $var_id, '_wc_additional_variation_images' );
-              $gallery_image_link  = wp_get_attachment_url( $image_ids[0]);
-              $display.='<div id="var-'.$var_id.'"class="variation';
-              if($count>6){$display.=' swiper-slide ';}
-              if($active){$display.= ' active default ';}
-              $display.=' " data-color="'.$color.'" >'.$image.'</div>';
-              $used_color[]=$color;
+          if( has_post_thumbnail( $var_id ) ){
+            $variation_obj=$product->get_child($var_id);
+            $value=$variation_obj->get_sku();
+            $price=$variation_obj->get_price();
+            $gallery_image_link=false;
+            if($variation_data['pa_color'] && count($variation_data['pa_color'])>1){
+              // !
+              $color=$variation['attributes']["attribute_pa_color"];
+              if(!in_array($color, $used_color)){
+                $x++;
+                $active=$default==$color?true:false;              
+                $image=$variation_obj-> get_image('thumbnail');
+                $image_ids = get_post_meta( $var_id, '_wc_additional_variation_images' );
+                $gallery_image_link  = wp_get_attachment_url( $image_ids[0]);
+                $display.='<div id="var-'.$var_id.'"class="variation';
+                if($count>6){$display.=' swiper-slide ';}
+                if($active){$display.= ' active default ';}
+                $display.=' " data-color="'.$color.'" >'.$image.'</div>';  
+                $used_color[]=$color;
+                $results[$var_id]=array("image"=>$variation_obj-> get_image('full'),"value"=>$value,"variation_image"=>$gallery_image_link,"price"=>$price,"attributes"=>$variation['attributes']);
+              }                            
             }
+            
           }
-          $results[$var_id]=array("image"=>$variation_obj-> get_image('full'),"value"=>$value,"variation_image"=>$gallery_image_link,"price"=>$price,"attributes"=>$variation['attributes']);
+          
         }
-        if($count>6) $display.='</div>
+        $slider2='';
+        if($count>6) $slider2.='</div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
 
@@ -218,7 +225,9 @@ function faberge_woocommerce_single_product_variations(){
 
 
 </div>';
+      if($x>0) $display=$slider.$display.$slider2;
       }
+
        echo '<div class="variations-thumbs">'.$display.'</div><script> productVariation='.json_encode($results).';</script>';
   }
 }
