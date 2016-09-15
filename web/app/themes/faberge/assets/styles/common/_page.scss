@@ -26,6 +26,12 @@
   max-width: 930px;
 }
 
+.home .page-wrapper{
+   @include media-query(palm) {
+    padding:0;
+   }
+
+}
 main > .woocommerce{
   padding:1rem 2%;
 }
