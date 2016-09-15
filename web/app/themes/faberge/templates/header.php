@@ -14,7 +14,8 @@
 	    $search .= '<i class="icon-search sb-icon-search fa-search"></i>';
 	    $search .= '</form>';
 	    $search .= '</div>';
-	    echo $search;
+	    do_action( 'myplugin_after_form_settings' );
+      echo do_shortcode(' [wpmenucart-button]' );
       ?>
     </nav>
   </div>
