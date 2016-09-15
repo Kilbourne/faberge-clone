@@ -61,10 +61,63 @@ do_action( 'woocommerce_before_cart' ); ?>
 							), $cart_item_key );
 						?>
 					</td>
+<?php 	
+		   $item_data = array();
 
+      // Variation data
+      if ( ! empty( $cart_item['data']->variation_id ) && is_array( $cart_item['variation'] ) ) {
+
+        foreach ( $cart_item['variation'] as $name => $value ) {
+
+          if ( '' === $value )
+            continue;
+
+          $taxonomy = wc_attribute_taxonomy_name( str_replace( 'attribute_pa_', '', urldecode( $name ) ) );
+
+          // If this is a term slug, get the term's nice name
+          if ( taxonomy_exists( $taxonomy ) ) {
+            $term = get_term_by( 'slug', $value, $taxonomy );
+            if ( ! is_wp_error( $term ) && $term && $term->name ) {
+              $value = $term->name;
+            }
+            $label = wc_attribute_label( $taxonomy );
+
+          // If this is a custom option slug, get the options name
+          } else {
+            $value              = apply_filters( 'woocommerce_variation_option_name', $value );
+            $product_attributes = $cart_item['data']->get_attributes();
+            if ( isset( $product_attributes[ str_replace( 'attribute_', '', $name ) ] ) ) {
+              $label = wc_attribute_label( $product_attributes[ str_replace( 'attribute_', '', $name ) ]['name'] );
+            } else {
+              $label = $name;
+            }
+          }
+
+          $item_data[] = array(
+            'key'   => $label,
+            'value' => $value
+          );
+        }
+      }
+
+      // Filter item data to allow 3rd parties to add more to the array
+      $item_data = apply_filters( 'woocommerce_get_item_data', $item_data, $cart_item );      
+      
+      if ( sizeof( $item_data ) > 0 ) {
+        $variation_id=$cart_item["variation_id"];
+        $variation = wc_get_product($variation_id);
+        	 
+$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $variation->get_image(), $cart_item, $cart_item_key );
+$title=$variation->get_sku();
+        
+      }else{
+$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+$title=$_product->get_title();
+      }
+ ?>
 					<td class="product-thumbnail">
 						<?php
-							$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+							
 
 							if ( ! $_product->is_visible() ) {
 								echo $thumbnail;
@@ -77,13 +130,37 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<td class="product-name" data-title="<?php _e( 'Product', 'woocommerce' ); ?>">
 						<?php
 							if ( ! $_product->is_visible() ) {
-								echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
+								echo apply_filters( 'woocommerce_cart_item_name', $title, $cart_item, $cart_item_key ) . '&nbsp;';
 							} else {
-								echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $_product->get_permalink( $cart_item ) ), $_product->get_title() ), $cart_item, $cart_item_key );
+								echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $_product->get_permalink( $cart_item ) ), $title ), $cart_item, $cart_item_key );
 							}
+							
 
 							// Meta data
-							echo WC()->cart->get_item_data( $cart_item );
+							//echo WC()->cart->get_item_data( $cart_item );
+							if ( sizeof( $item_data ) > 0 ) {
+							      foreach ( $item_data as $key => $data ) {
+        // Set hidden to true to not display meta on cart.
+							      	
+							      	
+        if ( ! empty( $data['hidden'] ) || $data["key"]==="Color" ) {
+          unset( $item_data[ $key ] );
+          continue;
+        }
+        $item_data[ $key ]['key']     = ! empty( $data['key'] ) ? $data['key'] : $data['name'];
+        $item_data[ $key ]['display'] = ! empty( $data['display'] ) ? $data['display'] : $data['value'];
+      }
+
+      // Output flat or in list format
+      
+        
+
+
+          wc_get_template( 'cart/cart-item-data.php', array( 'item_data' => $item_data ) );
+
+
+        
+      }
 
 							// Backorder notification
 							if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
