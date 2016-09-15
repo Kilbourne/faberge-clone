@@ -33,6 +33,7 @@
     "fastclick": "~1.0.6",
     "imagesloaded": "~4.1.0",
     "Flowtype.js": "~1.1.0",
-    "swiper": "~3.3.1"
+    "swiper": "~3.3.1",
+    "jquery-cache": "~1.0.1"
   }
 }
