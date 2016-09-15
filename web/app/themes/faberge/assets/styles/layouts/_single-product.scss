@@ -165,3 +165,12 @@ div.ppt,
     color:#fff
 }
 
+.yith_wccl_value.double{
+    height:13.5px;
+    &:first-child{
+        border-bottom:none;
+    }
+    &:nth-child(2){
+        border-TOP:none;
+    }
+}
