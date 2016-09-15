@@ -187,7 +187,7 @@
                     })(navigator.userAgent || navigator.vendor || window.opera);
                     return check;
                 }
-                var search = new UISearch(document.getElementById('sb-search'));
+                //var search = new UISearch(document.getElementById('sb-search'));
 
             },
             finalize: function() {
