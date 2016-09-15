@@ -86,11 +86,15 @@ use Roots\Sage\Wrapper;
 </g>
       </symbol>
     </svg>
-    <div class="page-wrapper page-wrapper--little">
-    <?php
+        <?php
       do_action('get_header');
       get_template_part('templates/header');
+      if(is_tax('product_cat' ) || is_singular('product')){
+        get_header( 'shop' );
+      }
     ?>
+    <div class="page-wrapper page-wrapper--little">
+
     <div class="wrap container" role="document">
       <div class="content">
         <main class="main">
@@ -103,13 +107,14 @@ use Roots\Sage\Wrapper;
         <?php endif; ?>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
-    <?php
+
+    </div>
+        <?php
       do_action('get_footer');
       get_template_part('templates/footer');
       echo do_shortcode('[responsive_menu_pro_menu] ' ); 
       
     ?>
-    </div>
     <?php wp_footer(); ?>
   </body>
 </html>
