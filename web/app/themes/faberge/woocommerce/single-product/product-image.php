@@ -58,7 +58,9 @@ global $post, $woocommerce, $product;
 		}
 	?>
 
-	<?php //do_action( 'woocommerce_product_thumbnails' );
-	faberge_woocommerce_single_product_variations();?>
+	<?php faberge_woocommerce_single_product_variations();
+	do_action( 'woocommerce_product_thumbnails' );	
+	
+	?>
 
 </div>

@@ -20,10 +20,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $post, $product, $woocommerce;
-
+	
 $attachment_ids = $product->get_gallery_attachment_ids();
 
-if ( $attachment_ids ) {
+foreach( $attachment_ids as $key => $attachment_id ) 
+{
+	$filename_only = basename( get_attached_file( $attachment_id ) );
+echo var_dump($filename_only);
+  //if(strpos($filename_only, '_zoom')) unset($attachment_ids[$key]);
+}
+
+if (count($attachment_ids) ) {
 	$loop 		= 0;
 	$columns 	= apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
 	?>
@@ -43,7 +50,9 @@ if ( $attachment_ids ) {
 
 			if ( ! $image_link )
 				continue;
+						 $pathinfo=pathinfo(parse_url($image_link, PHP_URL_PATH));
 
+					//$image_link=$pathinfo['dirname'].'/'.$pathinfo['filename'].'_zoom'.'.'.$pathinfo['extension'];
 			$image_title 	= esc_attr( get_the_title( $attachment_id ) );
 			$image_caption 	= esc_attr( get_post_field( 'post_excerpt', $attachment_id ) );
 
