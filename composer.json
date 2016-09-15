@@ -56,7 +56,8 @@
     "wpackagist-plugin/image-widget": "4.2.2",
     "wpackagist-plugin/no-category-base-wpml": "1.2",
     "wpackagist-plugin/transients-manager": "1.7.2",    
-    "wpackagist-plugin/store-locator-le": "4.4.36"
+    "wpackagist-plugin/store-locator-le": "4.4.36",
+    "wpackagist-plugin/flat-rate-per-countryregion-for-woocommerce": "2.4.5.2"
   },  
   "require-dev": {
     "wpackagist-plugin/query-monitor": ">=2.8.1",
