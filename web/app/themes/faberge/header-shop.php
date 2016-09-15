@@ -25,6 +25,8 @@ if(is_product_category() || is_product()){
   	$terms = get_the_terms( $post->ID, 'product_cat' );
 
   	foreach ($terms as $term) {
+      $cat_id=$term->term_id;
+      $active=$term->term_id;
   		$parent=$term->parent;      
       	if($parent === 0){
           $link=get_term_link($term);          
