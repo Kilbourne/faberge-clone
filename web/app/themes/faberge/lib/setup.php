@@ -16,7 +16,7 @@ function setup() {
   add_theme_support('soil-disable-trackbacks');
   add_theme_support('soil-disable-asset-versioning');
   //add_theme_support('soil-jquery-cdn');
-  add_theme_support('soil-relative-urls');
+  //add_theme_support('soil-relative-urls');
 
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations
@@ -105,10 +105,10 @@ function assets() {
   }
  if( !is_admin()){
     wp_deregister_script('jquery' );
- 
+
   wp_enqueue_script('jquery',  Assets\asset_path('scripts/jquery.js'), array(),null, false);
 
-  
+
 
   }
 }
@@ -119,7 +119,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\wpse8170_enqueue_my_scripts
 // add_action( 'init', 'wpse8170_enqueue_my_scripts', 0 );
 
 function wpse8170_enqueue_my_scripts() {
-  wp_enqueue_script('sage-js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);  
+  wp_enqueue_script('sage-js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
       wp_localize_script( 'sage-js', 'faberge', array(
     'ajax_url' => admin_url( 'admin-ajax.php' )
   ));

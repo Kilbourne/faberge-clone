@@ -1,59 +1,6 @@
 {
   "customizer.js": "customizer-2d71a5cf56.js",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "jquery.js": "jquery-599d728eab.js",
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "main.css": "main-67b72ab5dc.css",
-=======
-  "main.css": "main-9629d9ce07.css",
->>>>>>> fafa123... dssd
-=======
-  "main.css": "main-39ddaa9626.css",
-<<<<<<< HEAD
->>>>>>> 605c150... img history
-  "main.js": "main-45bb76470d.js"
-=======
-  "jquery.js": "jquery-7decc060e1.js",
-<<<<<<< HEAD
-  "main.css": "main-bb5821de9a.css",
-  "main.js": "main-4f45bfc22b.js"
->>>>>>> 9902534... homepage wide last row
-=======
-  "jquery.js": "jquery-7decc060e1.js",
-  "main.css": "main-4d8f090bf7.css",
-  "main.js": "main-4f45bfc22b.js"
->>>>>>> 660661d... fd
-=======
-  "jquery.js": "jquery-599d728eab.js",
-  "main.css": "main-cd21324c6b.css",
-  "main.js": "main-45bb76470d.js"
->>>>>>> de4a673... safari bug
-=======
-  "main.js": "main-613071d501.js"
->>>>>>> 78a0087... update analycts part two
-=======
-  "jquery.js": "jquery-7decc060e1.js",
-  "main.css": "main-d3c724b1e4.css",
-  "main.js": "main-95efc0eccc.js"
->>>>>>> a06ab31... ajax analytics
-=======
-  "jquery.js": "jquery-599d728eab.js",
-  "main.css": "main-e65b63f73f.css",
-  "main.js": "main-613071d501.js"
->>>>>>> 68a1b09... aaa
-=======
-  "main.css": "main-3202726d24.css",
-  "main.js": "main-55245d9409.js"
->>>>>>> 42f8afb... disable dbclick on variation image
-=======
   "jquery.js": "jquery-599d728eab.js",
   "main.css": "main-4e36f1ed4b.css",
   "main.js": "main-a62c7837d4.js"
->>>>>>> c954842... Store Locator & News
 }

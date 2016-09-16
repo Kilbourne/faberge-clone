@@ -27,10 +27,6 @@ global $post, $woocommerce, $product;
 	<?php
 
 		if ( has_post_thumbnail() ) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 31be2e1... template
 
 			$image_title 	= esc_attr( get_the_title( get_post_thumbnail_id() ) );
 			$image_caption 	= get_post( get_post_thumbnail_id() )->post_excerpt;
@@ -43,41 +39,19 @@ global $post, $woocommerce, $product;
 			$gallery_ids=$product->get_gallery_attachment_ids();
 			$attachment_count = count( $gallery_ids );
 
-<<<<<<< HEAD
-			if ( $attachment_count > 0 ) {
-
-				$gallery = '[product-gallery]';
-					 $pathinfo=pathinfo(parse_url($image_link, PHP_URL_PATH));
-
-					$image_link=$pathinfo['dirname'].'/'.$pathinfo['filename'].'_zoom'.'.'.$pathinfo['extension'];
-=======
 $pathinfo=pathinfo(parse_url($image_link, PHP_URL_PATH));
 $image_link=$pathinfo['dirname'].'/'.$pathinfo['filename'].'_zoom'.'.'.$pathinfo['extension'];
 
 			if ( $attachment_count > 0 ) {
 
 				$gallery = '[product-gallery]';
->>>>>>> 31be2e1... template
 
 			} else {
 				$gallery = '';
 			}			
 			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_caption, $image ), $post->ID );
 
-<<<<<<< HEAD
-=======
-			$attachment_count = count( $product->get_gallery_attachment_ids() );
-			$gallery          = $attachment_count > 0 ? '[product-gallery]' : '';
-			$props            = wc_get_product_attachment_props( get_post_thumbnail_id(), $post );
-			$image            = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
-				'title'	 => $props['title'],
-				'alt'    => $props['alt'],
-			) );
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $props['url'], $props['caption'], $image ), $post->ID );
->>>>>>> 49fa118... original
-=======
 
->>>>>>> 31be2e1... template
 		} else {
 
 			$image = apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
@@ -85,15 +59,8 @@ $image_link=$pathinfo['dirname'].'/'.$pathinfo['filename'].'_zoom'.'.'.$pathinfo
 
 
 		}
-<<<<<<< HEAD
-<<<<<<< HEAD
-	?>
-=======
->>>>>>> 49fa118... original
-=======
 		
 	?>
->>>>>>> 31be2e1... template
 
 	<?php faberge_woocommerce_single_product_variations();
 	do_action( 'woocommerce_product_thumbnails' );	

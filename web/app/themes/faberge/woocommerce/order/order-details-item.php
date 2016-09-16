@@ -26,18 +26,6 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 <tr class="<?php echo esc_attr( apply_filters( 'woocommerce_order_item_class', 'order_item', $item, $order ) ); ?>">
 	<td class="product-name">
 		<?php
-<<<<<<< HEAD
-<<<<<<< HEAD
-			$is_visible = $product && $product->is_visible();
-
-			echo apply_filters( 'woocommerce_order_item_name', $is_visible ? sprintf( '<a href="%s">%s</a>', get_permalink( $item['product_id'] ), $item['name'] ) : $item['name'], $item, $is_visible );
-=======
-			$is_visible        = $product && $product->is_visible();
-			$product_permalink = apply_filters( 'woocommerce_order_item_permalink', $is_visible ? $product->get_permalink( $item ) : '', $item, $order );
-
-			echo apply_filters( 'woocommerce_order_item_name', $product_permalink ? sprintf( '<a href="%s">%s</a>', $product_permalink, $item['name'] ) : $item['name'], $item, $is_visible );
->>>>>>> 49fa118... original
-=======
 			$is_visible = $product && $product->is_visible();
 			if(isset($item["item_meta"]['_variation_id'])){
 			$variation_id=$item ["item_meta"]['_variation_id'][0];
@@ -58,7 +46,6 @@ $title=$variation->get_title();
 		$title=isset($title)?($is_visible ? sprintf( '<a href="%s">%s</a>', get_permalink( $item['product_id'] ), $title ) : $title):(apply_filters( 'woocommerce_order_item_name', $is_visible ? sprintf( '<a href="%s">%s</a>', get_permalink( $item['product_id'] ), $item['name'] ) : $item['name'], $item, $is_visible ));
 		$thumbnail=isset($thumbnail)?$thumbnail:'';
 			echo '<div class="order-item-thumb-wrapper">'.$thumbnail.'</div>'.$title;
->>>>>>> c81bb0e... lang template
 			echo apply_filters( 'woocommerce_order_item_quantity_html', ' <strong class="product-quantity">' . sprintf( '&times; %s', $item['qty'] ) . '</strong>', $item );
 
 			do_action( 'woocommerce_order_item_meta_start', $item_id, $item, $order );

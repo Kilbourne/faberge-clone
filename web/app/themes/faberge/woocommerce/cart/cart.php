@@ -43,20 +43,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 		<?php
 		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-			$_product     = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
-			$product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
-=======
-			$_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
-			$product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
->>>>>>> 49fa118... original
-
-=======
 			$_product     = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
 			$product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
 			
->>>>>>> 31be2e1... template
 			if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 				?>
 				<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
@@ -145,55 +134,7 @@ $title=$_product->get_title();
 								printf( '<a href="%s">%s</a>', esc_url( $_product->get_permalink( $cart_item ) ), $thumbnail );
 							}
 						?>
-<<<<<<< HEAD
-<<<<<<< HEAD
 					</div>
-
-					</td><td class="product-name" data-title="<?php _e( 'Product', 'woocommerce' ); ?>">
-<div class="cart-details-wrapper">
-					<?php if ( ! $_product->is_visible() ) : ?>
-	
-		 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
-		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
-
-        $single_cat = array_shift( $product_cats ); ?>
-
-        <span class="minicart-category"><?php echo $single_cat->name; ?></span>
-
-<?php }
-		 ?> 
-	<span class="minicart-name">
-		<?php echo  $product_name ; ?>	
-	</span> 
-	
-<?php else : ?>
-			 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
-		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
-
-        $single_cat = array_shift( $product_cats ); ?>
-
-        
-
-<?php }     if ( ! empty( $cart_item['data']->variation_id ) && is_array( $cart_item['variation'] ) ) {
-
-        $product_name  = apply_filters( 'woocommerce_cart_item_name', $_product->get_sku(), $cart_item, $cart_item_key );
-
-      }else{
-      	$product_name  = apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key );
-      }
-		 ?> 
-	
-	<a class="minicart-name-link"href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
-		<span  class="minicart-category"><?php echo $single_cat->name; ?></span><span class="minicart-name"><?php echo $product_name ; ?></span> 
-	</a>
-
-	
-=======
-					</td>
->>>>>>> 49fa118... original
-=======
-					</div>
->>>>>>> 31be2e1... template
 
 					</td><td class="product-name" data-title="<?php _e( 'Product', 'woocommerce' ); ?>">
 <div class="cart-details-wrapper">
@@ -239,10 +180,6 @@ $title=$_product->get_title();
 							
 
 							// Meta data
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 31be2e1... template
 							//echo WC()->cart->get_item_data( $cart_item );
 							if ( sizeof( $item_data ) > 0 ) {
 							      foreach ( $item_data as $key => $data ) {
@@ -257,11 +194,6 @@ $title=$_product->get_title();
         $item_data[ $key ]['display'] = ! empty( $data['display'] ) ? $data['display'] : $data['value'];
  
         if($data["key"]==="Color"){
-<<<<<<< HEAD
- 
-    
-      $item_data[ $key ]['display']='<div class="select_box_colorpicker select_box attribute_pa_color"><div  class="select_option_colorpicker select_option"><span style="background-color:'.$item_data[ $key ]["value"].' ;" class="yith_wccl_value"></span></div></div>';
-=======
     if(is_array($item_data[ $key ]["value"])){
                              $item_data[ $key ]['display']='<div class="select_box_colorpicker select_box attribute_pa_color"><div  class="select_option_colorpicker select_option"><span style="background-color:'.$item_data[ $key ]["value"][0]['colore'].' ;" class="yith_wccl_value double"></span><span style="background-color:'.$item_data[ $key ]["value"][1]['colore'].' ;" class="yith_wccl_value double"></span></div></div>';
                           
@@ -269,7 +201,6 @@ $title=$_product->get_title();
                           $item_data[ $key ]['display']='<div class="select_box_colorpicker select_box attribute_pa_color"><div  class="select_option_colorpicker select_option"><span style="background-color:'.$item_data[ $key ]["value"].' ;" class="yith_wccl_value"></span></div></div>';
                         }
 
->>>>>>> 31be2e1... template
         }
       }
 
@@ -283,12 +214,6 @@ $title=$_product->get_title();
 
         
       }
-<<<<<<< HEAD
-=======
-							echo WC()->cart->get_item_data( $cart_item );
->>>>>>> 49fa118... original
-=======
->>>>>>> 31be2e1... template
 
 							// Backorder notification
 							if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
@@ -316,19 +241,6 @@ $title=$_product->get_title();
 							echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
 						?>
 					</td>
-<<<<<<< HEAD
-<<<<<<< HEAD
-					<td class="product-price not-empty" data-title="<?php _e( 'Price', 'woocommerce' ); ?>">
-						<?php
-							echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
-						?>
-					</td>
-					<td class="product-subtotal not-empty" data-title="<?php _e( 'Total', 'woocommerce' ); ?>">
-=======
-
-					<td class="product-subtotal" data-title="<?php _e( 'Total', 'woocommerce' ); ?>">
->>>>>>> 49fa118... original
-=======
 					<td class="product-price not-empty" data-title="<?php _e( 'Price', 'woocommerce' ); ?>">
 						<?php
 						//if(isset($cart_item["variation_id"])){
@@ -343,7 +255,6 @@ $title=$_product->get_title();
 						?>
 					</td>
 					<td class="product-subtotal not-empty" data-title="<?php _e( 'Total', 'woocommerce' ); ?>">
->>>>>>> 31be2e1... template
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 						?>

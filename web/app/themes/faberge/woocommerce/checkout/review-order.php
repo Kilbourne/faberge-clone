@@ -36,12 +36,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_checkout_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 					?>
 					<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-<<<<<<< HEAD
-<<<<<<< HEAD
-						<td class="product-name"><?php 	 
-$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-$title=$_product->get_title();
-=======
 						<td class="product-name"><?php 	 
 $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 
@@ -54,7 +48,6 @@ if ( ! empty( $cart_item['data']->variation_id ) && is_array( $cart_item['variat
         
         $title  = $sku;
 }
->>>>>>> 31be2e1... template
        ?>
 							<div class="cart-thumbnail-wrapper">
 							<?php
@@ -80,13 +73,6 @@ if ( ! empty( $cart_item['data']->variation_id ) && is_array( $cart_item['variat
 	<span class="minicart-name">
 		<?php echo  $title ; ?>	
 	</span> 
-<<<<<<< HEAD
-=======
-						<td class="product-name">
-							<?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;'; ?>
->>>>>>> 49fa118... original
-=======
->>>>>>> 31be2e1... template
 							<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?>
 							<?php echo WC()->cart->get_item_data( $cart_item ); ?>
 							</div>

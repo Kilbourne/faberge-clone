@@ -61,15 +61,16 @@ justify-content: space-between;
 max-width: 930px;
 
 margin: 0 auto;
+      @include media-query(palm)
+  {
+    flex-wrap:wrap;
+  }
+
   }
     background-color: rgb(223, 223, 223);
     font-size: 0.7rem;
     padding: 0.5rem 0.33rem;
     font-weight: 700;
-      @include media-query(palm)
-  {
-    flex-wrap:wrap;
-  }
     .right{
       >span{
         &:first-child{

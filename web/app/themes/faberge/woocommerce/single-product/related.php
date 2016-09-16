@@ -32,24 +32,10 @@ $args = apply_filters( 'woocommerce_related_products_args', array(
 	'post_type'            => 'product',
 	'ignore_sticky_posts'  => 1,
 	'no_found_rows'        => 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-	'posts_per_page'       => -1,
-	'orderby'              => 'ID',
-	'post__in'             => array_merge(array( $product->id ), $related)
-	//,'post__not_in'         => array( $product->id )
-=======
-	'posts_per_page'       => $posts_per_page,
-	'orderby'              => $orderby,
-	'post__in'             => $related,
-	'post__not_in'         => array( $product->id )
->>>>>>> 49fa118... original
-=======
 	'posts_per_page'       => -1,
 	//'orderby'              => 'ID',
 	'post__in'             => array_merge(array( $product->id ), $related)
 	//,'post__not_in'         => array( $product->id )
->>>>>>> c81bb0e... lang template
 ) );
 
 

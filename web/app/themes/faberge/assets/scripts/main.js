@@ -476,12 +476,6 @@ gaTrack(e.currentTarget.href,title);
     }
 
     function Menu() {
-        $('#responsive_menu_pro_menu .nolink>a').off('click').click(function(e) { e.preventDefault(); })
-        $('#responsive_menu_pro_additional_content').click(closeRM);
-        $('.wpmenucart-contents').click(function(e) { e.preventDefault();
-            $('.cart-tab').addClass('inview'); });
-        $(document).click(function(e) {
-            if (e.which != 2 && !$(e.target).closest('.cart-tab, .wpmenucart-shortcode').length) { closeCart() } });
     }
 
     function popstateCallback(event) {
@@ -730,6 +724,7 @@ gaTrack(e.currentTarget.href,title);
             $form = $('.variations_form');
             $form.find('.variations select').change();
 
+
             bigImage[0].href = zoom;
             bigImage.imagesLoaded().done(function() {
                 loading.hide();
@@ -803,21 +798,13 @@ gaTrack(e.currentTarget.href,title);
         // All pages
         'common': {
             init: function() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                Menu();
-=======
-                       $('#responsive_menu_pro_menu .nolink>a').off('click').click(function(e) { e.preventDefault(); })
-=======
         $('#responsive_menu_pro_menu .nolink>a').off('click').click(function(e) { e.preventDefault(); })
->>>>>>> faada79... fggf
         $('#responsive_menu_pro_additional_content').click(closeRM);
         jQuery(document.body).on('click','.wpmenucart-contents',function(e) { e.preventDefault();
             $('.cart-tab').addClass('inview'); });
         $(document).click(function(e) {
             if (e.which != 2 && !$(e.target).closest('.cart-tab, .wpmenucart-shortcode').length) { closeCart() } });
 
->>>>>>> 8cf8c89... ccc
                 Search();
                 $('body').on('click', '.quantity .minus,.quantity .plus', quantityController);
 

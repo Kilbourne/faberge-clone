@@ -370,7 +370,16 @@ table.shop_table_responsive tr td.product-thumb{
     }
     }
 }
-
+#customer_login{
+	>h2{
+		    text-align: center;
+    font-size: 1.25rem;
+	}
+	form.login{
+		max-width: 600px;
+    margin: 1em auto 0;
+	}
+}
 /* END Make the cart table responsive */
 
 /* END Make the WooCommerce Cart Table Responsive  for Mobile */

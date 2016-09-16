@@ -4,15 +4,10 @@
         background-image:url('../images/bg.jpg');
 
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
     >.panel-grid:last-child{
         margin-bottom:0 !important;
         border-top: 2px solid rgb(134, 134, 134);
     }
->>>>>>> b92798b... eee
     .homen9{
 
         background-image: url(../images/logo-9.svg);
@@ -26,7 +21,6 @@
 
     }
     }
->>>>>>> 8cf8c89... ccc
 }
 .panel-grid{
     margin-bottom: 3px !important;
@@ -114,11 +108,7 @@
         color: rgb(255, 255, 255);
         .widget-title {
             font-size: 3.8em;
-<<<<<<< HEAD
-            font-family: "bebas_neueregular";
-=======
             font-family: "bebasneue-webfontregular";
->>>>>>> 4894c98... ffff
             margin-bottom: 0;
             font-weight: 400;
         }
@@ -139,11 +129,7 @@
         &.history,&.locator{
             img{
                 width:auto;
-<<<<<<< HEAD
-                height:100%;
-=======
                 height:auto;
->>>>>>> de4a673... safari bug
             }
         }
     }
@@ -189,6 +175,7 @@
                             >.panel-grid-cell{
                               >.widget_sp_image{
                                 overflow: hidden;
+                                display:flex;
                               }
                                 margin-bottom: 0;
                                 &:last-child{
@@ -297,31 +284,16 @@ body.home .wrap.container>.content {
     //background-image: url('../images/bg.jpg');
     //background-color: #000;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.panel-grid-cell .locator.panel-widget-style{
-
-=======
 .panel-grid-cell .panel-widget-style{
 &.history,&.locator{
-<<<<<<< HEAD
->>>>>>> faada79... fggf
-  .textwidget a{
-=======
   .textwidget{
 padding: 0px 10% 0px 0px;
 font-size: 1rem;
     a{
->>>>>>> 9902534... homepage wide last row
 
     padding: 4px 0;
     font-size: 1em;
     background-color: transparent;
 }}
 }
-<<<<<<< HEAD
->>>>>>> 8cf8c89... ccc
-=======
 }
->>>>>>> faada79... fggf

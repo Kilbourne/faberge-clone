@@ -21,19 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 $cat=filter_woocommerce_get_related_term_terms(wp_get_post_terms( $product->id, 'product_cat' ))[0];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<h1 itemprop="name" class="category_title entry-title"><?php echo $cat->name; ?></h1>
-<h2 itemprop="name" class="product_title entry-title"><span ><?php _e('Cod. ','faberge'); ?>	</span><span class="codice"><?php the_title(); ?></span></h2>
-=======
-?>
-<h1 itemprop="name" class="product_title entry-title"><?php the_title(); ?></h1>
->>>>>>> 49fa118... original
-=======
 $original_cat_id =  apply_filters( 'wpml_object_id', $cat->term_id, 'product_cat', false,'en');
 $final_term=get_term( $original_cat_id, 'product_cat');
 ?>
 
 <h1 itemprop="name" class="category_title entry-title <?php if($final_term === 'N°9') echo 'tf9'; ?>"><?php echo $cat->name; ?></h1>
 <h2 itemprop="name" class="product_title entry-title"><span ><?php _e('Cod. ','faberge'); ?>	</span><span class="codice"><?php the_title(); ?></span></h2>
->>>>>>> c81bb0e... lang template

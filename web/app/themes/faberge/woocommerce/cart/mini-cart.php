@@ -41,21 +41,13 @@ $itemString=$totalnumber>1?'items':'item';
 				$product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
 
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 31be2e1... template
 
       $item_data = array();
 
       // Variation data
       if ( ! empty( $cart_item['data']->variation_id ) && is_array( $cart_item['variation'] ) ) {
-<<<<<<< HEAD
-
-=======
       	
       	
->>>>>>> 31be2e1... template
         foreach ( $cart_item['variation'] as $name => $value ) {
 
           if ( '' === $value )
@@ -69,11 +61,7 @@ $itemString=$totalnumber>1?'items':'item';
             if ( ! is_wp_error( $term ) && $term && $term->name ) {
               $value = $term->name;
             }
-<<<<<<< HEAD
-            $label = wc_attribute_label( $taxonomy );
-=======
             $label = wc_attribute_label( $taxonomy ); 
->>>>>>> 31be2e1... template
 
           // If this is a custom option slug, get the options name
           } else {
@@ -91,16 +79,12 @@ $itemString=$totalnumber>1?'items':'item';
             'value' => $value
           );
         }
-<<<<<<< HEAD
-        $product_name  = apply_filters( 'woocommerce_cart_item_name', $_product->get_sku(), $cart_item, $cart_item_key );
-=======
                 $variation_id=$cart_item["variation_id"];
                 
         $variation = wc_get_product($variation_id);
         $sku=$variation->get_sku();
         
         $product_name  = $sku;
->>>>>>> 31be2e1... template
 
       }else{
       	$product_name  = apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key );
@@ -123,15 +107,6 @@ $itemString=$totalnumber>1?'items':'item';
 					
 					$thumbnail     = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 					$product_price = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
-<<<<<<< HEAD
-=======
-					$product_name      = apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key );
-					$thumbnail         = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-					$product_price     = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
-					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
->>>>>>> 49fa118... original
-=======
->>>>>>> 31be2e1... template
 					?>
 					<li class="<?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
 					<div class="minicart-imagewrapper">
