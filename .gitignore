@@ -7,12 +7,17 @@ web/app/mu-plugins/*
 !web/app/mu-plugins/login-redirect-hack.php
 !web/app/mu-plugins/register-theme-directory.php
 web/app/upgrade
+web/app/updraft
 #web/app/uploads/*
 !web/app/uploads/.gitkeep
 # WordPress
 web/wp
 web/.htaccess
-.htaccess
+.htaccess*
+.III*
+.dfd*
+old
+staging
 # WP-CLI
 db-sync
 sql-dump-*.sql
