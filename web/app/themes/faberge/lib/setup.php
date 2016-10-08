@@ -113,7 +113,7 @@ function Is_Backend_LOGIN(){
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\deregister_assets', 997);
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\localize_scripts', 999);
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_assets', 998);
-if(!( is_admin() && Is_Backend_LOGIN() )){
+if(!( is_admin() || Is_Backend_LOGIN() )){
 add_filter( 'script_loader_tag', __NAMESPACE__ . '\\js_async_attr', 10 );
 }
 function deregister_assets(){
@@ -243,7 +243,7 @@ wp_localize_script('wpml-browser-redirect', 'wpml_browser_redirect_params', lang
           'i18n_make_a_selection_text'       => esc_attr__( 'Please select some product options before adding this product to your cart.', 'woocommerce' ),
           'i18n_unavailable_text'            => esc_attr__( 'Sorry, this product is unavailable. Please choose a different combination.', 'woocommerce' )
         ) );
-      wc_get_template( 'single-product/add-to-cart/variation.php' );
+      //wc_get_template( 'single-product/add-to-cart/variation.php' );
       wp_localize_script( 'sage_js', 'wc_additional_variation_images_local', array(
       'ajaxurl'              => admin_url( 'admin-ajax.php' ),
       'ajaxImageSwapNonce'   => wp_create_nonce( '_wc_additional_variation_images_nonce' ),
