@@ -33,7 +33,7 @@ color: #616161;
           text-decoration:none;
           //color: #24569B;
           transition:background-color 0.5s ease-in-out;
-   font-family: Georgia,"Antic Didone",serif;
+   font-family: Georgia,'roboto', serif;
 font-weight: 500;
 font-size: 1rem;
 height: 26px;
@@ -56,7 +56,7 @@ font: normal normal normal 14px/1 FontAwesome;
   }
   h5{margin:0;}
   .wpmenucart-icon-shopping-cart-0::before{
-   font-size: 1.5rem; 
+   font-size: 1.5rem;
   }
 }
 .accordionTitleActive,
@@ -124,7 +124,7 @@ font: normal normal normal 14px/1 FontAwesome;
  .accordion h5{
   background: rgb(255, 255, 255) none repeat scroll 0% 0%;
 border-bottom: 1px solid #4A72B0;
-font-family: robotoregular;
+font-family: "roboto";
 text-align: left;
 color: #24569B;
 }

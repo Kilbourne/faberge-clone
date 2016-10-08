@@ -1,6 +1,18 @@
 {
   "dependencies": {
     "main.js": {
+      "vendor": [
+        "../../plugins/responsive-menu/public/js/touch.js"
+        ,"../../plugins/responsive-menu-pro-data/js/responsive-menu-pro-1.js"
+        ,"../../plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js"
+        ,"../../plugins/woocommerce/assets/js/frontend/woocommerce.js"
+        ,"../../plugins/woocommerce/assets/js/frontend/cart-fragments.js"
+        ,"../../plugins/wp-menu-cart-pro/javascript/wpmenucart.js"
+        ,"../../plugins/woocommerce-additional-variation-images/assets/js/frontend.js"
+        ,"../../plugins/woocommerce/assets/js/frontend/add-to-cart.js"
+        ,"../../plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js"
+        ,"../../plugins/woocommerce-ajax-add-to-cart-for-variable-products/js/add-to-cart-variation.js"
+      ],
       "files": [
         "scripts/main.js"
       ],
@@ -8,6 +20,18 @@
     },
 
     "main.css": {
+      "vendor":[
+           "../../plugins/responsive-menu-pro-data/css/responsive-menu-pro-1.css"
+          ,"../../plugins/woocommerce/assets/css/woocommerce.css"
+          ,"../../plugins/woocommerce/assets/css/woocommerce-layout.css"
+          ,"styles/woocommerce-smallscreen.scss"
+          ,"../../plugins/woocommerce-cart-tab/assets/css/style.css"
+          ,"../../plugins/wp-menu-cart-pro/css/wpmenucart-icons-pro.css"
+          ,"../../plugins/wp-menu-cart-pro/css/wpmenucart-main.css"
+          ,"../../plugins/yith-woocommerce-color-label-variations-premium/assets/css/yith-wccl.css"
+          ,"../../plugins/yith-woocommerce-multi-step-checkout-premium/assets/css/frontend.css"
+          ,"../../plugins/yith-woocommerce-multi-step-checkout-premium/assets/css/responsive.css"
+      ],
       "files": [
         "styles/main.scss"
       ],
@@ -19,7 +43,8 @@
       ]
     },
     "jquery.js": {
-      "bower": ["jquery"]
+      "bower": ["jquery"],
+      "vendor":["../../plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.js"]
     }
   },
   "config": {
