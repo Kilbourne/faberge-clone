@@ -54,7 +54,7 @@
                 line-height: 1;
                 font-weight: 400;
             }
-            >h1.tf9{ font-family: "bebas_neueregular"; }
+            >h1.tf9{ font-family: "bebasneue-webfontregular"; }
             >h2 {
                 font-size: 0.75rem;
                 margin: 0px;
@@ -142,7 +142,7 @@
                         overflow: hidden;
                         //flex-wrap: wrap;
                         //display: flex;
-                        .select_option { margin-bottom: 3px; 
+                        .select_option { margin-bottom: 3px;
                             &.hover,&.selected{
                                 border-width: 2px;
                             }
@@ -180,7 +180,7 @@
 
             }
             .variation-form-title{
-                font-family: bebas_neueregular;
+                font-family: "bebasneue-webfontregular";
                 color: rgb(160, 160, 160);
                 margin: 0px 0px 1rem;
                 font-size: 1.5rem;
