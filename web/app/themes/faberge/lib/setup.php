@@ -97,29 +97,125 @@ false
 /**
  * Theme assets
  */
-function assets() {
-  wp_enqueue_style('sage_css', Assets\asset_path('styles/main.css'), false, null);
+//
+//    add_action( 'wp_head',  __NAMESPACE__ . '\\deregister_assets', 7 );
+//    add_action( 'wp_footer', __NAMESPACE__ . '\\deregister_assets' );
+//
+//
+//add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\wpse8170_enqueue_my_scripts', 0 );
+// or if you enqueue your scripts on init action
+// add_action( 'init', 'wpse8170_enqueue_my_scripts', 0 );
+function Is_Backend_LOGIN(){
+    $ABSPATH_MY = str_replace(array('\\','/'), DIRECTORY_SEPARATOR, ABSPATH);
+    return (in_array($ABSPATH_MY.'wp-login.php', get_included_files()) || in_array($ABSPATH_MY.'wp-register.php', get_included_files()) );
+}
+//add_action( 'wp_print_scripts', __NAMESPACE__ . '\\deregister_printed_assets',100 );
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\deregister_assets', 997);
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\localize_scripts', 999);
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_assets', 998);
+if(!( is_admin() && Is_Backend_LOGIN() )){
+add_filter( 'script_loader_tag', __NAMESPACE__ . '\\js_async_attr', 10 );
+}
+function deregister_assets(){
+  wp_deregister_script('jquery' );
 
+    $assets=["scripts"=>['touch','responsive-menu-pro','woocommerce','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','wc-add-to-cart-variation','add-to-cart-variation_ajax'],"styles"=>['responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive']];
+
+    if ( !empty( $assets['scripts'] ) ) {
+      foreach( $assets['scripts'] as $handle ) {
+        wp_deregister_script( $handle );
+      }
+    }
+
+    if ( !empty( $assets['styles'] ) ) {
+      foreach( $assets['styles'] as $handle ) {
+        wp_deregister_style( $handle );
+      }
+    }
+
+
+}
+
+function enqueue_assets(){
+  wp_enqueue_style('sage_css', Assets\asset_path('styles/main.css'), false, null);
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
- if( !is_admin()){
-    wp_deregister_script('jquery' );
+wp_enqueue_script('jquery',  Assets\asset_path('scripts/jquery.js'), array(),null, true);
 
-  wp_enqueue_script('jquery',  Assets\asset_path('scripts/jquery.js'), array(),null, false);
+  wp_enqueue_script('wpml-browser-redirect',ICL_PLUGIN_URL . '/res/js/browser-redirect.js',['jquery'],ICL_SITEPRESS_VERSION,true);
 
-
-
-  }
-}
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
-
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\wpse8170_enqueue_my_scripts', 0 );
-// or if you enqueue your scripts on init action
-// add_action( 'init', 'wpse8170_enqueue_my_scripts', 0 );
-
-function wpse8170_enqueue_my_scripts() {
   wp_enqueue_script('sage_js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+
+}
+function js_async_attr($tag){
+
+    # Do not add async to these scripts
+    $scripts_to_exclude = array('jquery');
+    $scripts_to_include = array();
+    foreach($scripts_to_exclude as $exclude_script){
+          global $wp_scripts;
+          $scripts=get_object_vars ($wp_scripts);
+        if( $scripts['registered'][$exclude_script] && $scripts['registered'][$exclude_script]->src &&
+          true == strpos($tag, basename($scripts['registered'][$exclude_script]->src) ) )
+        return $tag;
+
+    }
+//foreach($scripts_to_include as $include_script){
+       // if(true != strpos($tag, $include_script ) )
+        return str_replace( ' src', ' async="async" src', $tag );
+  //  }
+    //return $tag;
+    # Add async to all remaining scripts
+
+
+}
+
+
+
+
+function languages_param() {
+
+        $args['skip_missing'] = intval( apply_filters( 'wpml_setting', false, 'automatic_redirect' ) == 1 );
+
+        // Build multi language urls array
+        $languages      = apply_filters( 'wpml_active_languages', NULL, $args);
+        $language_urls  = array();
+        foreach($languages as $language) {
+      if(isset($language['default_locale']) && $language['default_locale']) {
+        $language_urls[$language['default_locale']] = $language['url'];
+        $language_parts = explode('_', $language['default_locale']);
+        if(count($language_parts)>1) {
+          foreach($language_parts as $language_part) {
+            if(!isset($language_urls[$language_part])) {
+              $language_urls[$language_part] = $language['url'];
+            }
+          }
+        }
+      }
+      $language_urls[$language['language_code']] = $language['url'];
+        }
+        // Cookie parameters
+        $http_host = $_SERVER['HTTP_HOST'] == 'localhost' ? '' : $_SERVER['HTTP_HOST'];
+        $cookie = array(
+            'name' => '_icl_visitor_lang_js',
+            'domain' => (defined('COOKIE_DOMAIN') && COOKIE_DOMAIN? COOKIE_DOMAIN : $http_host),
+            'path' => (defined('COOKIEPATH') && COOKIEPATH ? COOKIEPATH : '/'),
+            'expiration' => apply_filters( 'wpml_setting', false, 'remember_language' ),
+        );
+
+        // Send params to javascript
+        $params = array(
+            'pageLanguage'      => defined('ICL_LANGUAGE_CODE')? ICL_LANGUAGE_CODE : get_bloginfo('language'),
+            'languageUrls'      => $language_urls,
+            'cookie'            => $cookie
+        );
+
+   return $params;
+}
+
+function localize_scripts() {
+wp_localize_script('wpml-browser-redirect', 'wpml_browser_redirect_params', languages_param());
   wp_localize_script( 'sage_js', 'cssTarget', 'style-svg' );
   wp_localize_script( 'sage_js', 'woocommerce_params'
 , array(
@@ -169,86 +265,6 @@ function wpse8170_enqueue_my_scripts() {
 
 
 }
-    add_action( 'wp_head',  __NAMESPACE__ . '\\deregister_assets', 7 );
-    add_action( 'wp_footer', __NAMESPACE__ . '\\deregister_assets' );
-    add_action( 'wp_print_scripts', __NAMESPACE__ . '\\deregister_printed_assets',100 );
-
-    function deregister_assets() {
-
-    $assets=["scripts"=>['touch','responsive-menu-pro','woocommerce','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','wc-add-to-cart-variation','add-to-cart-variation_ajax'],"styles"=>['responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive']];
-
-    if ( !empty( $assets['scripts'] ) ) {
-      foreach( $assets['scripts'] as $handle ) {
-        wp_deregister_script( $handle );
-      }
-    }
-
-    if ( !empty( $assets['styles'] ) ) {
-      foreach( $assets['styles'] as $handle ) {
-        wp_deregister_style( $handle );
-      }
-    }
-  }
- function deregister_printed_assets(){
-    wp_deregister_script( 'wpml-browser-redirect' );
-    wp_register_script('wpml-browser-redirect', ICL_PLUGIN_URL . '/res/js/browser-redirect.js', array('jquery'), ICL_SITEPRESS_VERSION);
-
-        $args['skip_missing'] = intval( apply_filters( 'wpml_setting', false, 'automatic_redirect' ) == 1 );
-
-        // Build multi language urls array
-        $languages      = apply_filters( 'wpml_active_languages', NULL, $args);
-        $language_urls  = array();
-        foreach($languages as $language) {
-      if(isset($language['default_locale']) && $language['default_locale']) {
-        $language_urls[$language['default_locale']] = $language['url'];
-        $language_parts = explode('_', $language['default_locale']);
-        if(count($language_parts)>1) {
-          foreach($language_parts as $language_part) {
-            if(!isset($language_urls[$language_part])) {
-              $language_urls[$language_part] = $language['url'];
-            }
-          }
-        }
-      }
-      $language_urls[$language['language_code']] = $language['url'];
-        }
-        // Cookie parameters
-        $http_host = $_SERVER['HTTP_HOST'] == 'localhost' ? '' : $_SERVER['HTTP_HOST'];
-        $cookie = array(
-            'name' => '_icl_visitor_lang_js',
-            'domain' => (defined('COOKIE_DOMAIN') && COOKIE_DOMAIN? COOKIE_DOMAIN : $http_host),
-            'path' => (defined('COOKIEPATH') && COOKIEPATH ? COOKIEPATH : '/'),
-            'expiration' => apply_filters( 'wpml_setting', false, 'remember_language' ),
-        );
-
-        // Send params to javascript
-        $params = array(
-            'pageLanguage'      => defined('ICL_LANGUAGE_CODE')? ICL_LANGUAGE_CODE : get_bloginfo('language'),
-            'languageUrls'      => $language_urls,
-            'cookie'            => $cookie
-        );
-        wp_localize_script('wpml-browser-redirect', 'wpml_browser_redirect_params', $params);
-        wp_enqueue_script('wpml-browser-redirect');
- }
-function js_async_attr($tag){
-
-    # Do not add async to these scripts
-    $scripts_to_exclude = array('jquery');
-    $scripts_to_include = array();
-    foreach($scripts_to_exclude as $exclude_script){
-          global $wp_scripts;
-          $scripts=get_object_vars ($wp_scripts);
-        if(true == strpos($tag, basename($scripts['registered'][$exclude_script]->src) ) )
-        return $tag;
-
-    }
-//foreach($scripts_to_include as $include_script){
-       // if(true != strpos($tag, $include_script ) )
-        return str_replace( ' src', ' async="async" src', $tag );
-  //  }
-    //return $tag;
-    # Add async to all remaining scripts
 
 
-}
-add_filter( 'script_loader_tag', __NAMESPACE__ . '\\js_async_attr', 10 );
+
