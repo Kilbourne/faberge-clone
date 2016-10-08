@@ -166,6 +166,67 @@ function wpse8170_enqueue_my_scripts() {
         'nonce' => wp_create_nonce('wpmenucart')
       )
     );
-  
+
 
 }
+    add_action( 'wp_head',  __NAMESPACE__ . '\\deregister_assets', 7 );
+    add_action( 'wp_footer', __NAMESPACE__ . '\\deregister_assets' );
+    add_action( 'wp_print_scripts', __NAMESPACE__ . '\\deregister_printed_assets',100 );
+
+    function deregister_assets() {
+
+    $assets=["scripts"=>['touch','responsive-menu-pro','woocommerce','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','wc-add-to-cart-variation','add-to-cart-variation_ajax'],"styles"=>['responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive']];
+
+    if ( !empty( $assets['scripts'] ) ) {
+      foreach( $assets['scripts'] as $handle ) {
+        wp_deregister_script( $handle );
+      }
+    }
+
+    if ( !empty( $assets['styles'] ) ) {
+      foreach( $assets['styles'] as $handle ) {
+        wp_deregister_style( $handle );
+      }
+    }
+  }
+ function deregister_printed_assets(){
+    wp_deregister_script( 'wpml-browser-redirect' );
+    wp_register_script('wpml-browser-redirect', ICL_PLUGIN_URL . '/res/js/browser-redirect.js', array('jquery'), ICL_SITEPRESS_VERSION);
+
+        $args['skip_missing'] = intval( apply_filters( 'wpml_setting', false, 'automatic_redirect' ) == 1 );
+
+        // Build multi language urls array
+        $languages      = apply_filters( 'wpml_active_languages', NULL, $args);
+        $language_urls  = array();
+        foreach($languages as $language) {
+      if(isset($language['default_locale']) && $language['default_locale']) {
+        $language_urls[$language['default_locale']] = $language['url'];
+        $language_parts = explode('_', $language['default_locale']);
+        if(count($language_parts)>1) {
+          foreach($language_parts as $language_part) {
+            if(!isset($language_urls[$language_part])) {
+              $language_urls[$language_part] = $language['url'];
+            }
+          }
+        }
+      }
+      $language_urls[$language['language_code']] = $language['url'];
+        }
+        // Cookie parameters
+        $http_host = $_SERVER['HTTP_HOST'] == 'localhost' ? '' : $_SERVER['HTTP_HOST'];
+        $cookie = array(
+            'name' => '_icl_visitor_lang_js',
+            'domain' => (defined('COOKIE_DOMAIN') && COOKIE_DOMAIN? COOKIE_DOMAIN : $http_host),
+            'path' => (defined('COOKIEPATH') && COOKIEPATH ? COOKIEPATH : '/'),
+            'expiration' => apply_filters( 'wpml_setting', false, 'remember_language' ),
+        );
+
+        // Send params to javascript
+        $params = array(
+            'pageLanguage'      => defined('ICL_LANGUAGE_CODE')? ICL_LANGUAGE_CODE : get_bloginfo('language'),
+            'languageUrls'      => $language_urls,
+            'cookie'            => $cookie
+        );
+        wp_localize_script('wpml-browser-redirect', 'wpml_browser_redirect_params', $params);
+        wp_enqueue_script('wpml-browser-redirect');
+ }
