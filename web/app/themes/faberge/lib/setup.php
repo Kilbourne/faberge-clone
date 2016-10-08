@@ -230,3 +230,25 @@ function wpse8170_enqueue_my_scripts() {
         wp_localize_script('wpml-browser-redirect', 'wpml_browser_redirect_params', $params);
         wp_enqueue_script('wpml-browser-redirect');
  }
+function js_async_attr($tag){
+
+    # Do not add async to these scripts
+    $scripts_to_exclude = array('jquery');
+    $scripts_to_include = array();
+    foreach($scripts_to_exclude as $exclude_script){
+          global $wp_scripts;
+          $scripts=get_object_vars ($wp_scripts);
+        if(true == strpos($tag, basename($scripts['registered'][$exclude_script]->src) ) )
+        return $tag;
+
+    }
+//foreach($scripts_to_include as $include_script){
+       // if(true != strpos($tag, $include_script ) )
+        return str_replace( ' src', ' async="async" src', $tag );
+  //  }
+    //return $tag;
+    # Add async to all remaining scripts
+
+
+}
+add_filter( 'script_loader_tag', __NAMESPACE__ . '\\js_async_attr', 10 );
