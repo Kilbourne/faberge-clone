@@ -3,7 +3,8 @@
 namespace Roots\Sage\Setup;
 
 use Roots\Sage\Assets;
-
+use \RecursiveIteratorIterator;
+use \RecursiveArrayIterator;
 /**
  * Theme setup
  */
@@ -97,174 +98,222 @@ false
 /**
  * Theme assets
  */
-//
-//    add_action( 'wp_head',  __NAMESPACE__ . '\\deregister_assets', 7 );
-//    add_action( 'wp_footer', __NAMESPACE__ . '\\deregister_assets' );
-//
-//
-//add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\wpse8170_enqueue_my_scripts', 0 );
-// or if you enqueue your scripts on init action
-// add_action( 'init', 'wpse8170_enqueue_my_scripts', 0 );
-function Is_Backend_LOGIN(){
-    $ABSPATH_MY = str_replace(array('\\','/'), DIRECTORY_SEPARATOR, ABSPATH);
-    return (in_array($ABSPATH_MY.'wp-login.php', get_included_files()) || in_array($ABSPATH_MY.'wp-register.php', get_included_files()) );
-}
-//add_action( 'wp_print_scripts', __NAMESPACE__ . '\\deregister_printed_assets',100 );
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\deregister_assets', 997);
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\localize_scripts', 999);
+global $not_registered;
+$not_registered=[];
+//add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\asset_bundler_caller', 999);
+//add_action( 'wp_footer', __NAMESPACE__ . '\\asset_bundler_caller', 999);
+add_action( 'wp_print_scripts', __NAMESPACE__ . '\\wp_cookie',999);
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\in_footer', 999);
+add_action( 'wp_print_scripts', __NAMESPACE__ . '\\in_footer', 999);
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_assets', 998);
-if(!( is_admin() || Is_Backend_LOGIN() )){
-add_filter( 'script_loader_tag', __NAMESPACE__ . '\\js_async_attr', 10 );
+add_filter( 'script_loader_src',__NAMESPACE__ . '\\remove_bundled_script', 998,2  );
+add_filter( 'script_loader_tag',__NAMESPACE__ . '\\js_async_attr', 998,3  );
+add_filter( 'style_loader_src',__NAMESPACE__ . '\\remove_bundled_style', 998,2  );
+//add_action( 'wp_footer', __NAMESPACE__ . '\\var_dump_queue', 998);
+function var_dump_queue(){
+  global $wp_scripts;
+  dump_tree([current_filter(),'Queue:',count($wp_scripts->queue),'Todo:',count($wp_scripts->to_do),'Done:',count($wp_scripts->done)]);
+
 }
-function deregister_assets(){
-  wp_deregister_script('jquery' );
+function in_footer(){
+  global $wp_scripts;
+  $bundle=["underscore",'jquery-cookie','wp-util','jquery-blockui','touch','responsive-menu-pro','woocommerce','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','wc-add-to-cart-variation','add-to-cart-variation-ajax','yith_wccl_frontend',"wc-country-select","yith-wcms-step"];
+ foreach ($wp_scripts->queue as $queued_script) {
+  if($wp_scripts->registered[$queued_script]){
+    if(!in_array($queued_script, $bundle)){
 
-    $assets=["scripts"=>['touch','responsive-menu-pro','woocommerce','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','wc-add-to-cart-variation','add-to-cart-variation_ajax'],"styles"=>['responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive']];
+    $wp_scripts->registered[$queued_script]->ver=false;
 
-    if ( !empty( $assets['scripts'] ) ) {
-      foreach( $assets['scripts'] as $handle ) {
-        wp_deregister_script( $handle );
-      }
+     $wp_scripts->add_data( $queued_script, 'group', 1 );
+
+   }else{
+    $wp_scripts->registered[$queued_script]->deps=[];
+   }
+
+  }
+
+
+  }
+
+}
+function js_async_attr($tag,$handle,$src){
+    if(( is_admin() || Is_Backend_LOGIN() )) return;
+    # Do not add async to these scripts
+    $scripts_to_exclude = array('jquery','prettyPhoto',"password-strength-meter","zxcvbn-async","stripe");
+    $scripts_to_include = array();
+    foreach($scripts_to_exclude as $exclude_script){
+
+      if ( $handle === $exclude_script ) return $tag;
     }
+          //foreach($scripts_to_include as $include_script){
+       // if(true != strpos($tag, $include_script ) )
+    return str_replace( ' src', ' async="async" src', $tag );
+          //  }
+    //return $tag;
+    # Add async to all remaining scripts
+}
+function remove_bundled_script($src, $handle){
+   if(( is_admin() || Is_Backend_LOGIN() )) return;
+   $bundle=["underscore",'wp-util',"jquery-blockui",'woocommerce','jquery-cookie','touch','responsive-menu-pro','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','add-to-cart-variation_ajax','yith_wccl_frontend',"wc-country-select","yith-wcms-step"];
+    if(in_array($handle, $bundle)) return '//:0';
+    return $src;
 
-    if ( !empty( $assets['styles'] ) ) {
-      foreach( $assets['styles'] as $handle ) {
-        wp_deregister_style( $handle );
-      }
-    }
+}
 
+function remove_bundled_style($src, $handle){
+    if(( is_admin() || Is_Backend_LOGIN() )) return;
+    $bundle=['responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive'];
+      if(in_array($handle, $bundle)) return '//:0';
+      return $src;
 
 }
 
 function enqueue_assets(){
+
   wp_enqueue_style('sage_css', Assets\asset_path('styles/main.css'), false, null);
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
-wp_enqueue_script('jquery',  Assets\asset_path('scripts/jquery.js'), array(),null, true);
+  wp_deregister_script('wp-embed');
+  wp_deregister_script('jquery');
+  wp_enqueue_script('jquery',  Assets\asset_path('scripts/jquery.js'), array(),null, true);
 
-  wp_enqueue_script('wpml-browser-redirect',ICL_PLUGIN_URL . '/res/js/browser-redirect.js',['jquery'],ICL_SITEPRESS_VERSION,true);
+  //wp_enqueue_script('wpml-browser-redirect',ICL_PLUGIN_URL . '/res/js/browser-redirect.js',['jquery'],ICL_SITEPRESS_VERSION,true);
 
   wp_enqueue_script('sage_js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
-
-}
-function js_async_attr($tag){
-
-    # Do not add async to these scripts
-    $scripts_to_exclude = array('jquery');
-    $scripts_to_include = array();
-    foreach($scripts_to_exclude as $exclude_script){
-          global $wp_scripts;
-          $scripts=get_object_vars ($wp_scripts);
-        if( $scripts['registered'][$exclude_script] && $scripts['registered'][$exclude_script]->src &&
-          true == strpos($tag, basename($scripts['registered'][$exclude_script]->src) ) )
-        return $tag;
-
-    }
-//foreach($scripts_to_include as $include_script){
-       // if(true != strpos($tag, $include_script ) )
-        return str_replace( ' src', ' async="async" src', $tag );
-  //  }
-    //return $tag;
-    # Add async to all remaining scripts
-
-
-}
-
-
-
-
-function languages_param() {
-
-        $args['skip_missing'] = intval( apply_filters( 'wpml_setting', false, 'automatic_redirect' ) == 1 );
-
-        // Build multi language urls array
-        $languages      = apply_filters( 'wpml_active_languages', NULL, $args);
-        $language_urls  = array();
-        foreach($languages as $language) {
-      if(isset($language['default_locale']) && $language['default_locale']) {
-        $language_urls[$language['default_locale']] = $language['url'];
-        $language_parts = explode('_', $language['default_locale']);
-        if(count($language_parts)>1) {
-          foreach($language_parts as $language_part) {
-            if(!isset($language_urls[$language_part])) {
-              $language_urls[$language_part] = $language['url'];
-            }
-          }
-        }
-      }
-      $language_urls[$language['language_code']] = $language['url'];
-        }
-        // Cookie parameters
-        $http_host = $_SERVER['HTTP_HOST'] == 'localhost' ? '' : $_SERVER['HTTP_HOST'];
-        $cookie = array(
-            'name' => '_icl_visitor_lang_js',
-            'domain' => (defined('COOKIE_DOMAIN') && COOKIE_DOMAIN? COOKIE_DOMAIN : $http_host),
-            'path' => (defined('COOKIEPATH') && COOKIEPATH ? COOKIEPATH : '/'),
-            'expiration' => apply_filters( 'wpml_setting', false, 'remember_language' ),
-        );
-
-        // Send params to javascript
-        $params = array(
-            'pageLanguage'      => defined('ICL_LANGUAGE_CODE')? ICL_LANGUAGE_CODE : get_bloginfo('language'),
-            'languageUrls'      => $language_urls,
-            'cookie'            => $cookie
-        );
-
-   return $params;
-}
-
-function localize_scripts() {
-wp_localize_script('wpml-browser-redirect', 'wpml_browser_redirect_params', languages_param());
-  wp_localize_script( 'sage_js', 'cssTarget', 'style-svg' );
-  wp_localize_script( 'sage_js', 'woocommerce_params'
-, array(
-          'ajax_url'    => WC()->ajax_url(),
-          'wc_ajax_url' => \WC_AJAX::get_endpoint( "%%endpoint%%" )
-        ) );
-      wp_localize_script( 'sage_js', 'faberge', array(
+ wp_localize_script( 'sage_js', 'faberge', array(
     'ajax_url' => admin_url( 'admin-ajax.php' )
   ));
-      wp_localize_script( 'sage_js', 'wc_cart_fragments_params', array(
-          'ajax_url'      => WC()->ajax_url(),
-          'wc_ajax_url'   => \WC_AJAX::get_endpoint( "%%endpoint%%" ),
-          'fragment_name' => apply_filters( 'woocommerce_cart_fragment_name', 'wc_fragments' )
-        ) );
-      wp_localize_script( 'sage_js', 'wc_add_to_cart_params', array(
-          'ajax_url'                => WC()->ajax_url(),
-          'wc_ajax_url'             => \WC_AJAX::get_endpoint( "%%endpoint%%" ),
-          'i18n_view_cart'          => esc_attr__( 'View Cart', 'woocommerce' ),
-          'cart_url'                => apply_filters( 'woocommerce_add_to_cart_redirect', wc_get_cart_url() ),
-          'is_cart'                 => is_cart(),
-          'cart_redirect_after_add' => get_option( 'woocommerce_cart_redirect_after_add' )
-        ) );
-      wp_localize_script( 'sage_js', 'wc_add_to_cart_variation_params', array(
-          'i18n_no_matching_variations_text' => esc_attr__( 'Sorry, no products matched your selection. Please choose a different combination.', 'woocommerce' ),
-          'i18n_make_a_selection_text'       => esc_attr__( 'Please select some product options before adding this product to your cart.', 'woocommerce' ),
-          'i18n_unavailable_text'            => esc_attr__( 'Sorry, this product is unavailable. Please choose a different combination.', 'woocommerce' )
-        ) );
-      //wc_get_template( 'single-product/add-to-cart/variation.php' );
-      wp_localize_script( 'sage_js', 'wc_additional_variation_images_local', array(
-      'ajaxurl'              => admin_url( 'admin-ajax.php' ),
-      'ajaxImageSwapNonce'   => wp_create_nonce( '_wc_additional_variation_images_nonce' ),
-      'gallery_images_class' => apply_filters( 'wc_additional_variation_images_gallery_images_class', '.product .images .thumbnails' ),
-      'main_images_class'    => apply_filters( 'wc_additional_variation_images_main_images_class', '.product .images > a' ),
-      'lightbox_images'      => apply_filters( 'wc_additional_variation_images_main_lightbox_images_class', '.product .images a.zoom' ),
-      'custom_swap'          => apply_filters( 'wc_additional_variation_images_custom_swap', false ),
-      'custom_original_swap' => apply_filters( 'wc_additional_variation_images_custom_original_swap', false ),
-      'custom_reset_swap'    => apply_filters( 'wc_additional_variation_images_custom_reset_swap', false ),
-    ) );
-          wp_localize_script(
-      'sage_js',
-      'wpmenucart_ajax',
-      array(
-        'ajaxurl' => admin_url( 'admin-ajax.php' ),
-        'nonce' => wp_create_nonce('wpmenucart')
-      )
-    );
+}
+function wp_cookie(){
 
+  global $wp_scripts;
+  $wp_scripts->registered['wpml-browser-redirect']->deps[1]='jquery-cookie';
 
 }
 
+function dump_tree($arr){
+
+   global $wp_scripts;
+     echo'<style type="text/css" media="screen">
+     .var_dump{
+       background-color:#fff;
+       color:#000;
+       white-space:pre;
+       padding:50px 2%;
+     }
+    </style>';
+    echo'<div class="var_dump">
+    ';
+    if(is_array($arr)){
+      foreach ($arr as $key => $value) {
+        if(is_array($value)) {var_dump($value);}
+        else{ echo $value ;}
+        echo '<br>';
+      }
+    }
+      else{ echo $arr;}
+    echo'
+    </div>';
+}
+function asset_bundler_caller(){
 
 
+  if(!( is_admin() || Is_Backend_LOGIN() )){
+
+
+
+ $bundles= [
+   "main.js"=>[
+     "assets"=>["underscore",'jquery-cookie','wp-util','jquery-blockui',"wc-country-select","wc-address-i18n",'wc-add-to-cart-variation','woocommerce',"wc-checkout",'touch','responsive-menu-pro','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','add-to-cart-variation_ajax','yith_wccl_frontend',"yith-wcms-step"],
+      'type'=>'scripts'
+    ],
+    "main.css"=>[
+      "assets"=>['responsive-menu-pro','ct-styles','woocommerce-layout','
+woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','
+yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive'],
+      "type"=>"styles"
+    ]
+  ];
+  global $wp_scripts;
+global $not_registered;
+ $manifest=asset_bundler($bundles);
+ $dependency_tree=recursive_deps($wp_scripts->queue);
+ $flat_deps=flat_deps($dependency_tree);
+ $not_bundled_deps = not_bundled_deps($bundles["main.js"]['assets'], $flat_deps );
+ dump_tree([ 'Dependency_Tree',$dependency_tree,'Flat_Deps', $flat_deps, 'Not_Registered' , $not_registered, 'NotInBundle',$not_bundled_deps ] );
+dump_tree(stripslashes($manifest));
+
+}
+}
+function Is_Backend_LOGIN(){
+    $ABSPATH_MY = str_replace(array('\\','/'), DIRECTORY_SEPARATOR, ABSPATH);
+    return (in_array($ABSPATH_MY.'wp-login.php', get_included_files()) || in_array($ABSPATH_MY.'wp-register.php', get_included_files()) );
+
+}
+
+function deps($handle){
+  global $wp_scripts;
+  global $not_registered;
+  !isset($wp_scripts->registered[$handle])?($not_registered[]=$handle):false;
+  return  isset($wp_scripts->registered[$handle])&& $wp_scripts->registered[$handle]->deps ? $wp_scripts->registered[$handle]->deps:false;
+}
+
+function recursive_deps($array){
+  if(is_array($array)){
+      $new=[];
+      foreach ($array as $key => $value) {
+         $new[$value]=recursive_deps(deps($value));
+      }
+  }else{
+    $new=false;
+  }
+   return $new;
+}
+function flat_deps($arr){
+  $total=[];
+  foreach (new \RecursiveIteratorIterator(new \RecursiveArrayIterator($arr), RecursiveIteratorIterator::CHILD_FIRST) as $key => $value) {
+    if(!isset($total[$key]))$total[$key]=[];
+    if(is_array($value)){
+      foreach($value as $k => $v) {
+        if(!in_array($key,$total[$k]))$total[$k][]=$key;
+      }
+    }
+  }
+  return $total;
+}
+function asset_bundler( $bundles=[] ){
+  global $wp_scripts;
+  global $wp_styles;
+  $manifest=[];
+
+  foreach ($bundles as $bundle_slug => $bundle) {
+    $manifest[$bundle_slug]=[];
+    $manifest[$bundle_slug][0]=[];
+$manifest[$bundle_slug][1]=[];
+    foreach( $bundle['assets'] as $handle ) {
+      if($bundle['type']==='styles'){ $global = &$wp_styles; }
+      elseif($bundle['type']==='scripts'){ $global = &$wp_scripts; }
+      if(isset($global->registered[$handle])){
+        $obj =$global->registered[$handle];
+        $manifest[$bundle_slug][0][]=$handle;
+        $manifest[$bundle_slug][1][]=$obj->src;
+      }
+    }
+  }
+
+  return json_encode($manifest);
+}
+function not_bundled_deps($bundle,$flat){
+
+  foreach( $bundle as $handle ) {
+    if(isset($flat[$handle])) unset($flat[$handle]);
+  }
+  return $flat;
+}
+// not setted base price
+// see how asset-queue search deps
+// script head / body
+// search !frontend-plugin,url/path,modifiedMin
+// check if theme
+// redirect

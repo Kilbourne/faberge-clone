@@ -2,22 +2,15 @@
   "dependencies": {
     "main.js": {
       "vendor": [
-        "../../plugins/responsive-menu/public/js/touch.js"
-        ,"../../plugins/responsive-menu-pro-data/js/responsive-menu-pro-1.js"
-        ,"../../plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js"
-        ,"/wp-includes/js/underscore.min.js"
-        ,"../../../wp/wp-includes/js/wp-util.js"
-        ,"../../plugins/woocommerce/assets/js/frontend/woocommerce.js"
-        ,"../../plugins/woocommerce/assets/js/frontend/checkout.js"
-        ,"../../plugins/woocommerce/assets/js/frontend/cart-fragments.js"
-        ,"../../plugins/wp-menu-cart-pro/javascript/wpmenucart.js"
-        ,"../../plugins/woocommerce-additional-variation-images/assets/js/frontend.js"
-        ,"../../plugins/woocommerce/assets/js/frontend/add-to-cart.js"
-        ,"../../plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js"
-        ,"../../plugins/woocommerce-ajax-add-to-cart-for-variable-products/js/add-to-cart-variation.js"
-        ,"../../plugins/yith-woocommerce-color-label-variations-premium/assets/js/yith-wccl.js"
-        ,"/plugins/woocommerce/assets/js/frontend/country-select.js"
-        ,"/plugins/yith-woocommerce-multi-step-checkout-premium/assets/js/multistep-premium.js"
+        "../../plugins/responsive-menu-pro-bacon/public/js/touch.js",
+        "../../plugins/responsive-menu-pro-data/js/responsive-menu-pro-1.js",
+        "../../plugins/woocommerce/assets/js/frontend/cart-fragments.js",
+        "../../plugins/wp-menu-cart-pro/javascript/wpmenucart.js",
+        "../../plugins/woocommerce-additional-variation-images/assets/js/frontend.js",
+        "../../plugins/woocommerce/assets/js/frontend/add-to-cart.js",
+        "../../plugins/woocommerce-ajax-add-to-cart-for-variable-products/js/add-to-cart-variation.js",
+        "../../plugins/yith-woocommerce-color-label-variations-premium/assets/js/yith-wccl.js",
+        "../../plugins/yith-woocommerce-multi-step-checkout-premium/assets/js/multistep-premium.js"
       ],
       "files": [
         "scripts/main.js"
@@ -50,7 +43,17 @@
     },
     "jquery.js": {
       "bower": ["jquery"],
-      "vendor":["../../plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.js"]
+      "vendor":[
+                "../../../wp/wp-includes/js/underscore.min.js",
+        "../../plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.js",
+        "../../../wp/wp-includes/js/wp-util.js",
+        "../../plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js",
+        "../../plugins/woocommerce/assets/js/frontend/country-select.js",
+        "../../plugins/woocommerce/assets/js/frontend/address-i18n.js",
+        "../../plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js",
+        "../../plugins/woocommerce/assets/js/frontend/woocommerce.js",
+        "../../plugins/woocommerce/assets/js/frontend/checkout.js"
+        ]
     }
   },
   "config": {
