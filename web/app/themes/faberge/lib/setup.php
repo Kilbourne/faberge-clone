@@ -1,7 +1,5 @@
 <?php
-
 namespace Roots\Sage\Setup;
-
 use Roots\Sage\Assets;
 use \RecursiveIteratorIterator;
 use \RecursiveArrayIterator;
@@ -89,7 +87,7 @@ function display_sidebar() {
   isset($display) || $display = in_array(true, [
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
-false
+    false
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
@@ -98,222 +96,180 @@ false
 /**
  * Theme assets
  */
-global $not_registered;
-$not_registered=[];
-//add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\asset_bundler_caller', 999);
-//add_action( 'wp_footer', __NAMESPACE__ . '\\asset_bundler_caller', 999);
+
+$opts=[
+  "bundle"=>[
+    "underscore",'jquery-cookie','wp-util','jquery-blockui',"wc-country-select","wc-address-i18n",'wc-add-to-cart-variation','woocommerce',"wc-checkout",'touch','responsive-menu-pro','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','add-to-cart-variation_ajax','yith_wccl_frontend',"yith-wcms-step",'google_maps'
+  ],
+  "not_async"=>[
+    'jquery','prettyPhoto',"password-strength-meter","zxcvbn-async","stripe"
+  ],
+  "css"=>[
+    'responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive'
+  ]
+];
+new AssetBuilder($opts);
 add_action( 'wp_print_scripts', __NAMESPACE__ . '\\wp_cookie',999);
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\in_footer', 999);
-add_action( 'wp_print_scripts', __NAMESPACE__ . '\\in_footer', 999);
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_assets', 998);
-add_filter( 'script_loader_src',__NAMESPACE__ . '\\remove_bundled_script', 998,2  );
-add_filter( 'script_loader_tag',__NAMESPACE__ . '\\js_async_attr', 998,3  );
-add_filter( 'style_loader_src',__NAMESPACE__ . '\\remove_bundled_style', 998,2  );
-//add_action( 'wp_footer', __NAMESPACE__ . '\\var_dump_queue', 998);
-function var_dump_queue(){
-  global $wp_scripts;
-  dump_tree([current_filter(),'Queue:',count($wp_scripts->queue),'Todo:',count($wp_scripts->to_do),'Done:',count($wp_scripts->done)]);
-
-}
-function in_footer(){
-  global $wp_scripts;
-  $bundle=["underscore",'jquery-cookie','wp-util','jquery-blockui','touch','responsive-menu-pro','woocommerce','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','wc-add-to-cart-variation','add-to-cart-variation-ajax','yith_wccl_frontend',"wc-country-select","yith-wcms-step"];
- foreach ($wp_scripts->queue as $queued_script) {
-  if($wp_scripts->registered[$queued_script]){
-    if(!in_array($queued_script, $bundle)){
-
-    $wp_scripts->registered[$queued_script]->ver=false;
-
-     $wp_scripts->add_data( $queued_script, 'group', 1 );
-
-   }else{
-    $wp_scripts->registered[$queued_script]->deps=[];
-   }
-
-  }
-
-
-  }
-
-}
-function js_async_attr($tag,$handle,$src){
-    if(( is_admin() || Is_Backend_LOGIN() )) return;
-    # Do not add async to these scripts
-    $scripts_to_exclude = array('jquery','prettyPhoto',"password-strength-meter","zxcvbn-async","stripe");
-    $scripts_to_include = array();
-    foreach($scripts_to_exclude as $exclude_script){
-
-      if ( $handle === $exclude_script ) return $tag;
-    }
-          //foreach($scripts_to_include as $include_script){
-       // if(true != strpos($tag, $include_script ) )
-    return str_replace( ' src', ' async="async" src', $tag );
-          //  }
-    //return $tag;
-    # Add async to all remaining scripts
-}
-function remove_bundled_script($src, $handle){
-   if(( is_admin() || Is_Backend_LOGIN() )) return;
-   $bundle=["underscore",'wp-util',"jquery-blockui",'woocommerce','jquery-cookie','touch','responsive-menu-pro','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','add-to-cart-variation_ajax','yith_wccl_frontend',"wc-country-select","yith-wcms-step"];
-    if(in_array($handle, $bundle)) return '//:0';
-    return $src;
-
-}
-
-function remove_bundled_style($src, $handle){
-    if(( is_admin() || Is_Backend_LOGIN() )) return;
-    $bundle=['responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive'];
-      if(in_array($handle, $bundle)) return '//:0';
-      return $src;
-
-}
 
 function enqueue_assets(){
-
   wp_enqueue_style('sage_css', Assets\asset_path('styles/main.css'), false, null);
-  if (is_single() && comments_open() && get_option('thread_comments')) {
-    wp_enqueue_script('comment-reply');
-  }
   wp_deregister_script('wp-embed');
   wp_deregister_script('jquery');
+  if(is_checkout()){
+    wp_enqueue_script('sage_checkout',  Assets\asset_path('scripts/checkout.js'), array(),null, true);
+  }
   wp_enqueue_script('jquery',  Assets\asset_path('scripts/jquery.js'), array(),null, true);
-
   //wp_enqueue_script('wpml-browser-redirect',ICL_PLUGIN_URL . '/res/js/browser-redirect.js',['jquery'],ICL_SITEPRESS_VERSION,true);
-
   wp_enqueue_script('sage_js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
- wp_localize_script( 'sage_js', 'faberge', array(
+  wp_localize_script( 'sage_js', 'faberge', array(
     'ajax_url' => admin_url( 'admin-ajax.php' )
   ));
 }
-function wp_cookie(){
 
+function wp_cookie(){
   global $wp_scripts;
   $wp_scripts->registered['wpml-browser-redirect']->deps[1]='jquery-cookie';
-
 }
 
-function dump_tree($arr){
+class AssetBuilder{
+  public $bundle = [];
+  public $not_async = [];
+  public $head_scripts = [];
+  public $with_version = [];
+  public $head_to_do=[];
+  public $css=[];
 
-   global $wp_scripts;
-     echo'<style type="text/css" media="screen">
-     .var_dump{
-       background-color:#fff;
-       color:#000;
-       white-space:pre;
-       padding:50px 2%;
-     }
-    </style>';
-    echo'<div class="var_dump">
-    ';
-    if(is_array($arr)){
-      foreach ($arr as $key => $value) {
-        if(is_array($value)) {var_dump($value);}
-        else{ echo $value ;}
-        echo '<br>';
+  public function __construct($opts) {
+    if(isset($opts['bundle'])) $this->bundle = $opts['bundle'];
+    if(isset($opts['not_async'])) $this->not_async = $opts['not_async'];
+    if(isset($opts['head_scripts'])) $this->head_scripts = $opts['head_scripts'];
+    if(isset($opts['with_version'])) $this->with_version = $opts['with_version'];
+    if(isset($opts['css'])) $this->css = $opts['css'];
+    $this->bind_hook();
+  }
+  public function remove_bundled_style($src, $handle){
+    if ( is_admin() || did_action('login_head') || ! isset($GLOBALS['wp_scripts']) ) {      ;
+    }
+    if(in_array($handle, $this->css)) return false;
+    return $src;
+  }
+  public function remove_bundled_script($src, $handle){
+   if ( is_admin() || did_action('login_head') || ! isset($GLOBALS['wp_scripts']) ) {
+      return $src;
+    }
+
+    if(in_array($handle, $this->bundle)) return false;
+    return $src;
+  }
+
+  public function bind_hook(){
+    add_filter('print_scripts_array',array($this,'filter_script'));
+    add_filter( 'script_loader_tag',array($this,'add_async_attr'),999,3);
+    add_action( 'body_open', array($this,'open_body_ob'));
+    add_action( 'body_close', array($this,'close_body_ob'));
+    add_filter( 'style_loader_src', array($this,'remove_bundled_style'),999,2);
+    add_filter( 'script_loader_src', array($this,'remove_bundled_script'),999,2);
+  }
+  public function filter_script($to_do){
+    if ( is_admin() || did_action('login_head') || ! isset($GLOBALS['wp_scripts']) ) {
+      return $to_do;
+    }
+    $wp_scripts = &$GLOBALS[ 'wp_scripts' ];
+    foreach ($wp_scripts->to_do as $handle) {
+      if( !isset( $wp_scripts->registered[$handle] ) ) continue;
+      if( !in_array( $handle, $this->with_version ) && $wp_scripts->registered[$handle]->ver !== null ) $wp_scripts->registered[$handle]->ver = null;
+      if( !in_array( $handle, $this->head_scripts ) && !in_array($handle,$wp_scripts->in_footer)  ) $wp_scripts->in_footer[]=$handle;
+    }
+
+    if( did_action( 'body_open' ) === 0){
+      if( $wp_scripts->to_do  ){
+        $this->head_to_do = array_unique(array_merge($this->head_to_do,$wp_scripts->to_do ));
+        $to_do=[];
       }
     }
-      else{ echo $arr;}
-    echo'
-    </div>';
-}
-function asset_bundler_caller(){
-
-
-  if(!( is_admin() || Is_Backend_LOGIN() )){
-
-
-
- $bundles= [
-   "main.js"=>[
-     "assets"=>["underscore",'jquery-cookie','wp-util','jquery-blockui',"wc-country-select","wc-address-i18n",'wc-add-to-cart-variation','woocommerce',"wc-checkout",'touch','responsive-menu-pro','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','add-to-cart-variation_ajax','yith_wccl_frontend',"yith-wcms-step"],
-      'type'=>'scripts'
-    ],
-    "main.css"=>[
-      "assets"=>['responsive-menu-pro','ct-styles','woocommerce-layout','
-woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','
-yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive'],
-      "type"=>"styles"
-    ]
-  ];
-  global $wp_scripts;
-global $not_registered;
- $manifest=asset_bundler($bundles);
- $dependency_tree=recursive_deps($wp_scripts->queue);
- $flat_deps=flat_deps($dependency_tree);
- $not_bundled_deps = not_bundled_deps($bundles["main.js"]['assets'], $flat_deps );
- dump_tree([ 'Dependency_Tree',$dependency_tree,'Flat_Deps', $flat_deps, 'Not_Registered' , $not_registered, 'NotInBundle',$not_bundled_deps ] );
-dump_tree(stripslashes($manifest));
-
-}
-}
-function Is_Backend_LOGIN(){
-    $ABSPATH_MY = str_replace(array('\\','/'), DIRECTORY_SEPARATOR, ABSPATH);
-    return (in_array($ABSPATH_MY.'wp-login.php', get_included_files()) || in_array($ABSPATH_MY.'wp-register.php', get_included_files()) );
-
-}
-
-function deps($handle){
-  global $wp_scripts;
-  global $not_registered;
-  !isset($wp_scripts->registered[$handle])?($not_registered[]=$handle):false;
-  return  isset($wp_scripts->registered[$handle])&& $wp_scripts->registered[$handle]->deps ? $wp_scripts->registered[$handle]->deps:false;
-}
-
-function recursive_deps($array){
-  if(is_array($array)){
-      $new=[];
-      foreach ($array as $key => $value) {
-         $new[$value]=recursive_deps(deps($value));
-      }
-  }else{
-    $new=false;
+    return $to_do;
   }
-   return $new;
-}
-function flat_deps($arr){
-  $total=[];
-  foreach (new \RecursiveIteratorIterator(new \RecursiveArrayIterator($arr), RecursiveIteratorIterator::CHILD_FIRST) as $key => $value) {
-    if(!isset($total[$key]))$total[$key]=[];
-    if(is_array($value)){
-      foreach($value as $k => $v) {
-        if(!in_array($key,$total[$k]))$total[$k][]=$key;
+
+  public function open_body_ob(){
+    ob_start();
+  }
+
+  public function close_body_ob(){
+    $ob=ob_get_clean();
+    global $wp_scripts;
+    $matches=[];
+    $aaa=preg_match_all("/<script(.|\n)*?\/script>/",$ob, $matches);
+
+    foreach ($matches[0] as $key => $match) {
+      str_replace($match,"",$ob);
+    }
+    if($aaa) echo $ob;
+    $wp_scripts->do_items($this->head_to_do);
+    if(!$aaa) echo $ob;
+    if(isset($matches[0]) && is_array($matches[0])) echo implode("",$matches[0]);
+  }
+
+
+  public function add_async_attr($tag, $handle){
+    if ( is_admin() || did_action('login_head') || ! isset($GLOBALS['wp_scripts']) ) {
+      return $tag;
+    }
+    if( ! in_array( $handle, $this->not_async )) return str_replace( ' src', ' async="async" src', $tag );
+    return $tag;
+  }
+
+  public function deps($handle){
+    global $wp_scripts;
+    return  isset($wp_scripts->registered[$handle])&& $wp_scripts->registered[$handle]->deps ? $wp_scripts->registered[$handle]->deps:false;
+  }
+
+  public function recursive_deps($array){
+      if(is_array($array)){
+          $new=[];
+          foreach ($array as $key => $value) {
+             $new[$value]=$this->recursive_deps($this->deps($value));
+          }
+      }else{
+        $new=false;
+      }
+       return $new;
+  }
+
+  static function flat_deps($arr){
+    $total=[];
+    foreach (new \RecursiveIteratorIterator(new \RecursiveArrayIterator($arr), RecursiveIteratorIterator::CHILD_FIRST) as $key => $value) {
+      if(!isset($total[$key]))$total[$key]=[];
+      if(is_array($value)){
+        foreach($value as $k => $v) {
+          if(!in_array($key,$total[$k]))$total[$k][]=$key;
+        }
       }
     }
+    return $total;
   }
-  return $total;
-}
-function asset_bundler( $bundles=[] ){
-  global $wp_scripts;
-  global $wp_styles;
-  $manifest=[];
 
-  foreach ($bundles as $bundle_slug => $bundle) {
-    $manifest[$bundle_slug]=[];
-    $manifest[$bundle_slug][0]=[];
-$manifest[$bundle_slug][1]=[];
-    foreach( $bundle['assets'] as $handle ) {
-      if($bundle['type']==='styles'){ $global = &$wp_styles; }
-      elseif($bundle['type']==='scripts'){ $global = &$wp_scripts; }
+  static function manifest( $bundle,$css = false ){
+    if($css){ global $wp_styles; $global = $wp_styles; }
+    else{ global $wp_scripts; $global = $wp_scripts; }
+    $manifest=[];
+    $manifest[0]=[];
+    $manifest[1]=[];
+    foreach( $bundle as $handle ) {
       if(isset($global->registered[$handle])){
-        $obj =$global->registered[$handle];
-        $manifest[$bundle_slug][0][]=$handle;
-        $manifest[$bundle_slug][1][]=$obj->src;
+        $manifest[0][]=$handle;
+        $manifest[1][]=$global->registered[$handle]->src;
       }
     }
+    return json_encode($manifest);
   }
 
-  return json_encode($manifest);
 }
-function not_bundled_deps($bundle,$flat){
 
-  foreach( $bundle as $handle ) {
-    if(isset($flat[$handle])) unset($flat[$handle]);
-  }
-  return $flat;
-}
-// not setted base price
-// see how asset-queue search deps
-// script head / body
-// search !frontend-plugin,url/path,modifiedMin
-// check if theme
-// redirect
+/*
+bug:not setted base price
+checkout;
+search !frontend-plugin,
+        modifiedMin
+check if theme
+*/

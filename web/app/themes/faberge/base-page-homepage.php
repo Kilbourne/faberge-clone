@@ -9,6 +9,9 @@ use Roots\Sage\Wrapper;
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
+
+<?php do_action('body_open') ?>
+
     <!--[if IE]>
       <div class="alert alert-warning">
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
@@ -120,7 +123,9 @@ use Roots\Sage\Wrapper;
 
     ?>
     </div>
-    <?php wp_footer(); ?>
+    <?php
+do_action('body_close');
+    wp_footer(); ?>
               <script>
 
 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

@@ -9,6 +9,7 @@ use Roots\Sage\Wrapper;
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
+  <?php do_action('body_open') ?>
     <!--[if IE]>
       <div class="alert alert-warning">
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
@@ -118,6 +119,7 @@ use Roots\Sage\Wrapper;
     </div><!-- /.wrap -->
     </div>
       <?php
+      do_action('body_close');
       do_action('get_footer');
       get_template_part('templates/footer');
       echo do_shortcode('[responsive_menu_pro_menu] ' );
