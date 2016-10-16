@@ -99,13 +99,13 @@ function display_sidebar() {
 
 $opts=[
   "bundle"=>[
-    "underscore",'jquery-cookie','wp-util','jquery-blockui',"wc-country-select","wc-address-i18n",'wc-add-to-cart-variation','woocommerce',"wc-checkout",'touch','responsive-menu-pro','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','add-to-cart-variation_ajax','yith_wccl_frontend',"yith-wcms-step",'google_maps'
+    "underscore",'jquery-cookie','wp-util','jquery-blockui',"wc-country-select","wc-address-i18n",'wc-add-to-cart-variation','woocommerce',"wc-checkout",'touch','responsive-menu-pro','wc-cart-fragments','wpmenucart','wc_additional_variation_images_script','wc-add-to-cart','add-to-cart-variation_ajax','yith_wccl_frontend',"yith-wcms-step",'google_maps','sitepress','language-selector'
   ],
   "not_async"=>[
-    'jquery','prettyPhoto',"password-strength-meter","zxcvbn-async","stripe"
+    'jquery','prettyPhoto',"password-strength-meter","zxcvbn-async","stripe",'select2'
   ],
   "css"=>[
-    'responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive'
+    'responsive-menu-pro','ct-styles','woocommerce-layout','woocommerce-smallscreen','woocommerce-general','wpmenucart-icons','wpmenucart','yith_wccl_frontend','yith-wcms-checkout','yith-wcms-checkout-responsive','sitepress','language-selector'
   ]
 ];
 new AssetBuilder($opts);
@@ -123,7 +123,8 @@ function enqueue_assets(){
   //wp_enqueue_script('wpml-browser-redirect',ICL_PLUGIN_URL . '/res/js/browser-redirect.js',['jquery'],ICL_SITEPRESS_VERSION,true);
   wp_enqueue_script('sage_js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
   wp_localize_script( 'sage_js', 'faberge', array(
-    'ajax_url' => admin_url( 'admin-ajax.php' )
+    'ajax_url' => admin_url( 'admin-ajax.php' ),
+    'lang'=> ICL_LANGUAGE_CODE
   ));
 }
 
@@ -199,14 +200,16 @@ class AssetBuilder{
     $ob=ob_get_clean();
     global $wp_scripts;
     $matches=[];
+    $aaa=true;
     $aaa=preg_match_all("/<script(.|\n)*?\/script>/",$ob, $matches);
-
+if(isset($matches[0]) && is_array($matches[0])){
     foreach ($matches[0] as $key => $match) {
-      str_replace($match,"",$ob);
+      $ob=str_replace($match,"",$ob);
     }
-    if($aaa) echo $ob;
+}
+    if($aaa !== false) echo $ob;
     $wp_scripts->do_items($this->head_to_do);
-    if(!$aaa) echo $ob;
+    if($aaa === true) echo $ob;
     if(isset($matches[0]) && is_array($matches[0])) echo implode("",$matches[0]);
   }
 
@@ -267,9 +270,15 @@ class AssetBuilder{
 }
 
 /*
-bug:not setted base price
-checkout;
-search !frontend-plugin,
-        modifiedMin
+!bug:not setted base price
+    immagine iniziale
+    menutab;
+
+    account
+    homepag link
+
+store locator
+blog
+upgrade plugins
 check if theme
 */
