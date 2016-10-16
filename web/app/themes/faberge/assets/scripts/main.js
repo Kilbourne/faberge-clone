@@ -833,6 +833,7 @@ gaTrack(e.currentTarget.href,title);
                 // !!!! sku
                 $('body').on('found_variation', '.variations_form', function(event, variation) { $('.codice').text(variation.sku); });
                 Accordion();
+                variationSelect();
                 // !!!!  variation handler (3)
                 $('body').on('click', '.variation', variationHandler);
                 // !!!!  ajax list
