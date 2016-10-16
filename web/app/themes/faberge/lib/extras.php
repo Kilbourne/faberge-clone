@@ -146,3 +146,24 @@ function sitemap_per_language2($url, $type,$obj){
 
 return $url;
 }
+
+add_filter('woocommerce_variable_price_html', __NAMESPACE__ . '\\custom_variation_price', 10, 2);
+
+    function custom_variation_price( $price, $product ) {
+
+        foreach($product->get_available_variations() as $pav){
+            $def=true;
+            foreach($product->get_variation_default_attributes() as $defkey=>$defval){
+
+                if(isset($pav['attributes']['attribute_'.$defkey]) && $pav['attributes']['attribute_'.$defkey]!=$defval){
+                    $def=false;
+                }
+            }
+            if($def){
+                $price = $pav['display_price'];
+            }
+        }
+
+        return '<span class="woocommerce-Price-amount amount">'.woocommerce_price($price).'</span>' ;
+
+    }
