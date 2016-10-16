@@ -26,7 +26,7 @@
                     jQuery('#addy_in_state').show();
                     jQuery(sidebar).empty();
                 }
-              
+
             }else{
                 cslmap.searchLocations();
             }
@@ -36,7 +36,7 @@
             cslmap.searchLocations();
         }
 
-                    
+
 
     }else{
 jQuery('#addy_in_state').hide();
@@ -800,8 +800,20 @@ gaTrack(e.currentTarget.href,title);
             init: function() {
         $('#responsive_menu_pro_menu .nolink>a').off('click').click(function(e) { e.preventDefault(); })
         $('#responsive_menu_pro_additional_content').click(closeRM);
+
+
+
+                $('body').trigger( 'wc_fragments_refreshed' );
+
         jQuery(document.body).on('click','.wpmenucart-contents',function(e) { e.preventDefault();
             $('.cart-tab').addClass('inview'); });
+  $('#lansel a').click(function(e) {
+  $.cookie("fab-language", $(this).parent().data("lang"), {
+    expires: 365,
+    path: "/",
+    domain: document.location.host
+  });
+});
         $(document).click(function(e) {
             if (e.which != 2 && !$(e.target).closest('.cart-tab, .wpmenucart-shortcode').length) { closeCart() } });
 
@@ -852,7 +864,7 @@ gaTrack(e.currentTarget.href,title);
 jQuery('#addressInputState,#addressInputCountry').change(function(e) {
                     fabmapinit();
                 });
-                
+
 
             }
         }

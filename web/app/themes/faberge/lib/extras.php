@@ -92,7 +92,7 @@ $languages = icl_get_languages('skip_missing=0');
 if(!empty($languages)){
 echo '<ul id="lansel">';
 foreach($languages as $l){
-echo '<li '.($l['active']?'class="active"':'').'>';
+echo '<li '.($l['active']?'class="active"':'').' data-lang="'.$l['language_code'].'" >';
 if(!$l['active']) echo '<a href="'.$l['url'].'">';
 echo ''.$l['language_code'].'';
 if(!$l['active']) echo '</a>';
