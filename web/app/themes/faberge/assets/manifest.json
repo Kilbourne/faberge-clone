@@ -4,7 +4,7 @@
       "vendor": [
         "../../plugins/responsive-menu-pro-bacon/public/js/touch.js",
         "../../plugins/responsive-menu-pro-data/js/responsive-menu-pro-1.js",
-        "../../plugins/woocommerce/assets/js/frontend/cart-fragments.js",
+        "assets/scripts/cart-fragments.js",
         "../../plugins/wp-menu-cart-pro/javascript/wpmenucart.js",
         "../../plugins/woocommerce-additional-variation-images/assets/js/frontend.js",
         "../../plugins/woocommerce/assets/js/frontend/add-to-cart.js",
