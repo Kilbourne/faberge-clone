@@ -22,7 +22,7 @@
            "../../plugins/responsive-menu-pro-data/css/responsive-menu-pro-1.css"
           ,"../../plugins/woocommerce/assets/css/woocommerce.css"
           ,"../../plugins/woocommerce/assets/css/woocommerce-layout.css"
-          ,"styles/woocommerce-smallscreen.scss"
+          ,"assets/styles/woocommerce-smallscreen.scss"
           ,"../../plugins/woocommerce-cart-tab/assets/css/style.css"
           ,"../../plugins/wp-menu-cart-pro/css/wpmenucart-icons-pro.css"
           ,"../../plugins/wp-menu-cart-pro/css/wpmenucart-main.css"
@@ -48,7 +48,8 @@
         "../../../wp/wp-includes/js/wp-util.js",
         "../../plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js",
         "../../plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js",
-        "../../plugins/woocommerce/assets/js/frontend/woocommerce.js"
+        "../../plugins/woocommerce/assets/js/frontend/woocommerce.js",
+        "assets/scripts/analitycs.js"
         ]
     },
     "checkout.js":{
