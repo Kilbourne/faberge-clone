@@ -9,6 +9,13 @@ use Roots\Sage\Wrapper;
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
+    <script>
+
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-78528632-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
   <?php do_action('body_open') ?>
     <!--[if IE]>
       <div class="alert alert-warning">
@@ -120,6 +127,9 @@ use Roots\Sage\Wrapper;
     </div>
       <?php
       do_action('body_close');
+      ?>
+
+            <?
       do_action('get_footer');
       get_template_part('templates/footer');
       echo do_shortcode('[responsive_menu_pro_menu] ' );
@@ -137,13 +147,6 @@ use Roots\Sage\Wrapper;
       <span><a href="http://www.menthalia.com"><img src="<?php echo get_stylesheet_directory_uri().'/dist/images/logo-menthalia.png' ?>" alt="MENTHALIA LOGO"></a> </span> </div>
       </div>
     </div>
-              <script>
 
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-78528632-1', 'auto');
-ga('set', 'anonymizeIp', true);
-ga('send', 'pageview');
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
   </body>
 </html>

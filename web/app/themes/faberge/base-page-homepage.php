@@ -9,7 +9,13 @@ use Roots\Sage\Wrapper;
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
+<script>
 
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-78528632-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
 <?php do_action('body_open') ?>
 
     <!--[if IE]>
@@ -124,15 +130,11 @@ use Roots\Sage\Wrapper;
     ?>
     </div>
     <?php
-do_action('body_close');
-    wp_footer(); ?>
-              <script>
+do_action('body_close');?>
 
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-78528632-1', 'auto');
-ga('set', 'anonymizeIp', true);
-ga('send', 'pageview');
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+<?php
+    wp_footer(); ?>
+
+
   </body>
 </html>
