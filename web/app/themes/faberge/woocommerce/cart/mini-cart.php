@@ -24,11 +24,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php do_action( 'woocommerce_before_mini_cart' ); ?>
-<?php if ( ! WC()->cart->is_empty() ){ 
+<?php if ( ! WC()->cart->is_empty() ){
 $totalnumber=WC()->cart->get_cart_contents_count();
-$itemString=$totalnumber>1?'items':'item';
+$itemString=$totalnumber>1? __( 'items in cart', 'sage' ): __( 'item in cart', 'sage' );
 ?>
-<p class="totalitems"><?php echo $totalnumber.' '.$itemString.' '. __( 'in cart', 'woocommerce' ); ?></p>
+<p class="totalitems"><?php echo $totalnumber.' '.$itemString; ?></p>
 <?php } ?>
 <ul class="cart_list product_list_widget <?php echo $args['list_class']; ?>">
 
@@ -46,8 +46,8 @@ $itemString=$totalnumber>1?'items':'item';
 
       // Variation data
       if ( ! empty( $cart_item['data']->variation_id ) && is_array( $cart_item['variation'] ) ) {
-      	
-      	
+
+
         foreach ( $cart_item['variation'] as $name => $value ) {
 
           if ( '' === $value )
@@ -61,7 +61,7 @@ $itemString=$totalnumber>1?'items':'item';
             if ( ! is_wp_error( $term ) && $term && $term->name ) {
               $value = $term->name;
             }
-            $label = wc_attribute_label( $taxonomy ); 
+            $label = wc_attribute_label( $taxonomy );
 
           // If this is a custom option slug, get the options name
           } else {
@@ -80,10 +80,10 @@ $itemString=$totalnumber>1?'items':'item';
           );
         }
                 $variation_id=$cart_item["variation_id"];
-                
+
         $variation = wc_get_product($variation_id);
         $sku=$variation->get_sku();
-        
+
         $product_name  = $sku;
 
       }else{
@@ -104,14 +104,14 @@ $itemString=$totalnumber>1?'items':'item';
         $item_data[ $key ]['display'] = ! empty( $data['display'] ) ? $data['display'] : $data['value'];
       }
 
-					
+
 					$thumbnail     = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 					$product_price = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 					?>
 					<li class="<?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
 					<div class="minicart-imagewrapper">
-						
-					
+
+
 											<?php if ( ! $_product->is_visible() ) : ?>
 	<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) ; ?>
 <?php else : ?>
@@ -120,13 +120,13 @@ $itemString=$totalnumber>1?'items':'item';
 	</a>
 <?php endif; ?>
 </div><div class="minicart-detailswrapper">
-	
 
-					
+
+
 
 <?php if ( ! $_product->is_visible() ) : ?>
-	
-		 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
+
+		 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' );
 		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
 
         $single_cat = array_shift( $product_cats ); ?>
@@ -134,33 +134,33 @@ $itemString=$totalnumber>1?'items':'item';
         <span class="minicart-category"><?php echo $single_cat->name; ?></span>
 
 <?php }
-		 ?> 
+		 ?>
 	<span class="minicart-name">
-		<?php echo  $product_name ; ?>	
-	</span> 
-	
+		<?php echo  $product_name ; ?>
+	</span>
+
 <?php else : ?>
-			 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' ); 
+			 <?php $product_cats = wp_get_post_terms( $_product->id, 'product_cat' );
 		 		  if ( $product_cats && ! is_wp_error ( $product_cats ) ){
 
         $single_cat = array_shift( $product_cats ); ?>
 
-        
+
 
 <?php }
-		 ?> 
-	
+		 ?>
+
 	<a class="minicart-name-link"href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>">
-		<span  class="minicart-category"><?php echo $single_cat->name; ?></span><span class="minicart-name"><?php echo $product_name ; ?></span> 
+		<span  class="minicart-category"><?php echo $single_cat->name; ?></span><span class="minicart-name"><?php echo $product_name ; ?></span>
 	</a>
 
-	
+
 
 <?php endif; ?>
-	
+
 						<?php //echo WC()->cart->get_item_data( $cart_item ); ?>
-						<?php echo  '<span class="price">' . sprintf( 'Price: %s', $product_price ) . '</span>'; ?>
-						<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( 'Quantity: %s', $cart_item['quantity'] ) . '</span>', $cart_item, $cart_item_key ); ?>
+						<?php echo  '<span class="price">' . sprintf( __('Price','woocommerce').': %s', $product_price ) . '</span>'; ?>
+						<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( __('Quantity','woocommerce').': %s', $cart_item['quantity'] ) . '</span>', $cart_item, $cart_item_key ); ?>
 							<?php
 						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 							'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
@@ -183,7 +183,7 @@ $itemString=$totalnumber>1?'items':'item';
 
 	<?php endif; ?>
 
-</ul><!-- end product list --> 
+</ul><!-- end product list -->
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
 
