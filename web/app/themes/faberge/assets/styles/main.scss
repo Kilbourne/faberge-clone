@@ -1,3 +1,7 @@
+@media(max-width:768px){
+  @import "../../../../plugins/woocommerce/assets/css/woocommerce-smallscreen.scss";
+}
+
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/inuit-defaults/_settings.defaults.scss";

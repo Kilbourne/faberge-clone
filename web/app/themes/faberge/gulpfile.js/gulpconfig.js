@@ -95,7 +95,7 @@ module.exports = {
 		, sass    	   : {
 				          outputStyle: 'nested', // libsass doesn't support expanded yet
 				          precision: 10,
-				          includePaths: ['.'],
+				          includePaths: ['.',require( 'node-bourbon' ).includePaths],
 				          errLogToConsole: !enabled.failStyleTask
 				        }
 		, minify  	   : {
