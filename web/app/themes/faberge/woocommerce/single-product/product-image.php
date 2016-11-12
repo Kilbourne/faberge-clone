@@ -9,14 +9,14 @@
  * as little as possible, but it does happen. When this occurs the version of the template file will.
  * be bumped and the readme will list any important changes.
  *
- * @see 	    http://docs.woothemes.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
+ * @see         http://docs.woothemes.com/document/template-structure/
+ * @author         WooThemes
+ * @package     WooCommerce/Templates
  * @version     2.0.14
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
 }
 
 global $post, $woocommerce, $product;
@@ -24,47 +24,45 @@ global $post, $woocommerce, $product;
 ?>
 <div class="images">
 
-	<?php
+  <?php
 
-		if ( has_post_thumbnail() ) {
+if (has_post_thumbnail()) {
 
-			$image_title 	= esc_attr( get_the_title( get_post_thumbnail_id() ) );
-			$image_caption 	= get_post( get_post_thumbnail_id() )->post_excerpt;
-			$image_link  	= wp_get_attachment_url( get_post_thumbnail_id() );
-			$image       	= get_the_post_thumbnail( $post->ID, 'full', array(
-				'title'	=> $image_title,
-				'alt'	=> $image_title
-				) );
-			
-			$gallery_ids=$product->get_gallery_attachment_ids();
-			$attachment_count = count( $gallery_ids );
+    $image_title   = get_post_meta(get_post_thumbnail_id(), '_yoast_wpseo_title', true) ? get_post_meta(get_post_thumbnail_id(), '_yoast_wpseo_title', true) : esc_attr(get_the_title(get_post_thumbnail_id()));
+    $image_caption = get_post(get_post_thumbnail_id())->post_excerpt;
+    $image_link    = wp_get_attachment_url(get_post_thumbnail_id());
+    $image         = get_the_post_thumbnail($post->ID, 'full', array(
+        'title' => $image_title,
+        'alt'   => $image_title,
+    ));
 
-$pathinfo=pathinfo(parse_url($image_link, PHP_URL_PATH));
-$image_link=$pathinfo['dirname'].'/'.$pathinfo['filename'].'_zoom'.'.'.$pathinfo['extension'];
+    $gallery_ids      = $product->get_gallery_attachment_ids();
+    $attachment_count = count($gallery_ids);
 
-			if ( $attachment_count > 0 ) {
+    $pathinfo   = pathinfo(parse_url($image_link, PHP_URL_PATH));
+    $image_link = $pathinfo['dirname'] . '/' . $pathinfo['filename'] . '_zoom' . '.' . $pathinfo['extension'];
 
-				$gallery = '[product-gallery]';
+    if ($attachment_count > 0) {
 
-			} else {
-				$gallery = '';
-			}			
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_caption, $image ), $post->ID );
+        $gallery = '[product-gallery]';
 
+    } else {
+        $gallery = '';
+    }
+    echo apply_filters('woocommerce_single_product_image_html', sprintf('<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_caption, $image), $post->ID);
 
-		} else {
+} else {
 
-			$image = apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a  itemprop="image" class="woocommerce-main-image zoom"  data-rel="prettyPhoto">%s</a>',  $image ), $post->ID );
+    $image = apply_filters('woocommerce_single_product_image_html', sprintf('<img src="%s" alt="%s" />', wc_placeholder_img_src(), __('Placeholder', 'woocommerce')), $post->ID);
+    echo apply_filters('woocommerce_single_product_image_html', sprintf('<a  itemprop="image" class="woocommerce-main-image zoom"  data-rel="prettyPhoto">%s</a>', $image), $post->ID);
 
+}
 
-		}
-		
-	?>
+?>
 
-	<?php faberge_woocommerce_single_product_variations();
-	do_action( 'woocommerce_product_thumbnails' );	
-	
-	?>
+  <?php faberge_woocommerce_single_product_variations();
+do_action('woocommerce_product_thumbnails');
+
+?>
 
 </div>
