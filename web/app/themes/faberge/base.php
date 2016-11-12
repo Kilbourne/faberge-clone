@@ -110,7 +110,7 @@ ga('send', 'pageview');
         get_header( 'shop' );
       }
     ?>
-    <div class="page-wrapper page-wrapper--little">
+    <div class="page-wrapper <?php if(!is_front_page()){ ?> page-wrapper--little <?php } ?>">
 
     <div class="wrap container" role="document">
       <div class="content">
