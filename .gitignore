@@ -13,6 +13,7 @@ web/app/updraft
 # WordPress
 web/wp
 web/.htaccess
+.htaccess
 .htaccess*
 .III*
 .dfd*
