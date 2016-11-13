@@ -416,7 +416,7 @@ function so_28060317 ( $show_empty ) {
     return $show_empty;
 }
 remove_filter( 'post_class', 'wc_product_post_class', '20' );
-add_filter( 'post_class', __NAMESPACE__ . 'fab_product_post_class', '20' );
+add_filter( 'post_class', __NAMESPACE__ . 'fab_product_post_class', '20',3 );
 function fab_product_post_class( $classes, $class = '', $post_id = '' ) {
   if ( ! $post_id || 'product' !== get_post_type( $post_id ) ) {
     return $classes;
