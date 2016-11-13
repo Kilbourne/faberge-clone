@@ -146,7 +146,7 @@ function sitemap_per_language2($url, $type,$obj){
 
 return $url;
 }
-
+if(!is_admin()){
 add_filter('woocommerce_variable_price_html', __NAMESPACE__ . '\\custom_variation_price', 10, 2);
 
     function custom_variation_price( $price, $product ) {
@@ -167,3 +167,4 @@ add_filter('woocommerce_variable_price_html', __NAMESPACE__ . '\\custom_variatio
         return '<span class="woocommerce-Price-amount amount">'.woocommerce_price($price).'</span>' ;
 
     }
+}
