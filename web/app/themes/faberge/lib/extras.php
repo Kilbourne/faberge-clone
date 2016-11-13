@@ -150,7 +150,7 @@ if(!is_admin()){
 add_filter('woocommerce_variable_price_html', __NAMESPACE__ . '\\custom_variation_price', 10, 2);
 
     function custom_variation_price( $price, $product ) {
-
+        if(!is_product()) return $price;
         foreach($product->get_available_variations() as $pav){
             $def=true;
             foreach($product->get_variation_default_attributes() as $defkey=>$defval){

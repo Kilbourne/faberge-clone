@@ -14,6 +14,9 @@ remove_action( 'woocommerce_after_single_product_summary','woocommerce_output_pr
 
 remove_action( 'woocommerce_before_shop_loop','woocommerce_result_count', 20, 0);
 remove_action( 'woocommerce_before_shop_loop','woocommerce_catalog_ordering', 30, 0);
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 /**
  * Archive Description
  *
@@ -411,4 +414,35 @@ function so_28060317 ( $show_empty ) {
     $show_empty  =  true;
 
     return $show_empty;
+}
+remove_filter( 'post_class', 'wc_product_post_class', '20' );
+add_filter( 'post_class', __NAMESPACE__ . 'fab_product_post_class', '20' );
+function fab_product_post_class( $classes, $class = '', $post_id = '' ) {
+  if ( ! $post_id || 'product' !== get_post_type( $post_id ) ) {
+    return $classes;
+  }
+
+  $product = wc_get_product( $post_id );
+
+  if ( $product ) {
+    $classes[] = wc_get_loop_class();
+
+    if ( $product->get_type() ) {
+      $classes[] = "product-type-" . $product->get_type();
+    }
+    if ( $product->is_type( 'variable' ) ) {
+      if ( $product->has_default_attributes() ) {
+        $classes[] = 'has-default-attributes';
+      }
+      if ( $product->has_child() ) {
+        $classes[] = 'has-children';
+      }
+    }
+  }
+
+  if ( false !== ( $key = array_search( 'hentry', $classes ) ) ) {
+    unset( $classes[ $key ] );
+  }
+
+  return $classes;
 }
