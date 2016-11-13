@@ -168,3 +168,35 @@ add_filter('woocommerce_variable_price_html', __NAMESPACE__ . '\\custom_variatio
 
     }
 }
+
+  add_filter( 'wc_google_analytics_pro_tracking_function_name', function($tracker){ return 'ga';} );
+function ga_tracking_code($class) {
+
+    // bail if tracking is disabled
+
+
+    // no indentation on purpose
+    ?>
+<!-- Start WooCommerce Google Analytics Pro -->
+  <?php do_action( 'wc_google_analytics_pro_before_tracking_code' ); ?>
+<script>
+
+  <?php echo $class->ga_function_name; ?>( 'create', '<?php echo esc_js( $class->get_tracking_id() ); ?>', 'auto' );
+  <?php echo $class->ga_function_name; ?>( 'set', 'forceSSL', true );
+<?php if ( 'yes' === $class->settings['track_user_id'] && is_user_logged_in() ) : ?>
+  <?php echo $class->ga_function_name; ?>( 'set', 'userId', '<?php echo esc_js( get_current_user_id() ) ?>' );
+<?php endif; ?>
+<?php if ( 'yes' === $class->settings['anonymize_ip'] ) : ?>
+  <?php echo $class->ga_function_name; ?>( 'set', 'anonymizeIp', true );
+<?php endif; ?>
+<?php if ( 'yes' === $class->settings['enable_displayfeatures'] ) : ?>
+  <?php echo $class->ga_function_name; ?>( 'require', 'displayfeatures' );
+<?php endif; ?>
+  <?php echo $class->ga_function_name; ?>( 'require', 'ec' );
+</script>
+  <?php do_action( 'wc_google_analytics_pro_after_tracking_code' ); ?>
+<!-- end WooCommerce Google Analytics Pro -->
+    <?php
+  }
+
+
