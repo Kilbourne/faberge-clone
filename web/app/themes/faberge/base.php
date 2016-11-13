@@ -46,11 +46,11 @@ use Roots\Sage\Wrapper;
       do_action('get_footer');
       get_template_part('templates/footer');
       echo do_shortcode('[responsive_menu_pro_menu] ' );
-      wp_footer();
+
 
     ?>
     </div>
-    <?php do_action('body_close'); ?>
+    <?php do_action('body_close');wp_footer(); ?>
 
 
   </body>
