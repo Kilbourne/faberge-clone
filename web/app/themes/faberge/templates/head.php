@@ -5,7 +5,7 @@
   <?php
   use Roots\Sage\Extras;
   $tracking = wc_google_analytics_pro()->get_integration();
-$tracking->ga_tracking_code();
+
 remove_action( 'wp_head',  array( $tracking, 'ga_tracking_code' ), 9 );
 
       add_action( 'body_open',  function() use ($tracking) { Extras\ga_tracking_code($tracking);}, 1 );

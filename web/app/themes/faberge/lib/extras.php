@@ -119,10 +119,9 @@ function my_custom_post_xml_priority( $return, $type, $post) {
     return $return;
 }
 
-if (isset($sitepress)){
-  add_filter('wpseo_posts_join', __NAMESPACE__ . '\\sitemap_per_language', 10, 2);
-  add_filter('wpseo_sitemap_entry', __NAMESPACE__ . '\\sitemap_per_language2', 10, 3);
-}
+ // add_filter('wpseo_posts_join', __NAMESPACE__ . '\\sitemap_per_language', 11, 2);
+  //add_filter('wpseo_sitemap_entry', __NAMESPACE__ . '\\sitemap_per_language2', 11, 3);
+
 
 function sitemap_per_language($join, $type) {
     global $wpdb, $sitepress;
