@@ -199,7 +199,9 @@ class AssetBuilder{
   public function close_body_ob(){
     $ob=ob_get_clean();
     global $wp_scripts;
-    $matches=[];
+    $pos=strpos($ob,'<script');
+    if($pos !== false){
+       $matches=[];
     $aaa=true;
     $aaa=preg_match_all("/<script(.|\n)*?\/script>/",$ob, $matches);
 if(isset($matches[0]) && is_array($matches[0])){
@@ -207,10 +209,16 @@ if(isset($matches[0]) && is_array($matches[0])){
       $ob=str_replace($match,"",$ob);
     }
 }
-    if($aaa !== false) echo $ob;
+if($aaa !== false) echo $ob;
     $wp_scripts->do_items($this->head_to_do);
     if($aaa === true) echo $ob;
     if(isset($matches[0]) && is_array($matches[0])) echo implode("",$matches[0]);
+    
+    }else{
+    echo $ob;
+    }
+ 
+    
   }
 
 

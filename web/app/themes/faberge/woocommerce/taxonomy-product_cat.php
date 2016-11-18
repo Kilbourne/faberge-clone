@@ -15,112 +15,113 @@
  * @version     2.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-  exit; // Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
 }
 
- ?>
+?>
 
   <?php
-    /**
-     * woocommerce_before_main_content hook.
-     *
-     * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-     * @hooked woocommerce_breadcrumb - 20
-     */
-    do_action( 'woocommerce_before_main_content' );
-    global $wp_query;
-    $cat = $wp_query->get_queried_object();
-    $cat_id=$cat->term_id;
-    
-    if( !category_has_parent($cat)){
+/**
+ * woocommerce_before_main_content hook.
+ *
+ * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+ * @hooked woocommerce_breadcrumb - 20
+ */
+do_action('woocommerce_before_main_content');
+global $wp_query;
+$cat    = $wp_query->get_queried_object();
+$cat_id = $cat->term_id;
+
+if (!category_has_parent($cat) || is_super_admin(get_current_user_id())) {
     $image = get_category_attachment_url($cat_id);
-  ?>
-
-    <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-
-      <h1 class="page-title hide-text"><?php woocommerce_page_title(); ?></h1>
-
-    <?php endif; ?>
-
-    <?php
-      /**
-       * woocommerce_archive_description hook.
-       *
-       * @hooked woocommerce_taxonomy_archive_description - 10
-       * @hooked woocommerce_product_archive_description - 10
-       */
-      echo '<div class="linea-image-wrap"><img src="' . $image . '" alt="" class="linea-image">';
-      do_action( 'woocommerce_archive_description' );
-      echo '</div>';
     ?>
 
-    <?php if ( have_posts() ) : ?>
+    <?php if (apply_filters('woocommerce_show_page_title', true)): ?>
+
+      <h1 class="page-title hide-text"><?php woocommerce_page_title();?></h1>
+
+    <?php endif;?>
+
+    <?php
+/**
+     * woocommerce_archive_description hook.
+     *
+     * @hooked woocommerce_taxonomy_archive_description - 10
+     * @hooked woocommerce_product_archive_description - 10
+     */
+
+    echo '<div class="linea-image-wrap"><img src="' . $image . '" alt="" class="linea-image">';
+    do_action('woocommerce_archive_description');
+    echo '</div>';
+    ?>
+
+    <?php if (have_posts()): ?>
 
       <?php
-        /**
-         * woocommerce_before_shop_loop hook.
-         *
-         * @hooked woocommerce_result_count - 20
-         * @hooked woocommerce_catalog_ordering - 30
-         */
-        do_action( 'woocommerce_before_shop_loop' );
-      ?>
+/**
+     * woocommerce_before_shop_loop hook.
+     *
+     * @hooked woocommerce_result_count - 20
+     * @hooked woocommerce_catalog_ordering - 30
+     */
+    do_action('woocommerce_before_shop_loop');
+    ?>
 
-      <?php   $title=category_has_children($cat_id)?__('Collections','sage'):__('DISCOVER THE COLLECTION','sage');
-      if(category_has_children($cat_id)){
-        echo '<h3 class="term-categories-title">'.$title.'</h3>';
-      }else{
-        echo '<h2 >'.$title.'</h2>';
-      }
+      <?php $title = category_has_children($cat_id) ? __('Collections', 'sage') : __('DISCOVER THE COLLECTION', 'sage');
+    if (category_has_children($cat_id)) {
+        echo '<h3 class="term-categories-title">' . $title . '</h3>';
+    } else {
+        echo '<h2 >' . $title . '</h2>';
+    }
 
-          woocommerce_product_loop_start(); ?>
+    woocommerce_product_loop_start();?>
 
-        <?php woocommerce_product_subcategories(array('force_display' => true)); ?>
+        <?php woocommerce_product_subcategories(array('force_display' => true));?>
 
-        <?php while ( have_posts() ) : the_post(); ?>
+        <?php while (have_posts()): the_post();?>
 
-          <?php wc_get_template_part( 'content', 'product' ); ?>
+                      <?php wc_get_template_part('content', 'product');?>
 
-        <?php endwhile; // end of the loop. ?>
+                    <?php endwhile; // end of the loop. ?>
 
-      <?php woocommerce_product_loop_end(); ?>
+      <?php woocommerce_product_loop_end();?>
 
       <?php
-        /**
-         * woocommerce_after_shop_loop hook.
-         *
-         * @hooked woocommerce_pagination - 10
-         */
-        //do_action( 'woocommerce_after_shop_loop' );
-      ?>
-
-    <?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
-
-      <?php wc_get_template( 'loop/no-products-found.php' ); ?>
-
-    <?php endif; ?>
-<?php }else{
-
-      get_category_single_product_content($cat_id);
-
-  } ?>
-  <?php
-    /**
-     * woocommerce_after_main_content hook.
+/**
+     * woocommerce_after_shop_loop hook.
      *
-     * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+     * @hooked woocommerce_pagination - 10
      */
-    do_action( 'woocommerce_after_main_content' );
-  ?>
+    //do_action( 'woocommerce_after_shop_loop' );
+    ?>
+
+    <?php elseif (!woocommerce_product_subcategories(array('before' => woocommerce_product_loop_start(false), 'after' => woocommerce_product_loop_end(false)))): ?>
+
+      <?php wc_get_template('loop/no-products-found.php');?>
+
+    <?php endif;?>
+<?php } else {
+
+    get_category_single_product_content($cat_id);
+
+}?>
+  <?php
+/**
+ * woocommerce_after_main_content hook.
+ *
+ * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+ */
+do_action('woocommerce_after_main_content');
+?>
 
   <?php
-    /**
-     * woocommerce_sidebar hook.
-     *
-     * @hooked woocommerce_get_sidebar - 10
-     */
-    //do_action( 'woocommerce_sidebar' );
-  ?>
+/**
+ * woocommerce_sidebar hook.
+ *
+ * @hooked woocommerce_get_sidebar - 10
+ */
+//do_action( 'woocommerce_sidebar' );
+?>
 
 <?php //get_footer( 'shop' ); ?>
