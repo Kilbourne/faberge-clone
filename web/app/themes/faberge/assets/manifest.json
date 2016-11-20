@@ -2,6 +2,7 @@
   "dependencies": {
     "main.js": {
       "vendor": [
+        "assets/scripts/analytics.js",
         "../../plugins/responsive-menu-pro-bacon/public/js/touch.js",
         "../../plugins/responsive-menu-pro-data/js/responsive-menu-pro-1.js",
         "assets/scripts/cart-fragments.js",
@@ -47,8 +48,7 @@
         "../../../wp/wp-includes/js/wp-util.js",
         "../../plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js",
         "../../plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js",
-        "../../plugins/woocommerce/assets/js/frontend/woocommerce.js",
-        "assets/scripts/analitycs.js"
+        "../../plugins/woocommerce/assets/js/frontend/woocommerce.js"
         ]
     },
     "checkout.js":{
