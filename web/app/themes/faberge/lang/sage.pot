@@ -97,6 +97,26 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
+#: woocommerce/cart/mini-cart.php:57
+msgid "items in cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:57
+msgid "item in cart"
+msgstr ""
+
+#: woocommerce/single-product/related.php:99
+msgid "Discover the collection"
+msgstr ""
+
+#: woocommerce/single-product/share.php:103
+msgid "Total: "
+msgstr ""
+
+#: woocommerce/single-product/share.php:229
+msgid "Share this article on %s"
+msgstr ""
+
 #: woocommerce/taxonomy-product_cat.php:141
 msgid "DISCOVER THE COLLECTION"
 msgstr ""

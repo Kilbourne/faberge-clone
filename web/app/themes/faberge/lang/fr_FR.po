@@ -100,27 +100,32 @@ msgstr "Pages:"
 msgid "Search"
 msgstr "Recherche"
 
+#: woocommerce/cart/mini-cart.php:57
+msgid "items in cart"
+msgstr "produits en panier"
+
+#: woocommerce/cart/mini-cart.php:57
+msgid "item in cart"
+msgstr "produit en panier"
+
+#: woocommerce/single-product/related.php:99
+msgid "Discover the collection"
+msgstr "Découvrez-vous la collection"
+
+#: woocommerce/single-product/share.php:103
+msgid "Total: "
+msgstr "Total:"
+
+#: woocommerce/single-product/share.php:229
+msgid "Share this article on %s"
+msgstr "Partager sur %s"
+
 #: woocommerce/taxonomy-product_cat.php:141
 msgid "DISCOVER THE COLLECTION"
 msgstr "DÉCOUVREZ-VOUS LA COLLECTION "
 
-#~ msgid "items in cart"
-#~ msgstr "produits en panier"
-
-#~ msgid "item in cart"
-#~ msgstr "produit en panier"
-
 #~ msgid "Search for:"
 #~ msgstr "Rechercher:"
-
-#~ msgid "Discover the collection"
-#~ msgstr "Découvrez-vous la collection"
-
-#~ msgid "Total: "
-#~ msgstr "Total:"
-
-#~ msgid "Share this article on %s"
-#~ msgstr "Partager sur %s"
 
 #~ msgid "By"
 #~ msgstr "Par"
