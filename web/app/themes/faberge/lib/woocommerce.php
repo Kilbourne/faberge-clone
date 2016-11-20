@@ -53,7 +53,31 @@ function get_category_attachment_url($cat_id){
   $thumbnail_id = get_woocommerce_term_meta( $cat_id, 'thumbnail_id', true );
   return wp_get_attachment_url( $thumbnail_id );
 }
+remove_action( 'woocommerce_before_subcategory_title', 'woocommerce_subcategory_thumbnail',10 );
+add_action( 'woocommerce_before_subcategory_title', 'woocommerce_subcategory_thumbnail1' );
 
+
+    function woocommerce_subcategory_thumbnail1( $category ) {
+        $small_thumbnail_size   = apply_filters( 'subcategory_archive_thumbnail_size', 'shop_catalog' );
+        $dimensions             = wc_get_image_size( $small_thumbnail_size );
+        $obj_id = icl_object_id( $category->term_id,'product_cat', false, 'en');
+        $thumbnail_id           = get_field( 'seconda_immagine','product_cat_'. $obj_id  );
+        $image=false;
+
+        if(!$thumbnail_id )  $thumbnail_id           = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true  );
+        if ( $thumbnail_id ) {
+            $image = wp_get_attachment_image_src( $thumbnail_id, $small_thumbnail_size  );
+            $image = $image[0];
+        }
+
+        if ( $image ) {
+            // Prevent esc_url from breaking spaces in urls for image embeds
+            // Ref: https://core.trac.wordpress.org/ticket/23605
+            $image = str_replace( ' ', '%20', $image );
+
+            echo '<img src="' . esc_url( $image ) . '" alt="' . esc_attr( $category->name ) . '" width="' . esc_attr( $dimensions['width'] ) . '" height="' . esc_attr( $dimensions['height'] ) . '" />';
+        }
+    }
 function get_category_single_product_content($cat_id){
   global $post;
   $posts= get_posts(

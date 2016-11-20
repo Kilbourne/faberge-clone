@@ -33,7 +33,7 @@ global $wp_query;
 $cat    = $wp_query->get_queried_object();
 $cat_id = $cat->term_id;
 
-if (!category_has_parent($cat) || is_super_admin(get_current_user_id())) {
+
     $image = get_category_attachment_url($cat_id);
     ?>
 
@@ -101,11 +101,7 @@ if (!category_has_parent($cat) || is_super_admin(get_current_user_id())) {
       <?php wc_get_template('loop/no-products-found.php');?>
 
     <?php endif;?>
-<?php } else {
 
-    get_category_single_product_content($cat_id);
-
-}?>
   <?php
 /**
  * woocommerce_after_main_content hook.

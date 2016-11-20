@@ -1,11 +1,11 @@
 {
-    "key": "group_5746c6d236a74",
-    "title": "Campi Size",
+    "key": "group_5831853474625",
+    "title": "Categoria prodotti immagine 2",
     "fields": [
         {
-            "key": "field_5746c6d30ae7f",
-            "label": "thumbnail",
-            "name": "thumb_size",
+            "key": "field_58318535bc530",
+            "label": "Seconda immagine",
+            "name": "seconda_immagine",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -15,15 +15,15 @@
                 "class": "",
                 "id": ""
             },
+            "return_format": "id",
             "preview_size": "thumbnail",
             "library": "all",
-            "return_format": "url",
-            "min_width": 0,
-            "min_height": 0,
-            "min_size": 0,
-            "max_width": 0,
-            "max_height": 0,
-            "max_size": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
             "mime_types": ""
         }
     ],
@@ -32,17 +32,17 @@
             {
                 "param": "taxonomy",
                 "operator": "==",
-                "value": "pa_measure"
+                "value": "product_cat"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1479650171
+    "modified": 1479650157
 }

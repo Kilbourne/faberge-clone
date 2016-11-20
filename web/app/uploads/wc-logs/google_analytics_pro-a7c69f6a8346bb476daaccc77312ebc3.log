@@ -1,0 +1,4266 @@
+11-15-2016 @ 23:38:58 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479249538
+    [cid] => 1987454054.1479059418
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => TROPHY R
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => TROPHY R VARIABLE
+    [pr1nm] => TROPHY R
+    [pr1ca] => Hermitage
+    [pr1pr] => 380
+    [pr1qt] => 1
+)
+
+duration: 0.18338s
+11-15-2016 @ 23:38:58 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Tue, 15 Nov 2016 22:38:58 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:17:39 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259059
+    [cid] => 67e9c7fe-afb4-47bc-b447-5355ce66d083
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 962-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 962-L
+    [pr1nm] => 962-L
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.16704s
+11-16-2016 @ 02:17:39 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:17:39 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:17:48 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259068
+    [cid] => 74e2c911-d48a-4c03-8c80-c6a3d54fc691
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 804-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 804-L
+    [pr1nm] => 804-L
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.15716s
+11-16-2016 @ 02:17:48 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:17:48 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:20:29 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259229
+    [cid] => cd273d0b-e144-451e-a3b2-5a6be1f77f4c
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 804-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 804-L
+    [pr1nm] => 804-L
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.16071s
+11-16-2016 @ 02:20:29 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:20:29 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:21:04 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259263
+    [cid] => e7fc61e3-6dcc-4532-a24a-0a7c82e65885
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 962-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 962-L
+    [pr1nm] => 962-L
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.1647s
+11-16-2016 @ 02:21:04 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:21:04 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:21:09 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259269
+    [cid] => f0b4908f-25da-4c71-b5b0-b68264a5336c
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 809-XL
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 890-XL
+    [pr1nm] => 809-XL
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 496,00
+    [pr1qt] => 1
+)
+
+duration: 0.18838s
+11-16-2016 @ 02:21:09 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:21:09 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:21:48 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259308
+    [cid] => 66f527d6-5a9b-4652-b76a-afae2cc0f486
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 900E126
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 900E126
+    [pr1nm] => 900E126
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 5400
+    [pr1qt] => 1
+)
+
+duration: 0.1554s
+11-16-2016 @ 02:21:48 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:21:48 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:21:59 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259319
+    [cid] => 08f57e68-b8bc-418d-8d91-cc04fba58926
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 800F242
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 800F242
+    [pr1nm] => 800F242
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 5760
+    [pr1qt] => 1
+)
+
+duration: 0.38075s
+11-16-2016 @ 02:21:59 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:21:59 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:23:55 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259435
+    [cid] => e50bc340-0d46-4fb4-b201-b33b607458d2
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 809-XL
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 890-XL
+    [pr1nm] => 809-XL
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 496,00
+    [pr1qt] => 1
+)
+
+duration: 0.19805s
+11-16-2016 @ 02:23:55 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:23:55 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:25:14 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259514
+    [cid] => 84400145-326a-46a6-823e-685fd7f1fb22
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 900E126
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 900E126
+    [pr1nm] => 900E126
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 5400
+    [pr1qt] => 1
+)
+
+duration: 0.17866s
+11-16-2016 @ 02:25:14 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:25:14 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:25:20 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259520
+    [cid] => bdafb071-adfc-49fe-b37e-ab93037f00d8
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 800F242
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 800F242
+    [pr1nm] => 800F242
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 5760
+    [pr1qt] => 1
+)
+
+duration: 0.18593s
+11-16-2016 @ 02:25:20 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:25:20 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:30:30 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259830
+    [cid] => 18d77514-b740-4d7c-abd4-07cf59aa0d9f
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AA-2
+    [pr1nm] => AA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89,00
+    [pr1qt] => 1
+)
+
+duration: 0.18266s
+11-16-2016 @ 02:30:30 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:30:30 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:30:45 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259845
+    [cid] => d0068bc2-05c9-40a4-b9db-6858b76a9bc1
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-4
+    [pr1nm] => HO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.1806s
+11-16-2016 @ 02:30:45 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:30:45 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:30:51 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259851
+    [cid] => 7d78d94e-9410-4eb3-bd51-65bf619227ca
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-4
+    [pr1nm] => AO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.185s
+11-16-2016 @ 02:30:51 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:30:51 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:31:29 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259889
+    [cid] => a8678080-4b90-4478-b23a-2c0685651be2
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-2
+    [pr1nm] => AO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.19136s
+11-16-2016 @ 02:31:29 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:31:29 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:31:39 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259899
+    [cid] => 9b50169c-1d6c-4277-b276-674e3fe61045
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HA-2
+    [pr1nm] => HA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.18208s
+11-16-2016 @ 02:31:39 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:31:39 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:31:49 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259909
+    [cid] => 6b2026ee-41e7-4222-bc52-5fe7c2f07124
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-2
+    [pr1nm] => HO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.19207s
+11-16-2016 @ 02:31:49 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:31:49 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:31:55 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259915
+    [cid] => 0875e675-be6f-4032-9cce-e3e4e541c605
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HA-2
+    [pr1nm] => HA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.19573s
+11-16-2016 @ 02:31:55 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:31:55 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:32:09 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259928
+    [cid] => aee9cace-0b41-4420-87c2-72d0a70a5d7c
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-2
+    [pr1nm] => AO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.18684s
+11-16-2016 @ 02:32:09 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:32:09 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:32:25 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259944
+    [cid] => c5df4e15-7f06-4a13-931d-8558beaaa5b4
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-4
+    [pr1nm] => HO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.18475s
+11-16-2016 @ 02:32:25 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:32:25 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:32:30 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259949
+    [cid] => f7e234b1-f178-47d4-a047-1284c9160ee8
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-2
+    [pr1nm] => HO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.18277s
+11-16-2016 @ 02:32:30 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:32:30 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:33:00 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259979
+    [cid] => aec20817-38d9-4432-b627-95a7896048c0
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-4
+    [pr1nm] => AO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.19676s
+11-16-2016 @ 02:33:00 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:33:00 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:33:09 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479259989
+    [cid] => 3be1f1dd-c6d7-4949-8083-d1b0af3d0296
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HP-11
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HP-11
+    [pr1nm] => HP-11
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 249,00
+    [pr1qt] => 1
+)
+
+duration: 0.19714s
+11-16-2016 @ 02:33:09 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:33:09 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:33:20 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260000
+    [cid] => 856188e3-56cf-42a8-ba9a-86c6ead34415
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AA-2
+    [pr1nm] => AA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89,00
+    [pr1qt] => 1
+)
+
+duration: 0.18145s
+11-16-2016 @ 02:33:20 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:33:20 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:35:40 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260140
+    [cid] => 1f8a3ac1-54a2-472d-80b2-c284a12f7df7
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HP-11
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HP-11
+    [pr1nm] => HP-11
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 249,00
+    [pr1qt] => 1
+)
+
+duration: 0.19126s
+11-16-2016 @ 02:35:40 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:35:40 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:38:58 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260338
+    [cid] => df047c2e-96d1-495f-94cf-64be6ad32047
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 804-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 804-L
+    [pr1nm] => 804-L
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.18666s
+11-16-2016 @ 02:38:58 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:38:58 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:39:35 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260374
+    [cid] => 166fa4bb-7737-4574-9f5e-2a663c77db51
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 962-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 962-L
+    [pr1nm] => 962-L
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.19164s
+11-16-2016 @ 02:39:35 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:39:34 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:40:35 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260434
+    [cid] => 039c4d2b-d844-42ed-b75a-1a8d3823929b
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 962-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 962-L
+    [pr1nm] => 962-L
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.18455s
+11-16-2016 @ 02:40:35 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:40:35 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:40:54 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260454
+    [cid] => 02d965e8-e280-43f1-afc9-faa9e108a56c
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 890-XL
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 890-XL
+    [pr1nm] => 890-XL
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 496,00
+    [pr1qt] => 1
+)
+
+duration: 0.18418s
+11-16-2016 @ 02:40:54 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:40:54 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:41:08 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260468
+    [cid] => b5ad31dd-3e38-4d25-81bf-4609e5a7eaaa
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 804-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 804-L
+    [pr1nm] => 804-L
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.19032s
+11-16-2016 @ 02:41:08 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:41:08 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:41:13 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260473
+    [cid] => 8eaf81e1-c209-4f49-a864-b3a5c92589f2
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 13981 B
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 13981 B
+    [pr1nm] => 13981 B
+    [pr1ca] => Classics/Emperor
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.18899s
+11-16-2016 @ 02:41:13 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:41:13 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:41:33 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260493
+    [cid] => de3df849-5194-4dd2-9376-5f5e51891e9b
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 800F242
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 800F242
+    [pr1nm] => 800F242
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 5760
+    [pr1qt] => 1
+)
+
+duration: 0.19107s
+11-16-2016 @ 02:41:33 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:41:33 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:42:14 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260534
+    [cid] => 872f2e3c-6167-47d3-8e81-d159b1ce2029
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 890-XL
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 890-XL
+    [pr1nm] => 890-XL
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 496,00
+    [pr1qt] => 1
+)
+
+duration: 0.19586s
+11-16-2016 @ 02:42:14 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:42:14 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:42:24 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260544
+    [cid] => f2a2e89d-8848-480e-b492-006f47b801fd
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 13981 B
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 13981 B
+    [pr1nm] => 13981 B
+    [pr1ca] => Classics/Emperor
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.18354s
+11-16-2016 @ 02:42:24 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:42:24 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:43:04 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260584
+    [cid] => ab0aecdd-4f26-456b-a97d-82067ca6ee53
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 900E126
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 900E126
+    [pr1nm] => 900E126
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 5400
+    [pr1qt] => 1
+)
+
+duration: 0.20009s
+11-16-2016 @ 02:43:04 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:43:04 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:43:43 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260623
+    [cid] => 5e6df39b-280e-4f38-b3ac-1029e9c1b13a
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 890-XL
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 890-XL
+    [pr1nm] => 890-XL
+    [pr1ca] => Iconiques Oeufs
+    [pr1pr] => 496,00
+    [pr1qt] => 1
+)
+
+duration: 0.17707s
+11-16-2016 @ 02:43:43 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:43:43 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:44:29 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260669
+    [cid] => 6341e327-1d62-4cfd-9af0-0775bacb92d9
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 900E126
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 900E126
+    [pr1nm] => 900E126
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 5400
+    [pr1qt] => 1
+)
+
+duration: 0.18771s
+11-16-2016 @ 02:44:29 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:44:29 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:44:49 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260689
+    [cid] => d58616c7-283c-44c5-bef5-c4bc21a8ff66
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 800F242
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 800F242
+    [pr1nm] => 800F242
+    [pr1ca] => Iconic Eggs
+    [pr1pr] => 5760
+    [pr1qt] => 1
+)
+
+duration: 0.17771s
+11-16-2016 @ 02:44:49 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:44:49 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:14 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260714
+    [cid] => 4d4ca8d6-9703-4053-b517-87bac6fcc8d8
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 962-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 962-L
+    [pr1nm] => 962-L
+    [pr1ca] => Iconiques Oeufs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.18813s
+11-16-2016 @ 02:45:14 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:14 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:19 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260719
+    [cid] => fdb0086b-36d2-4999-bbc9-d88d7d503218
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 804-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 804-L
+    [pr1nm] => 804-L
+    [pr1ca] => Iconiques Oeufs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.19s
+11-16-2016 @ 02:45:19 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:19 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:24 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260724
+    [cid] => 4e88b196-5667-477f-a988-2eaebdf00fa6
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 890-XL
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 890-XL
+    [pr1nm] => 890-XL
+    [pr1ca] => Iconiques Oeufs
+    [pr1pr] => 496,00
+    [pr1qt] => 1
+)
+
+duration: 0.1785s
+11-16-2016 @ 02:45:24 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:24 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:29 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260729
+    [cid] => 5f945990-d1ec-460e-9c8f-f066e4eac7f8
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-2
+    [pr1nm] => AO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.18913s
+11-16-2016 @ 02:45:29 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:29 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:35 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260735
+    [cid] => 229f6865-4d8b-4119-9de7-2ba00a19e567
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 23999 TB
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 23999 TB
+    [pr1nm] => 23999 TB
+    [pr1ca] => Classics/Anastasija
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.19941s
+11-16-2016 @ 02:45:35 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:35 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:40 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260739
+    [cid] => abfa3d0b-c983-40df-ac2f-b22a572d69d2
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-4
+    [pr1nm] => HO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.19289s
+11-16-2016 @ 02:45:40 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:40 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:44 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260744
+    [cid] => abc6faf0-c4bf-47db-b77b-9958987a3a83
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 13989 GR
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 13989 GR
+    [pr1nm] => 13989 GR
+    [pr1ca] => Classics/Anastasija
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.17643s
+11-16-2016 @ 02:45:44 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:44 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:49 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260748
+    [cid] => 6d8afe30-a520-40bc-b664-aa2c32693c08
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HA-2
+    [pr1nm] => HA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.18487s
+11-16-2016 @ 02:45:49 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:48 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:54 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260754
+    [cid] => 5ea7321f-3964-447b-8928-7b18460b85ce
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 804-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 804-L
+    [pr1nm] => 804-L
+    [pr1ca] => Iconiques Oeufs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.18098s
+11-16-2016 @ 02:45:54 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:54 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:45:59 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260759
+    [cid] => a0c99b0c-1097-41b0-a312-4681d8758ade
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-2
+    [pr1nm] => HO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.18751s
+11-16-2016 @ 02:45:59 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:45:59 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:04 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260764
+    [cid] => 88ef861b-2729-45da-af69-dc2e2486b0d0
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-4
+    [pr1nm] => AO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.17959s
+11-16-2016 @ 02:46:04 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:04 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:09 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260768
+    [cid] => 416e5241-e2a1-4817-93ab-62daef832043
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HA-2
+    [pr1nm] => HA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.17809s
+11-16-2016 @ 02:46:09 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:09 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:14 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260774
+    [cid] => 7029c537-7370-40f6-bf19-d2792250e12a
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AA-2
+    [pr1nm] => AA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89,00
+    [pr1qt] => 1
+)
+
+duration: 0.19042s
+11-16-2016 @ 02:46:14 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:14 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:19 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260779
+    [cid] => fd673dfb-9e66-48e6-8f25-686ae5213fa4
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-2
+    [pr1nm] => AO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.19547s
+11-16-2016 @ 02:46:19 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:19 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:23 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260783
+    [cid] => 41b09ec9-48ad-487a-9ffe-c216e5bddd21
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-2
+    [pr1nm] => HO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.20001s
+11-16-2016 @ 02:46:23 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:23 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:29 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260789
+    [cid] => bc0f8f98-e680-4944-a73d-9de12b7621c2
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 962-L
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 962-L
+    [pr1nm] => 962-L
+    [pr1ca] => Iconiques Oeufs
+    [pr1pr] => 426,00
+    [pr1qt] => 1
+)
+
+duration: 0.1813s
+11-16-2016 @ 02:46:29 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:29 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:35 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260794
+    [cid] => 5500c3d1-174b-445f-b777-96c8a2294ea1
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-4
+    [pr1nm] => HO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.17985s
+11-16-2016 @ 02:46:35 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:34 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:39 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260799
+    [cid] => 81e1f847-d568-4d74-9a13-e367141b5b55
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-4
+    [pr1nm] => AO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.19094s
+11-16-2016 @ 02:46:39 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:39 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:45 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260805
+    [cid] => bc700c81-f59d-4fb6-b00c-b9edd42f6d44
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AA-2
+    [pr1nm] => AA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89,00
+    [pr1qt] => 1
+)
+
+duration: 0.17665s
+11-16-2016 @ 02:46:45 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:45 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-16-2016 @ 02:46:50 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479260810
+    [cid] => 96eeb55b-5544-49e3-ab63-c12cd49da7f9
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-4
+    [pr1nm] => AO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.1823s
+11-16-2016 @ 02:46:50 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Wed, 16 Nov 2016 01:46:50 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-17-2016 @ 06:50:18 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479361818
+    [cid] => 8bd55e59-7ad7-4755-88f4-3007d1831b7b
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-4
+    [pr1nm] => AO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.19728s
+11-17-2016 @ 06:50:18 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Thu, 17 Nov 2016 05:50:18 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-17-2016 @ 06:50:21 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479361821
+    [cid] => ab0224ae-a029-445d-80ca-a12472822004
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HP-11
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HP-11
+    [pr1nm] => HP-11
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 249,00
+    [pr1qt] => 1
+)
+
+duration: 0.18948s
+11-17-2016 @ 06:50:21 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Thu, 17 Nov 2016 05:50:21 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-17-2016 @ 06:50:33 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479361833
+    [cid] => a05d96dd-cc03-4a95-b7c4-e65e8618a805
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF020 DB
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF020 DB
+    [pr1nm] => PF020 DB
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.19874s
+11-17-2016 @ 06:50:33 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Thu, 17 Nov 2016 05:50:33 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-17-2016 @ 06:50:34 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479361833
+    [cid] => c7804529-3544-408d-88c6-7e0ee3d93510
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF005 TB
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF005 TB
+    [pr1nm] => PF005 TB
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.20415s
+11-17-2016 @ 06:50:34 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Thu, 17 Nov 2016 05:50:34 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-17-2016 @ 06:50:36 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479361835
+    [cid] => 9b091435-5ca5-49b3-877e-0312d7dcbbd7
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HP-11
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HP-11
+    [pr1nm] => HP-11
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 249,00
+    [pr1qt] => 1
+)
+
+duration: 0.18898s
+11-17-2016 @ 06:50:36 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Thu, 17 Nov 2016 05:50:36 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-17-2016 @ 06:51:52 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479361911
+    [cid] => ba393dc9-d965-4b35-88a8-465a62d6137f
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-4
+    [pr1nm] => HO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.19141s
+11-17-2016 @ 06:51:52 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Thu, 17 Nov 2016 05:51:52 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-17-2016 @ 06:51:59 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479361919
+    [cid] => db351051-c81b-47f9-949d-bae35ac1c907
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF005 TB
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF005 TB
+    [pr1nm] => PF005 TB
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.19156s
+11-17-2016 @ 06:51:59 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Thu, 17 Nov 2016 05:51:59 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-18-2016 @ 23:45:27 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479509127
+    [cid] => b1aac97f-e469-46fc-a2f5-8bc5d522a739
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 13989 GR
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 13989 GR
+    [pr1nm] => 13989 GR
+    [pr1ca] => Classics/Anastasija
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.19911s
+11-18-2016 @ 23:45:27 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Fri, 18 Nov 2016 22:45:27 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 01:26:22 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; RavenCrawler/2.0; +https://raventools.com/seo-website-auditor/)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479601582
+    [cid] => e610fabd-740c-4a77-b3e8-0e4fb6ffc0dd
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF005 TB
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF005 TB
+    [pr1nm] => PF005 TB
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.19814s
+11-20-2016 @ 01:26:22 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 00:26:22 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:07:51 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611270
+    [cid] => 94c2f6bf-2ef4-4fd6-b0c8-fc27f38838f4
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 23999 TB
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 23999 TB
+    [pr1nm] => 23999 TB
+    [pr1ca] => Classics/Anastasija
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.196s
+11-20-2016 @ 04:07:51 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:07:51 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:07:53 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611273
+    [cid] => a72827d3-dc57-41de-9edf-4b87e211f97a
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => 13989 GR
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => 13989 GR
+    [pr1nm] => 13989 GR
+    [pr1ca] => Classics/Anastasija
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.18612s
+11-20-2016 @ 04:07:53 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:07:53 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:08:02 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611282
+    [cid] => c7e05167-b577-4673-bf82-2a081a34930c
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF008 GR
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF008 GR
+    [pr1nm] => PF008 GR
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.19911s
+11-20-2016 @ 04:08:02 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:08:02 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:08:22 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611302
+    [cid] => f52129c4-f24d-4998-b9dc-3cd3e6ce89b2
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-2
+    [pr1nm] => AO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.18294s
+11-20-2016 @ 04:08:22 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:08:22 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:08:26 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611306
+    [cid] => 2098be3d-249a-4a4a-b53b-721d45d7735c
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AA-2
+    [pr1nm] => AA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89,00
+    [pr1qt] => 1
+)
+
+duration: 0.18731s
+11-20-2016 @ 04:08:26 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:08:26 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:08:27 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611307
+    [cid] => d18980cb-07df-42f2-80b7-138ff3d228ae
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => AO-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => AO-2
+    [pr1nm] => AO-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 89.00
+    [pr1qt] => 1
+)
+
+duration: 0.18837s
+11-20-2016 @ 04:08:27 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:08:27 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:08:30 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611310
+    [cid] => 71bf8d87-19da-48f0-9474-3918a4ca21d3
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HA-2
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HA-2
+    [pr1nm] => HA-2
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.17963s
+11-20-2016 @ 04:08:30 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:08:30 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:09:05 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611344
+    [cid] => b526faac-67f2-4f24-aab0-ca27369cecb3
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF020 DB
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF020 DB
+    [pr1nm] => PF020 DB
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.19158s
+11-20-2016 @ 04:09:05 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:09:05 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:09:16 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479611356
+    [cid] => 597a3a29-5924-42da-b4eb-f2a34815a9e9
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF028 B
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF028 B
+    [pr1nm] => PF028 B
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214,00
+    [pr1qt] => 1
+)
+
+duration: 0.18589s
+11-20-2016 @ 04:09:16 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:09:16 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:26:05 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479612365
+    [cid] => 7ff3b9ac-344d-402d-88b8-e3930299cb95
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF030 B
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF030 B
+    [pr1nm] => PF030 B
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214.00
+    [pr1qt] => 1
+)
+
+duration: 0.18691s
+11-20-2016 @ 04:26:05 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:26:05 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:37:43 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479613063
+    [cid] => 684964b6-b7a6-489f-967b-aa6089c0bbb6
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => PF030 B
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => PF030 B
+    [pr1nm] => PF030 B
+    [pr1ca] => Classics/Peter Carl Fabergé
+    [pr1pr] => 214.00
+    [pr1qt] => 1
+)
+
+duration: 0.18934s
+11-20-2016 @ 04:37:43 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:37:43 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+
+11-20-2016 @ 04:37:45 - Request
+Request
+method: POST
+uri: https://ssl.google-analytics.com/collect
+user-agent: Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+headers: Array
+(
+)
+
+body: Array
+(
+    [v] => 1
+    [tid] => UA-78528632-1
+    [z] => 1479613065
+    [cid] => 8eafff48-6980-4c37-ada7-422eccc76017
+    [t] => event
+    [ec] => Products
+    [ea] => added to cart
+    [el] => HO-4
+    [ev] => 1
+    [cos] => 3
+    [pa] => add
+    [pr1id] => HO-4
+    [pr1nm] => HO-4
+    [pr1ca] => Treasure Mountain
+    [pr1pr] => 149,00
+    [pr1qt] => 1
+)
+
+duration: 0.19922s
+11-20-2016 @ 04:37:45 - Response
+Response
+code: 200
+message: OK
+headers: Array
+(
+    [access-control-allow-origin] => *
+    [date] => Sun, 20 Nov 2016 03:37:45 GMT
+    [pragma] => no-cache
+    [expires] => Fri, 01 Jan 1990 00:00:00 GMT
+    [cache-control] => no-cache, no-store, must-revalidate
+    [last-modified] => Sun, 17 May 1998 03:00:00 GMT
+    [x-content-type-options] => nosniff
+    [content-type] => image/gif
+    [server] => Golfe2
+    [content-length] => 35
+    [alt-svc] => quic=":443"; ma=2592000; v="36,35,34"
+)
+
+body: Array
+(
+    [GIF89a] => 
+)
+

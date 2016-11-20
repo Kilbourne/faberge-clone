@@ -20667,3 +20667,648 @@
 [05-Oct-2016 15:16:54 UTC] PHP Notice:  Undefined variable: visibility in /home1/tatianaf/public_html/web/app/plugins/woocommerce-cart-tab/cart-tab.php on line 174
 [05-Oct-2016 16:21:36 UTC] PHP Notice:  Undefined variable: visibility in /home1/tatianaf/public_html/web/app/plugins/woocommerce-cart-tab/cart-tab.php on line 174
 [05-Oct-2016 16:50:04 UTC] PHP Notice:  Undefined variable: visibility in /home1/tatianaf/public_html/web/app/plugins/woocommerce-cart-tab/cart-tab.php on line 174
+[13-Nov-2016 16:36:08 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 174
+[13-Nov-2016 16:36:13 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 174
+[13-Nov-2016 16:36:34 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 174
+[13-Nov-2016 16:36:34 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 16:36:34 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 16:36:34 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 16:36:34 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 16:37:31 UTC] PHP Fatal error:  Call to a member function get_integrations() on null in /home1/tatianaf/public_html/web/app/plugins/woocommerce-google-analytics-pro/woocommerce-google-analytics-pro.php on line 602
+[13-Nov-2016 16:37:31 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 16:37:31 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 16:37:31 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 16:37:31 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:02:29 UTC] PHP Fatal error:  Call to a member function get_integrations() on null in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 175
+[13-Nov-2016 17:02:29 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:02:29 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:02:29 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:02:29 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:02:56 UTC] PHP Fatal error:  Call to a member function get_integrations() on null in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 175
+[13-Nov-2016 17:02:56 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:02:56 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:02:56 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:02:56 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:03:09 UTC] PHP Fatal error:  Call to a member function get_integrations() on null in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 175
+[13-Nov-2016 17:03:09 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:03:09 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:03:09 UTC] PHP Notice:  wp_dequeue_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:03:09 UTC] PHP Notice:  wp_deregister_script è stato richiamato <strong>in maniera scorretta</strong>. Gli script e gli stili non dovrebbero essere registrati o accodati prima degli hooks <code>wp_enqueue_scripts</code>,<code>admin_enqueue_scripts</code>, o <code>login_enqueue_scripts</code>. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (Questo messaggio è stato aggiunto nella versione 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[13-Nov-2016 17:22:43 UTC] PHP Notice:  Undefined offset: 0 in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 69
+[13-Nov-2016 17:22:43 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/plugins/yith-woocommerce-color-label-variations-premium/includes/class.yith-wccl-frontend.php on line 255
+[13-Nov-2016 17:22:43 UTC] PHP Fatal error:  Call to a member function is_downloadable() on null in /home1/tatianaf/public_html/web/app/plugins/woocommerce/includes/wc-template-functions.php on line 701
+[13-Nov-2016 17:22:54 UTC] PHP Notice:  Undefined offset: 0 in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 69
+[13-Nov-2016 17:22:54 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/plugins/yith-woocommerce-color-label-variations-premium/includes/class.yith-wccl-frontend.php on line 255
+[13-Nov-2016 17:22:54 UTC] PHP Fatal error:  Call to a member function is_downloadable() on null in /home1/tatianaf/public_html/web/app/plugins/woocommerce/includes/wc-template-functions.php on line 701
+[13-Nov-2016 10:40:22 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:40:28 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:40:29 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:40:31 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:40:34 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:40:52 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:40:58 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:41:56 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:43:45 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:44:04 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:44:10 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:44:57 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:44:57 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:02 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:04 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:05 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:06 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:10 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:11 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:31 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:49 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:50 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:52 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:45:53 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:46:27 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:46:28 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:47:16 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:49:59 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 10:50:01 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(8): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[13-Nov-2016 23:47:24 UTC] PHP Parse error:  syntax error, unexpected ''</li>-BIOGENADELI' (T_ENCAPSED_AND_WHITESPACE) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 50
+[13-Nov-2016 23:47:31 UTC] PHP Parse error:  syntax error, unexpected ''</li>-BIOGENADELI' (T_ENCAPSED_AND_WHITESPACE) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 50
+[13-Nov-2016 23:47:33 UTC] PHP Parse error:  syntax error, unexpected ''</li>-BIOGENADELI' (T_ENCAPSED_AND_WHITESPACE) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 50
+[14-Nov-2016 11:49:47 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:49:49 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:49:49 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:49:52 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:50:34 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:51:02 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:51:09 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:51:09 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:51:10 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:55:34 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:55:34 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:55:36 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:55:36 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:55:38 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:55:39 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:55:39 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:55:39 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 222
+[14-Nov-2016 11:56:05 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:05 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:08 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:13 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:13 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:13 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:13 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:16 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:16 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:16 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:56:16 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:08 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:08 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:08 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:09 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:11 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:12 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:12 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:12 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:39 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:45 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:45 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:45 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:45 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:48 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:49 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:49 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:49 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:57:57 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:58:02 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:58:03 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:58:03 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:58:03 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:58:07 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:58:07 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:58:07 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:58:07 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:00 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:00 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:03 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:10 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:16 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:26 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:29 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:34 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 11:59:56 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:00:09 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:00:13 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:00:37 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:00:40 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:00:43 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:00:49 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:00:51 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:01:00 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:01:03 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:01:03 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:01:05 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:01:13 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:01:39 UTC] PHP Fatal error:  Class 'Roots\Sage\Extras\WPSEO_Frontend' not found in /home1/tatianaf/public_html/web/app/themes/faberge/lib/extras.php on line 220
+[14-Nov-2016 12:01:39 UTC] PHP Notice:  wp_dequeue_script was called <strong>incorrectly</strong>. Scripts and styles should not be registered or enqueued until the <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code>, or <code>login_enqueue_scripts</code> hooks. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[14-Nov-2016 12:01:39 UTC] PHP Notice:  wp_deregister_script was called <strong>incorrectly</strong>. Scripts and styles should not be registered or enqueued until the <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code>, or <code>login_enqueue_scripts</code> hooks. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[14-Nov-2016 12:01:39 UTC] PHP Notice:  wp_dequeue_script was called <strong>incorrectly</strong>. Scripts and styles should not be registered or enqueued until the <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code>, or <code>login_enqueue_scripts</code> hooks. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[14-Nov-2016 12:01:39 UTC] PHP Notice:  wp_deregister_script was called <strong>incorrectly</strong>. Scripts and styles should not be registered or enqueued until the <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code>, or <code>login_enqueue_scripts</code> hooks. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 10:52:00 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home1/tatianaf/public_html/web/app/plugins/advanced-custom-fields-pro/api/api-value.php on line 36
+[20-Nov-2016 10:52:37 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home1/tatianaf/public_html/web/app/plugins/advanced-custom-fields-pro/api/api-value.php on line 36
+[20-Nov-2016 10:53:19 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home1/tatianaf/public_html/web/app/plugins/advanced-custom-fields-pro/api/api-value.php on line 36
+[20-Nov-2016 03:54:12 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:13 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:13 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:16 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:16 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:18 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:24 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:29 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:30 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:30 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:36 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:38 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:40 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 03:54:56 America/Denver] PHP Fatal error:  Uncaught exception 'Dotenv\Exception\ValidationException' with message 'One or more environment variables failed assertions: WP_HOME is missing, WP_SITEURL is missing.' in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php:122
+Stack trace:
+#0 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php(47): Dotenv\Validator->assertCallback(Object(Closure), 'is missing')
+#1 /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Dotenv.php(85): Dotenv\Validator->__construct(Array, Object(Dotenv\Loader))
+#2 /home1/tatianaf/public_html/config/application.php(11): Dotenv\Dotenv->required(Array)
+#3 /home1/tatianaf/public_html/web/wp-config.php(9): require_once('/home1/tatianaf...')
+#4 /home1/tatianaf/public_html/web/wp/wp-load.php(42): require_once('/home1/tatianaf...')
+#5 /home1/tatianaf/public_html/web/wp/wp-blog-header.php(12): require_once('/home1/tatianaf...')
+#6 /home1/tatianaf/public_html/web/index.php(5): require('/home1/tatianaf...')
+#7 {main}
+  thrown in /home1/tatianaf/public_html/vendor/vlucas/phpdotenv/src/Validator.php on line 122
+[20-Nov-2016 10:55:16 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home1/tatianaf/public_html/web/app/plugins/advanced-custom-fields-pro/api/api-value.php on line 36
+[20-Nov-2016 10:57:34 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home1/tatianaf/public_html/web/app/plugins/advanced-custom-fields-pro/api/api-value.php on line 36
+[20-Nov-2016 10:58:04 UTC] PHP Notice:  Use of undefined constant category - assumed 'category' in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 64
+[20-Nov-2016 10:58:15 UTC] PHP Notice:  Use of undefined constant category - assumed 'category' in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 64
+[20-Nov-2016 11:16:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 109
+[20-Nov-2016 11:16:22 UTC] PHP Notice:  wp_dequeue_script est appelée de la mauvaise manière. Les scripts et les styles ne peuvent pas être enregistrés ou ajoutés avant le déclenchement des crochets <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code> ou <code>login_enqueue_scripts</code>. Veuillez lire <a href="https://codex.wordpress.org/Debugging_in_WordPress">Débugger dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 11:16:22 UTC] PHP Notice:  wp_deregister_script est appelée de la mauvaise manière. Les scripts et les styles ne peuvent pas être enregistrés ou ajoutés avant le déclenchement des crochets <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code> ou <code>login_enqueue_scripts</code>. Veuillez lire <a href="https://codex.wordpress.org/Debugging_in_WordPress">Débugger dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 11:16:22 UTC] PHP Notice:  wp_dequeue_script est appelée de la mauvaise manière. Les scripts et les styles ne peuvent pas être enregistrés ou ajoutés avant le déclenchement des crochets <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code> ou <code>login_enqueue_scripts</code>. Veuillez lire <a href="https://codex.wordpress.org/Debugging_in_WordPress">Débugger dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 11:16:22 UTC] PHP Notice:  wp_deregister_script est appelée de la mauvaise manière. Les scripts et les styles ne peuvent pas être enregistrés ou ajoutés avant le déclenchement des crochets <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code> ou <code>login_enqueue_scripts</code>. Veuillez lire <a href="https://codex.wordpress.org/Debugging_in_WordPress">Débugger dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 11:22:49 UTC] PHP Notice:  Undefined index: WC_Widget_Cart in /home1/tatianaf/public_html/web/wp/wp-includes/widgets.php on line 1030
+[20-Nov-2016 11:23:31 UTC] PHP Notice:  Undefined index: WC_Widget_Cart in /home1/tatianaf/public_html/web/wp/wp-includes/widgets.php on line 1030
+[20-Nov-2016 11:55:38 UTC] PHP Notice:  Undefined index: WC_Widget_Cart in /home1/tatianaf/public_html/web/wp/wp-includes/widgets.php on line 1030
+[20-Nov-2016 11:59:02 UTC] PHP Notice:  Undefined variable: image in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 69
+[20-Nov-2016 12:26:40 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 64
+[20-Nov-2016 12:26:46 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 64
+[20-Nov-2016 12:26:51 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 64
+[20-Nov-2016 12:26:55 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 64
+[20-Nov-2016 12:27:22 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 64
+[20-Nov-2016 12:27:45 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 64
+[20-Nov-2016 12:27:45 UTC] PHP Notice:  wp_dequeue_script was called <strong>incorrectly</strong>. Scripts and styles should not be registered or enqueued until the <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code>, or <code>login_enqueue_scripts</code> hooks. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 12:27:45 UTC] PHP Notice:  wp_deregister_script was called <strong>incorrectly</strong>. Scripts and styles should not be registered or enqueued until the <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code>, or <code>login_enqueue_scripts</code> hooks. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 12:27:45 UTC] PHP Notice:  wp_dequeue_script was called <strong>incorrectly</strong>. Scripts and styles should not be registered or enqueued until the <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code>, or <code>login_enqueue_scripts</code> hooks. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 12:27:45 UTC] PHP Notice:  wp_deregister_script was called <strong>incorrectly</strong>. Scripts and styles should not be registered or enqueued until the <code>wp_enqueue_scripts</code>, <code>admin_enqueue_scripts</code>, or <code>login_enqueue_scripts</code> hooks. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 3.3.) in /home1/tatianaf/public_html/web/wp/wp-includes/functions.php on line 3792
+[20-Nov-2016 12:41:05 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 222
+[20-Nov-2016 12:42:56 UTC] PHP Parse error:  syntax error, unexpected 'icl_object_id' (T_STRING) in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 65
+[20-Nov-2016 13:37:29 UTC] PHP Notice:  Undefined offset: 1 in /home1/tatianaf/public_html/web/app/plugins/debug-this/debug-this.php on line 198
+[20-Nov-2016 13:38:05 UTC] PHP Notice:  Undefined offset: 1 in /home1/tatianaf/public_html/web/app/plugins/debug-this/debug-this.php on line 198
+[20-Nov-2016 13:39:12 UTC] PHP Notice:  Undefined offset: 1 in /home1/tatianaf/public_html/web/app/plugins/debug-this/debug-this.php on line 198
+[20-Nov-2016 13:40:40 UTC] PHP Notice:  Undefined offset: 1 in /home1/tatianaf/public_html/web/app/plugins/debug-this/debug-this.php on line 198
+[20-Nov-2016 13:43:16 UTC] PHP Warning:  Missing argument 1 for woocommerce_subcategory_thumbnail1(), called in /home1/tatianaf/public_html/web/app/themes/faberge/woocommerce/content-product_cat.php on line 55 and defined in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 60
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Undefined variable: category in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Warning:  Missing argument 1 for woocommerce_subcategory_thumbnail1(), called in /home1/tatianaf/public_html/web/app/themes/faberge/woocommerce/content-product_cat.php on line 55 and defined in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 60
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Undefined variable: category in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Warning:  Missing argument 1 for woocommerce_subcategory_thumbnail1(), called in /home1/tatianaf/public_html/web/app/themes/faberge/woocommerce/content-product_cat.php on line 55 and defined in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 60
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Undefined variable: category in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Warning:  Missing argument 1 for woocommerce_subcategory_thumbnail1(), called in /home1/tatianaf/public_html/web/app/themes/faberge/woocommerce/content-product_cat.php on line 55 and defined in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 60
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Undefined variable: category in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Warning:  Missing argument 1 for woocommerce_subcategory_thumbnail1(), called in /home1/tatianaf/public_html/web/app/themes/faberge/woocommerce/content-product_cat.php on line 55 and defined in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 60
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Undefined variable: category in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Warning:  Missing argument 1 for woocommerce_subcategory_thumbnail1(), called in /home1/tatianaf/public_html/web/app/themes/faberge/woocommerce/content-product_cat.php on line 55 and defined in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 60
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Undefined variable: category in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Warning:  Missing argument 1 for woocommerce_subcategory_thumbnail1(), called in /home1/tatianaf/public_html/web/app/themes/faberge/woocommerce/content-product_cat.php on line 55 and defined in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 60
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Undefined variable: category in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Warning:  Missing argument 1 for woocommerce_subcategory_thumbnail1(), called in /home1/tatianaf/public_html/web/app/themes/faberge/woocommerce/content-product_cat.php on line 55 and defined in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 60
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Undefined variable: category in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
+[20-Nov-2016 13:43:16 UTC] PHP Notice:  Trying to get property of non-object in /home1/tatianaf/public_html/web/app/themes/faberge/lib/woocommerce.php on line 63
