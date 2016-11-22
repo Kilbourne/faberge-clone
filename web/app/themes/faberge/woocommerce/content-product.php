@@ -35,7 +35,7 @@ $classes = array();
 if($main_product->ID === $post->ID || ( $main_product->parent > 0 && $main_product->ID === null &&  0 === ( $woocommerce_loop['loop']     ))){ $classes[] = ' active';}
 $classes[]='product';
 ?>
-<li id="product-<?php the_ID() ?>" <?php echo var_dump($woocommerce_loop['loop']);post_class($classes); echo var_dump($woocommerce_loop['loop']); ?> >
+<li id="product-<?php the_ID() ?>" <?php echo post_class($classes); ?> >
 
 	<?php
 	/**
