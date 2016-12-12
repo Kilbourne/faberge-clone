@@ -24,7 +24,7 @@ global $product;
 if (!$product->is_purchasable()) {
     global $product;
     $notes    = get_the_terms($product->id, 'pa_note');
-    $note_url = get_term_meta($notes[0], 'attribute_url');
+    $note_url = get_term_meta($notes[0]->term_id, 'attribute_url', true);
     if (is_array($notes)) {
         echo '<a href="' . $note_url . '" class="product-notes">' . $notes[0]->name . '</a>';
     }
