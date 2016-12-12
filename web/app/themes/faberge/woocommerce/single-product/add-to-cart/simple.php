@@ -9,61 +9,63 @@
  * as little as possible, but it does happen. When this occurs the version of the template file will.
  * be bumped and the readme will list any important changes.
  *
- * @see 	    http://docs.woothemes.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
+ * @see         http://docs.woothemes.com/document/template-structure/
+ * @author         WooThemes
+ * @package     WooCommerce/Templates
  * @version     2.1.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
 }
 
 global $product;
 
-if ( ! $product->is_purchasable() ) {
-	  global $product;
-  $notes=get_the_terms( $product->id, 'pa_note');
- $note_url=delete_term_meta( $notes[0], 'attribute_url' );
-  if(is_array($notes)) 
-   echo '<a href="'.$note_url .'" class="product-notes">'.$notes[0]->name.'</a>';
-	return;
+if (!$product->is_purchasable()) {
+    global $product;
+    $notes    = get_the_terms($product->id, 'pa_note');
+    $note_url = get_term_meta($notes[0], 'attribute_url');
+    if (is_array($notes)) {
+        echo '<a href="' . $note_url . '" class="product-notes">' . $notes[0]->name . '</a>';
+    }
+
+    return;
 }
 
 ?>
 
 <?php
-	// Availability
-	$availability      = $product->get_availability();
-	$availability_html = empty( $availability['availability'] ) ? '' : '<p class="stock ' . esc_attr( $availability['class'] ) . '">' . esc_html( $availability['availability'] ) . '</p>';
+// Availability
+$availability      = $product->get_availability();
+$availability_html = empty($availability['availability']) ? '' : '<p class="stock ' . esc_attr($availability['class']) . '">' . esc_html($availability['availability']) . '</p>';
 
-	echo apply_filters( 'woocommerce_stock_html', $availability_html, $availability['availability'], $product );
+echo apply_filters('woocommerce_stock_html', $availability_html, $availability['availability'], $product);
 ?>
 
-<?php if ( $product->is_in_stock() ) : ?>
+<?php if ($product->is_in_stock()): ?>
 
-	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
+  <?php do_action('woocommerce_before_add_to_cart_form');?>
 
-	<form class="cart" method="post" enctype='multipart/form-data'>
-	 	<?php do_action( 'woocommerce_before_add_to_cart_button' );
-	 	woocommerce_template_single_price(); ?>
+  <form class="cart" method="post" enctype='multipart/form-data'>
+    <?php do_action('woocommerce_before_add_to_cart_button');
+woocommerce_template_single_price();?>
 
-	 	<?php
-	 		if ( ! $product->is_sold_individually() ) {
-	 			woocommerce_quantity_input( array(
-	 				'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 1, $product ),
-	 				'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product ),
-	 				'input_value' => ( isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 )
-	 			) );
-	 		}
-	 	?>
+    <?php
+if (!$product->is_sold_individually()) {
+    woocommerce_quantity_input(array(
+        'min_value'   => apply_filters('woocommerce_quantity_input_min', 1, $product),
+        'max_value'   => apply_filters('woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product),
+        'input_value' => (isset($_POST['quantity']) ? wc_stock_amount($_POST['quantity']) : 1),
+    ));
+}
+?>
 
-	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+    <input type="hidden" name="add-to-cart" value="<?php echo esc_attr($product->id); ?>" />
 
-	 	<?php woocommerce_template_loop_add_to_cart(); ?>
-		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-	</form>
+    <?php woocommerce_template_loop_add_to_cart();?>
+    <?php do_action('woocommerce_after_add_to_cart_button');?>
+  </form>
 
-	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
+  <?php do_action('woocommerce_after_add_to_cart_form');?>
 
-<?php endif; ?>
+<?php endif;?>
