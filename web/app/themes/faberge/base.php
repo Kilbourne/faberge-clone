@@ -15,7 +15,7 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
     <?php include "svg.php";?>
-	<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 </script>
     <?php do_action('body_open');?>
     <div class="page-wrapper ">
@@ -24,10 +24,7 @@ use Roots\Sage\Wrapper;
 do_action('get_header');
 get_template_part('templates/header');?>
       <?php if (!is_front_page()) {?> <div class="page-wrapper page-wrapper--little "> <?php }?>
-    <?php if (is_tax('product_cat') || is_singular('product')) {
-    get_header('shop');
-}
-?>
+
 
 
     <div class="wrap container" role="document">
