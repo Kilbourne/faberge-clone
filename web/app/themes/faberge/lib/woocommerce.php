@@ -149,13 +149,20 @@ function woocommerce_before_single_product_summary_cart()
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10, 0);
 
 //add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25,2 );
-
+remove_action('woocommerce_before_single_product_summary','woocommerce_show_product_sale_flash',10);
 add_action('woocommerce_single_product_summary', 'woocommerce_before_single_product_price_single_add_to_cart', 24, 2);
 
 function woocommerce_before_single_product_price_single_add_to_cart()
 {
+    global $product;
+    if( $product->is_type( 'variable' ) ){
     echo '<div class="buy-section"><div class="accordion-title-wrap">
-          <a href="#buy-wrapper" aria-expanded="false" aria-controls="buy-wrapper" class="accordion-title accordionTitle js-accordionTrigger fa fa-caret-right"><i class="wpmenucart-icon-shopping-cart-0"></i>' . __('Buy Information', 'sage') . '</a></div><div id="buy-wrapper"class="accordion-content accordionItem is-collapsed"  >';
+          <a href="#buy-wrapper" aria-expanded="false" aria-controls="buy-wrapper" ><i class="wpmenucart-icon-shopping-cart-0"></i>' . __('Buy Information', 'sage') . '</a></div><div id="buy-wrapper"  >';
+      }else{
+        remove_action('woocommerce_single_product_summary', 'woocommerce_before_single_product_summary_cart', 29, 2);
+        remove_action('woocommerce_single_product_summary', 'woocommerce_after_single_product_summary_single_add_to_cart', 31, 2);
+        remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+      }
 
 };
 add_action('woocommerce_single_product_summary', 'woocommerce_after_single_product_summary_single_add_to_cart', 31, 2);

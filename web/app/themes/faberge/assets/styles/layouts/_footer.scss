@@ -1,111 +1,116 @@
-footer.content-info{
-  border-bottom: 2px solid rgb(134, 134, 134) !important;
-border-top: 2px solid rgb(134, 134, 134) !important;
-  >.container{
-    max-width: 920px;
-margin: 0px auto;
-  }
-  background-color: #fff;
-  .nav-footer{
-    padding: 0 0 0.5rem;
-    position: relative;
-    >hr{
-      top: 47px;
-      width: 98%;
-      margin: 0px;
-      position: absolute;
-      left: 1%;
+footer.content-info {
+    border-bottom: 2px solid rgb(134, 134, 134) !important;
+    border-top: 2px solid rgb(134, 134, 134) !important;
+    >.container {
+        max-width: 920px;
+        margin: 0px auto;
     }
-    a{ text-decoration: none; }
-    .hr-footer{
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      margin: 0px;
+    background-color: #fff;
+    .nav-footer {
+        padding: 0 0 0.5rem;
+        position: relative;
+        >hr {
+            top: 47px;
+            width: 98%;
+            margin: 0px;
+            position: absolute;
+            left: 1%;
+        }
+        a {
+            text-decoration: none;
+        }
+        .hr-footer {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            margin: 0px;
+        }
     }
-  }
-  ul.nav{
-  display: flex;
-  justify-content: space-between;
-  //border-bottom: 2px solid #868686 !important;
-  //border-top: 2px solid #868686 !important;
-  padding: 0.75rem 1%;
-  margin: 0px;
-  list-style: none;
-  >li{
-    //margin-bottom: 1rem;
-    margin-right: .5rem;
-    >a{
-      color:#756A6A;
-      text-transform: uppercase;
-      font-weight: 700;
+    ul.nav {
+        display: flex;
+        justify-content: space-between;
+        //border-bottom: 2px solid #868686 !important;
+        //border-top: 2px solid #868686 !important;
+        padding: 0.75rem 1%;
+        margin: 0px;
+        list-style: none;
+        >li {
+            //margin-bottom: 1rem;
+            margin-right: .5rem;
+            >a {
+                color: #756A6A;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+        .sub-menu {
+            margin: 0;
+            margin-top: 1rem;
+            list-style: none;
+            >li>a {
+                color: #6f6f6f;
+            }
+        }
+        @include media-query(palm) {
+            flex-wrap: wrap;
+        }
     }
-  }
-  .sub-menu{
-    margin:0;
-    margin-top: 1rem;
-    list-style: none;
-    >li>a{ color:#6f6f6f;}
-  }
-  @include media-query(palm)
-  {
-    flex-wrap:wrap;
-  }
 }
 
-}
-body > .page-wrapper > .credits{
-  .credits-wrap{
-    display: flex;
-justify-content: space-between;
-max-width: 930px;
-
-margin: 0 auto;
-      @include media-query(palm)
-  {
-    flex-wrap:wrap;
-  }
-
-  }
+body > .page-wrapper > .credits {
+    .credits-wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 930px;
+        width: 100%;
+        margin: 0 auto;
+        @include media-query(palm) {
+            flex-wrap: wrap;
+        }
+    }
     background-color: rgb(223, 223, 223);
     font-size: 0.7rem;
     padding: 0.5rem 0.33rem;
     font-weight: 700;
-    .right{
-      >span{
-        &:first-child{
-          vertical-align: middle;
-          margin-right: 0.25rem;
+    .right {
+        >span {
+            &:first-child {
+                vertical-align: middle;
+                margin-right: 0.25rem;
+            }
+            &:last-child {
+                display: inline-block;
+                padding: 0;
+                >a {
+                    display: inline-block;
+                }
+            }
         }
-        &:last-child{
-          padding: 0px 10px;
-        }
-      }
     }
-  }
-body.home{
-    footer.content-info  >.container{
-    max-width: none;
-margin: 0;
-  }
- .credits{
+}
 
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(223, 223, 223);
-    font-size: 0.7rem;
-    padding: 0.5rem 0.33rem;
-    font-weight: 700;
-    .right{
-      >span{
-        &:first-child{
-          vertical-align: middle;
-          margin-right: 0.25rem;
-        }
-        &:last-child{
-          padding: 0px 10px;
-        }
-      }
+body.home {
+    footer.content-info >.container {
+        max-width: none;
+        margin: 0;
     }
-  }
-  }
+    .credits {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(223, 223, 223);
+        font-size: 0.7rem;
+        padding: 0.5rem 0.33rem;
+        font-weight: 700;
+        .right {
+            >span {
+                &:first-child {
+                    vertical-align: middle;
+                    margin-right: 0.25rem;
+                }
+                &:last-child {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
